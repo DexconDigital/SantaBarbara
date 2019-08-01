@@ -1,20 +1,39 @@
 <!-- Codigo del preloader -->
 <style>
-  .fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-  }
+        #wrap-preload {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity .5s ease, visibility .5s ease;
+            z-index: 998;
+        }
 
-  #wrap-preload>img.gif {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    z-index: 1032;
-  }
+        #wrap-preload.close {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        #wrap-preload>img.gif {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            z-index: 1032;
+        }
 </style>
 <div id="wrap-preload">
   <img src="img/preloader.gif" alt="gif" class="gif" id="gif">

@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php'?>
 <!doctype html>
 <html lang="es">
 
@@ -19,15 +20,17 @@
     <section id="hero">
       <div style="position: relative;" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/no_image.png" class="" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/no_image.png" class="" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/no_image.png" class="" alt="...">
-          </div>
+          <?php
+            echo '<div class="carousel-item active">
+                    <img src="'.$imagenes_slide_principal[0]['imagen'].'" class="w-100" alt="'.$imagenes_slide_principal[0]['alt'].'">
+                  </div>';
+            for($i=1; $i<count($imagenes_slide_principal); $i++){
+                $r = $imagenes_slide_principal[$i];
+                echo '<div class="carousel-item active">
+                        <img src="'.$r['imagen'].'" class="w-100" alt="'.$r['alt'].'">
+                    </div>';
+            }
+          ?>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
