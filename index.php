@@ -21,14 +21,18 @@
       <div style="position: relative;" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <?php
+            // Colocarle un nombre más corto al array
+            $r=$imagenes_slide_principal;
+            // Declarar el primer item del carousel con la clase active
             echo '<div class="carousel-item active">
-                    <img src="'.$imagenes_slide_principal[0]['imagen'].'" class="w-100" alt="'.$imagenes_slide_principal[0]['alt'].'">
+                    <img src="'.$r[0]['imagen'].'" class="w-100" alt="'.$r[0]['alt'].'">
                   </div>';
-            for($i=1; $i<count($imagenes_slide_principal); $i++){
-                $r = $imagenes_slide_principal[$i];
-                echo '<div class="carousel-item active">
+            //iterar el array para imprimir todos los valores
+            for($i=1; $i<count($r); $i++){
+                $r = $r[$i];
+                echo '<div class="carousel-item">
                         <img src="'.$r['imagen'].'" class="w-100" alt="'.$r['alt'].'">
-                    </div>';
+                      </div>';
             }
           ?>
         </div>
