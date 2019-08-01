@@ -32,15 +32,11 @@
                     <div class="property-list-detail text-left p-4">
                         <h5>Tipo de inmueble _ tipo de ubicación</h5>
                         <p>(añadir una pequeña descripción)</p>
-                        <ul id="list" class="row">
-                            <li class="col-12">Código:</li>
-                            <li class="col-12">Ciudads:</li>
-                            <li class="col-12">Barrio:</li>
-                            <li class="col-12 d-flex">
-                                <div class="contenedor_icon">
-                                    <i class="fas fa-home mr-2"></i>
-                                </div>
-                                Casa</li>
+                        <ul id="list" class="row contenedor_icon">
+                            <li  class="col-12 d-flex">Código:</li>
+                            <li  class="col-12 d-flex">Ciudads:</li>
+                            <li  class="col-12 d-flex">Barrio:</li>
+                            <li class="col-12 d-flex">Casa</li>
                         </ul>
                         <a href="detalle_inmueble.php" class="btn btn-dark rounded-0 col-4 ">Ver más</a>
                     </div>

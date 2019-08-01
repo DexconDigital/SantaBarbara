@@ -4,17 +4,21 @@
       <div class="row">
         <div class="col-4">
           <img src="img/logo.png" alt="" height="50px">
-          <p class="text-center p-4"> Dirección inmobiliaria </p>
-          <ul style="margin-top: 5px; display: inline-block;">
-            <li class="li_foot">Facebook</li>
-            <li class="li_foot"> Twitter</li>
-            <li class="li_foot">Instagram</li>
-            <li class="li_foot">YouTube</li>
+          <p class="text-center mt-4" style="">Dirección inmobiliaria </p>
+          <ul class="estilo_foot_list2" style=" padding:36px;">
+            <li class="col-12 d-flex">
+              <div class="contenedor_icon" style="">
+                <i class="fab fa-facebook-square mr-2 border border-secondary" id="estilo_icono_foot"></i>
+                <i class="fab fa-twitter-square mr-2 border border-secondary" id="estilo_icono_foot"></i>
+                <i class="fab fa-instagram mr-2 border border-secondary" id="estilo_icono_foot"></i>
+                <i class="fab fa-youtube mr-2 border border-secondary" id="estilo_icono_foot"></i>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="col-2" style="width: 25%;">
           <h6 class="tit_foot">Menú</h6>
-          <ul style="margin-top: 50px; display: inline-block;">
+          <ul class="estilo_foot_list" style="">
             <li class="li_foot">Inicio</li>
             <li class="li_foot">Quienes Somos</li>
             <li class="li_foot">Servicios</li>
@@ -25,7 +29,7 @@
         </div>
         <div class="col-3" style="width: 25%; ">
           <h6 class="tit_foot"> Formularios aseguradoras</h6>
-          <ul style="margin-top: 50px; display: inline-block;">
+          <ul class="estilo_foot_list">
             <li class="li_foot">Link</li>
             <li class="li_foot">Link</li>
             <li class="li_foot">Link</li>
@@ -36,7 +40,7 @@
           <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
           <p>Déjanos saber de ti, y estemos en contacto.</p>
           <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
-          <button type="button" class="btn btn-dark rounded-0 col-12" name=""><span>Enviar</span></button>
+          <button style="margin-top: 18px;" type="button" class="btn btn-dark rounded-0 col-12" name=""><span>Enviar</span></button>
         </div>
       </div>
     </div>

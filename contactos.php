@@ -14,7 +14,7 @@
 <body>
   <?php include 'layout/menu.php' ?>
 
-  <div class="contaider body border border-secondary">
+  <div class="contaider body">
     <div class="col-12 p-4 " id="contenedor_contacto">
       <h2 class="main-title text-center">Escríbenos</h2>
     </div>
@@ -23,7 +23,7 @@
     </div>
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-md-12 border border-secondary">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
             </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="col-md-2">
             </div>
-            <div class="container-fluid border border-secondary">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col-md-2">
                 </div>
@@ -90,7 +90,7 @@
               </div>
             </div>
           </div>
-          <div class="container border border-secondary">
+          <div class="container">
             <div class="col-12 p-4 mt-4 ">
               <h2 class="main-title text-center"> Datos de Contacto</h2>
             </div>
@@ -118,12 +118,24 @@
             </div>
           </div>
         </div>
-        <div style="padding: 40px 0px; background-color: #2f2f2f; width: 100%;" class="mt-4">
-          <div class="container">
-            <p class="tit_foot2 text-white">Suscríbete a nuestro boletín</p>
-            <div class="subscribe">
-              <input type="email" class="" placeholder="ejemplo@dominio.com" id="supscrp_foot">
-              <button type="button" class="btn btn-dark rounded-0 " name=""><span>Enviar</span></button>
+        <div id="enviar_contactos" style="" class="mt-4 ">
+          <div class="container ">
+            <div class="row d-flex justify-content-center">
+              <div style="margin-top:-22px; margin-right: -55px;">
+                <p class="tit_foot2 text-white justify-content-center">Suscríbete a nuestro boletín</p>
+              </div>
+              <div class="col-6 d-flex align-items-center justify-content-center">
+                <div>
+                  <div class="form-group border border-secondary">
+                    <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
+
+                  </div>
+                </div>
+                <div class="form-group border border-secondary">
+                  <button style=" padding: 12px;" type="button" class="btn btn-dark rounded-0 " name=""><span>Enviar</span></button>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>

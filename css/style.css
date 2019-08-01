@@ -701,7 +701,7 @@ figure{
 
 }
 #supscrp_foot{
-    padding: 10px; margin-bottom: 15px
+    padding: 10px;
 }
 .ul{
     list-style: none;
@@ -713,4 +713,25 @@ figure{
 .iconos_inmmueble li .container_iconos{
     display: flex;
     justify-content: center;
+}
+#enviar_contactos{
+    padding: 40px 0px; 
+    background-color: 
+    #dc3545; width: 100%;
+}
+.estilo_foot_list{
+    margin-top: 50px; 
+    display: inline-block;
+    list-style:none;
+     padding:12%;
+}
+.estilo_foot_list2{
+    margin-top: 5px;
+     display: inline-block;
+      list-style:none;
+      
+}
+#estilo_icono_foot{
+    font-size: 35px; 
+    padding: 7px;
 }
