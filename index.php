@@ -8,7 +8,7 @@
 
   <?php include 'layout/archivosheader.php' ?>
 
-  <title>Inicio | Santa barbara</title>
+  <title>Inicio | Santa barbara Inmobiliaria</title>
 </head>
 
 <body>
