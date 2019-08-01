@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -13,40 +14,51 @@
 
 <body>
     <?php include 'layout/menu.php' ?>
-
     <div class="pricing-wrapper index inner-section-padding text-center">
         <div class="container contenedor_servicio">
-            <h2 class="main-title p-4"> Nuestros Servicios</h2>
+        <div class="col-12 p-4  ">
+          <h2 class="main-title text-center"> Nuestros Servicios</h2>
+        </div>
+        <div class="col-12">
+          <p class="text-center"> enviado por el cliente</p>
+        </div>
             <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 p-4">
+                    <div class="pricing">
+                        <figure>
+                            <img src="img/no_image.png" alt="">
+                        </figure>
+                        <h6 class="titulos_servicio">
+                        <?php echo $texto_servicios['ventas']['titulo'] ?> </h6>
+                        <div class="rate">
+                        </div>
+                       <div class="container">
+                       <?php echo $texto_servicios['ventas']['parrafo'] ?> </h6>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 p-4">
+                    <div class="pricing">
+                    <figure>
+                            <img src="img/no_image.png" alt="">
+                        </figure>   
+                        <h6 class="titulos_servicio">Nombre del servicio</h6>
+                        <div class="rate"></div>
+                        <p>Parrafo enviado por el cliente</p>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 p-4">
                     <div class="pricing">
                         <figure>
                             <img src="img/no_image.png " alt="">
                         </figure>
-                        <h6 class="titulos_servicio">Nombre del servicio</h6>
-                        <div class="rate">
-                        </div>
-                        <p>Parrafo enviado por el cliente</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 p-4">
-                    <div class="pricing">
-                        <figure>
-                        <img src="img/no_image.png " alt="">
-                        </figure>
-                        <h6 class="titulos_servicio">Nombre del servicio</h6>
+                        <h6 class="titulos_servicio">
+                        <?php echo $texto_servicios['arriendos']['titulo'] ?>
+                        </h6>
                         <div class="rate"></div>
-                        <p>Parrafo enviado por el cliente</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 p-4">
-                    <div class="pricing">
-                        <figure>
-                        <img src="img/no_image.png " alt="">
-                        </figure>
-                        <h6 class="titulos_servicio">Nombre del servicio</h6>
-                        <div class="rate"></div>
-                        <p>Parrafo enviado por el cliente</p>
+                        <div class="container">
+                       <?php echo $texto_servicios['arriendos']['parrafo'] ?> </h6>
+                       </div>
                     </div>
                 </div>
             </div>

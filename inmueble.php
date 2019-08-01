@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +14,6 @@
 
 <body>
     <?php include 'layout/menu.php' ?>
-
     <div class="contaider-fluid body">
         <?php include 'layout/buscador.php' ?>
     </div>
@@ -32,11 +32,11 @@
                     <div class="property-list-detail text-left p-4">
                         <h5>Tipo de inmueble _ tipo de ubicación</h5>
                         <p>(añadir una pequeña descripción)</p>
-                        <ul id="list" class="row contenedor_icon">
-                            <li  class="col-12 d-flex">Código:</li>
-                            <li  class="col-12 d-flex">Ciudads:</li>
-                            <li  class="col-12 d-flex">Barrio:</li>
-                            <li class="col-12 d-flex">Casa</li>
+                        <ul id="list" class="row contenedor_icon" style="padding: 0%;">
+                            <li class="col-12 d-flex">Código:</li>
+                            <li class="col-12 d-flex">Ciudad:</li>
+                            <li class="col-12 d-flex">Barrio:</li>
+                            <li class="col-12 d-flex">Casa:</li>
                         </ul>
                         <a href="detalle_inmueble.php" class="btn btn-dark rounded-0 col-4 ">Ver más</a>
                     </div>

@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +14,6 @@
 
 <body>
     <?php include 'layout/menu.php' ?>
-
     <div class="contaider-fluid body">
 
         <div class="row d-flex justify-content-around  p-4  ">

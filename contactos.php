@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +14,6 @@
 
 <body>
   <?php include 'layout/menu.php' ?>
-
   <div class="contaider body">
     <div class="col-12 p-4 " id="contenedor_contacto">
       <h2 class="main-title text-center">Escríbenos</h2>

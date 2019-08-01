@@ -8,7 +8,7 @@
           <ul class="estilo_foot_list2" style=" padding:36px;">
             <li class="col-12 d-flex">
               <div class="contenedor_icon" style="">
-                <i class="fab fa-facebook-square mr-2 border border-secondary" id="estilo_icono_foot"></i>
+                <i class="<?php echo $redes_sociales['facebook']['icono']?> mr-2 border border-secondary" id="estilo_icono_foot"></i>
                 <i class="fab fa-twitter-square mr-2 border border-secondary" id="estilo_icono_foot"></i>
                 <i class="fab fa-instagram mr-2 border border-secondary" id="estilo_icono_foot"></i>
                 <i class="fab fa-youtube mr-2 border border-secondary" id="estilo_icono_foot"></i>

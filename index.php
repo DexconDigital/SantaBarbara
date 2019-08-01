@@ -1,4 +1,4 @@
-<?php require 'variables/variables.php'?>
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="es">
 
@@ -9,7 +9,7 @@
 
   <?php include 'layout/archivosheader.php' ?>
 
-  <title>Inicio | Santa barbara Inmobiliaria</title>
+  <title>Inicio</title>
 </head>
 
 <body>
@@ -21,20 +21,19 @@
       <div style="position: relative;" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <?php
-            // Colocarle un nombre más corto al array
-            $r=$imagenes_slide_principal;
-            // Declarar el primer item del carousel con la clase active
-            echo '<div class="carousel-item active">
-                    <img src="'.$r[0]['imagen'].'" class="w-100" alt="'.$r[0]['alt'].'">
+          // Colocarle un nombre más corto al array
+          $r = $imagenes_slide_principal[0];
+          // Declarar el primer item del carousel con la clase active
+          echo '<div class="carousel-item active">
+                    <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
                   </div>';
-            //iterar el array para imprimir todos los valores
-            for($i=1; $i<count($r); $i++){
-                $r = $r[$i];
-                echo '<div class="carousel-item">
-                        <img src="'.$r['imagen'].'" class="w-100" alt="'.$r['alt'].'">
+          //iterar el array para imprimir todos los valores
+          for ($i = 1; $i < count($r) - 1; $i++) {
+            $r = $r[$i];
+            echo '<div class="carousel-item">
+                        <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
                       </div>';
-            }
-          ?>
+          } ?>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,9 +60,7 @@
           <h6>RESIDENCIAL</h6>
         </div>
         <div class="col-12">
-
           <p class="text-center"> Nuestros inmuebles destacados en este momento</p>
-
         </div>
         <div class="col-12 row justify-content-center">
           <div class="col-12 col-md-6 col-lg-4 p-4 ">
@@ -122,11 +119,11 @@
       </div>
     </section>
 
-    <section id=cards>
+    <section id="" class="separador-p bg-gris">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="extra-info ">
+            <div class="extra-info separador">
               <figure id="targeta" class="extra-info-image pull-right">
                 <img id="card_img" src="img/no_image.png">
               </figure>
@@ -141,13 +138,13 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="extra-info ">
+            <div class="extra-info separador">
               <figure id="targeta2" class="extra-info-image pull-right">
-                <img id="card_img" src="img/no_image.png">
+                <?php $r = $imagenes['banner_servicios_home'];
+                echo '
+               <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
               </figure>
               <div id="cuadro_cards2" class="extra-info-text margin-control">
                 <h3> Nuestros servicios, cerca de ti</h3>
@@ -192,35 +189,43 @@
                   <p class="mb-1">Correo:</p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
-        <div class="row d-flex justify-content-around p-4">
+
+        <div class="row justify-content-around  bg-gris" style="margin-bottom: 41px;">
           <div class="col-12 p-4  ">
             <h2 class="main-title text-center"> Zona Clientes</h2>
           </div>
           <div class="col-12">
             <p class="text-center"> Te facilitamos todas las operaciones, sin que salgas de casa accede a nuestros servicios con un solo clic y de forma segura.</p>
           </div>
+
           <section class="container mt-5 ">
             <div class="card-deck">
               <div class="card">
-                <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
+                <?php $r = $imagenes['banner_clientes_home']['propietarios'];
+                echo '
+               <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
 
               </div>
               <div class="card">
-                <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
+                <?php $r = $imagenes['banner_clientes_home']['arrendatarios'];
+                echo '
+               <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
 
               </div>
               <div class="card">
-                <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
+                <?php $r = $imagenes['banner_clientes_home']['pagos_pse'];
+                echo '
+               <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">'; ?>
 
               </div>
             </div>
           </section>
 
         </div>
+      </div>
     </section>
 
     <section id='parallax'>

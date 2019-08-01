@@ -10,8 +10,23 @@ body{
 body .body{
     flex: 1;
     padding: 0;
+    
 }
-
+body.h1{
+   font-display: CENTURY GOTHIC;
+}
+body.p{
+    font-family: lato;
+}
+.separador{
+    margin: 30px 0;
+}
+.separador-p{
+    padding: 30px 0;
+}
+.bg-gris{
+    background-color: #f3f3f3;
+}
 .main-title{
     position: relative;
     text-transform: uppercase;
@@ -406,16 +421,15 @@ figure{
 }
 .company-history h2{
     margin: 0px 0px 68px 0px;
-
-}
-.container{
-    width: 1170px;
 }
 .section-padding{
     padding: 100px 0px;
 }
 .titulo{
     margin: 0px 0px 68px 0px;
+}
+.form-control{
+ height: 50px;
 }
 .contenido_completo{
     margin-right: -15px;

@@ -49,7 +49,7 @@
 <!-- Inicio menu -->
 <nav id="medida_nav" class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="img/logo.png" alt="" height="52px">
+    <img src="<?php echo $logo;?>" alt="" height="52px">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

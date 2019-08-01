@@ -1,12 +1,12 @@
 <?php
 
 $nombre_inmobiliaria = "Inmobiliaria Santa Bárbara";
-$logo = "images/logo.png";
+$logo = "img/logo.png";
 
 
 //logo empresa
 $logo_empresa = array(
-	"src" => "images/logo.png",
+	"src" => "img/logo.png",
 	"alt" => "Logo Inmobiliaria Santa Bárbara"
 ); 
 
@@ -119,6 +119,7 @@ $texto_quienes_somos = array(
 	"titulo" => "Reseña Historica",
 	"parrafos" => array(
 		0 => "Somos una Empresa con más de 30 años de experiencia en el sector Inmobiliario, arrendando y vendiendo en Bogotá, nos caracterizamos por la honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial un servicio profesional a nuestros clientes.",		
+		
 	),
 	"mision" => array(
 		0 => "MISIÓN: Crear una nueva y buena imagen del sector inmobiliario ofreciendo un servicio amable, cercano, eficiente y honesto que haga felices a nuestros clientes.",
@@ -136,20 +137,20 @@ $imagenes = array(
 		'alt' => 'Imagen'
 	),
 	"banner_servicios_home" => array(
-		'imagen' => 'images/servicios.jpg',
+		'imagen' => 'img/servicios.jpg',
 		'alt' => 'Imagen'
 	),
 	"banner_clientes_home" => array(
 		"propietarios" => array(
-			'imagen' => 'images/propietarios.jpg',
+			'imagen' => 'img/propietarios.jpg',
 			'alt' => 'Imagen'
 		),
 		"arrendatarios" => array(
-			'imagen' => 'images/arrendatarios.jpg',
+			'imagen' => 'img/arrendatarios.jpg',
 			'alt' => 'Imagen'
 		),
 		"pagos_pse" => array(
-			'imagen' => 'images/PAGO-PSE.png',
+			'imagen' => 'img/PAGO-PSE.png',
 			'alt' => 'Imagen'
 		),
 	),
@@ -158,7 +159,7 @@ $imagenes = array(
 		'alt' => 'Imagen'
 	),
 	"banner_quienes_somos" => array(
-		'imagen' => 'images/banner_quienes_somos.jpg',
+		'imagen' => 'img/banner_quienes_somos.jpg',
 		'alt' => 'Imagen banner quienes somos'
 	),
 	"banner_quienes_somos_slogan" => array(
@@ -166,7 +167,7 @@ $imagenes = array(
 		'alt' => 'Imagen quienes somos'
 	),
 	"banner_mision_vision" => array(
-		'imagen' => 'images/mision_vision.jpg',
+		'imagen' => 'img/mision_vision.jpg',
 		'alt' => 'Imagen mision'
 	),
 );

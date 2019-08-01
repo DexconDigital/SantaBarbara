@@ -1,3 +1,4 @@
+<?php require 'variables/variables.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +14,6 @@
 
 <body>
     <?php include 'layout/menu.php' ?>
-
     <div id="contenido_total" class="contaider-fluid body">
         <div class="row col-12  d-flex justify-content-center p-4 ">
             <div class="col-5 ">
