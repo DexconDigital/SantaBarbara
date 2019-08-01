@@ -1,3 +1,33 @@
+<!-- Codigo del preloader -->
+<style>
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  #wrap-preload>img.gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1032;
+  }
+</style>
+<div id="wrap-preload">
+  <img src="img/preloader.gif" alt="gif" class="gif" id="gif">
+</div>
+<script>
+  var loader = document.getElementById("wrap-preload");
+  window.addEventListener("load", function() {
+    loader.style.visibility = "hidden";
+  });
+</script>
+<!-- Fin de codigo preloader -->
+
+<!-- Inicio menu -->
 <nav id="medida_nav" class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="img/logo.png" alt="" height="52px">
