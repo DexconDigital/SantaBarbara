@@ -47,7 +47,7 @@
 <!-- Fin de codigo preloader -->
 
 <!-- Inicio menu -->
-<nav id="medida_nav" class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="<?php echo $logo;?>" alt="" height="52px">
   </a>
@@ -88,3 +88,13 @@
     </a>
   </div>
 </nav>
+
+<!-- Espacio menu -->
+<div class="w-100" id="espacio-menu">
+</div>
+
+<script>
+    var altomenu = document.getElementById('medida_nav').offsetHeight;
+     altomenu = altomenu + 'px';
+    var espacio_menu = document.getElementById('espacio-menu').style.height = altomenu;
+</script>

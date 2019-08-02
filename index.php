@@ -1,4 +1,5 @@
-<?php require 'variables/variables.php' ?>
+<?php require 'variables/variables.php';
+$page = 'Inicio'?>
 <!doctype html>
 <html lang="es">
 
@@ -9,7 +10,7 @@
 
   <?php include 'layout/archivosheader.php' ?>
 
-  <title>Inicio</title>
+  <title> <?php echo $page.' | '.$nombre_inmobiliaria;?></title>
 </head>
 
 <body>
@@ -22,13 +23,13 @@
         <div class="carousel-inner">
           <?php
           // Colocarle un nombre más corto al array
-          $r = $imagenes_slide_principal[0];
+          $r = $imagenes_slide_principal;
           // Declarar el primer item del carousel con la clase active
           echo '<div class="carousel-item active">
-                    <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
+                    <img src="' . $r[0]['imagen'] . '" class="w-100" alt="' . $r[0]['alt'] . '">
                   </div>';
           //iterar el array para imprimir todos los valores
-          for ($i = 1; $i < count($r) - 1; $i++) {
+          for ($i = 1; $i < count($r)-1; $i++) {
             $r = $r[$i];
             echo '<div class="carousel-item">
                         <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
@@ -56,11 +57,8 @@
         <div class="col-12 p-4  ">
           <h2 class="main-title text-center"> Propiedades destacadas</h2>
         </div>
-        <div class=" col-12 text center text-center ">
-          <h6>RESIDENCIAL</h6>
-        </div>
         <div class="col-12">
-          <p class="text-center"> Nuestros inmuebles destacados en este momento</p>
+          <p class="text-center text-uppercase"> Nuestros inmuebles destacados en este momento</p>
         </div>
         <div class="col-12 row justify-content-center">
           <div class="col-12 col-md-6 col-lg-4 p-4 ">
