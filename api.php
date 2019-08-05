@@ -26,6 +26,7 @@
         console.log('Inmuebles Destacados');
        console.log(response);
        console.log(response.length);
+       console.log(response.length);
 	}
 				
 });
