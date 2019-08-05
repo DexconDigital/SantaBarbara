@@ -1,0 +1,14 @@
+$titulo: 'century-gotic';
+$textos: 'Lato';
+$rojo:  #dc3545;
+$blanco: #fff;
+$negro: #000;
+$gris-claro: #f3f3f3;
+
+p, span{
+    font-family: $textos;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $titulo;
+}
