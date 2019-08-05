@@ -14,43 +14,64 @@
 
 <body>
     <?php include 'layout/menu.php' ?>
-    <div class="contaider-fluid body">
+    <div class="container-fluid body">
         <?php include 'layout/buscador.php' ?>
     </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="property-list">
+    <div id="propiedades">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4" style=" max-width: 43.333333%;">
-                    <figure>
-                        <a href="#">
-                            <img src="img/no_image.png" alt="">
-                            <span class="overlay-1"></span>
-                        </a>
-                    </figure>
+                <!-- propiedades -->
+                <div class="col-12">
+                    <div class="property-list">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/no_image.png" alt="">
+                                        <span class="overlay-1"></span>
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-md-6 row">
+                                <div class="col-12 col-md-8">
+                                    <h5 class="mb-0">Tipo de inmueble</h5>
+                                    <h5 class="text-muted"> <small> Barrio, Ciudad </small></h5>
+                                    <p>(añadir una pequeña descripción)</p>
+                                </div>
+                                <div class="col-12 col-md-4 text-md-right">
+                                    <h6 class="pr-2">$ Precio</h6>
+                                </div>
+                                <div class="col-12">
+                                    <ul id="list" class="row contenedor_icon" style="padding: 0%;">
+                                        <li class="col-6 col-md-auto">Código:</li>
+                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-ruler"></i> m<sup>2</sup></li>
+                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-bed mr-2"></i></li>
+                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-bath mr-2"></i></li>
+                                        <li class="col-12 col-md-auto ml-auto"><a href="detalle_inmueble.php" class="btn btn-dark rounded-0">Ver más</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-5 col-md-6">
-                    <div class="property-list-detail text-left p-4">
-                        <h5>Tipo de inmueble _ tipo de ubicación</h5>
-                        <p>(añadir una pequeña descripción)</p>
-                        <ul id="list" class="row contenedor_icon" style="padding: 0%;">
-                            <li class="col-12 d-flex">Código:</li>
-                            <li class="col-12 d-flex">Ciudad:</li>
-                            <li class="col-12 d-flex">Barrio:</li>
-                            <li class="col-12 d-flex">Casa:</li>
+                <!-- Fin de propiedades -->
+                <div class="col-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">Atras</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                            </li>
                         </ul>
-                        <a href="detalle_inmueble.php" class="btn btn-dark rounded-0 col-4 ">Ver más</a>
-                    </div>
+                    </nav>
                 </div>
-                <div class="row">
-                    <h6><i class="fa">$</i> Precio</h6>
-                    <div class="talk-to text-center">
-                    </div>
-
-                </div>
-
             </div>
         </div>
     </div>
+
+
 
 
     <?php include 'layout/footer.php' ?>

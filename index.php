@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/indexController.php';
 $page = 'Inicio'?>
 <!doctype html>
 <html lang="es">
@@ -52,7 +53,7 @@ $page = 'Inicio'?>
       <?php include 'layout/buscador.php' ?>
     </section>
 
-    <section id="propiedades" class="container mt-4 ">
+    <section id="propiedades_destacadas" class="container mt-4 ">
       <div class="row">
         <div class="col-12 p-4  ">
           <h2 class="main-title text-center"> Propiedades destacadas</h2>
@@ -61,57 +62,8 @@ $page = 'Inicio'?>
           <p class="text-center text-uppercase"> Nuestros inmuebles destacados en este momento</p>
         </div>
         <div class="col-12 row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 p-4 ">
-            <div class="card" style="">
-              <div class="property">
-                <a href="">
-                  <div class="property-image">
-                    <img alt="" src="img/no_image.png"></div>
-                  <div class="precio">
-                    precio
-                  </div>
-                  <div class="overlay">
-                    <ul class="additional-info">
-                      <li>
-                        <header>Areá:</header>
-                        <figure>0<sup>2</sup></figure>
-                      </li>
-                      <li>
-                        <header>Alcobas:</header>
-                        <figure></figure>
-                      </li>
-                      <li>
-                        <header>Baños:</header>
-                        <figure></figure>
-                      </li>
-                      <li>
-                        <header>Código:</header>
-                        <figure></figure>
-                      </li>
-
-                    </ul>
-                  </div>
-                </a>
-              </div>
-              <div class=" row col-12">
-                <div class="col-12">
-                  <p class="mb-1">Ubicación:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1"> <small>
-                      Tipo de gestión:
-                    </small>
-                  </p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1"> <small>
-                      Tipo de Inmueble:
-                    </small>
-                  </p>
-                </div>
-              </div>
-            </div>
-
+          <div class="owl-carousel owl-theme" id="owl_propiedades_destacadas">
+            <?php inmuebles_destacados($api)?>
           </div>
         </div>
       </div>
