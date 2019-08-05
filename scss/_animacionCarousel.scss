@@ -1,0 +1,26 @@
+#hero {
+    .carousel-item{
+    animation-name: zoom;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    }
+    .overlay{
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+        opacity: 1
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}

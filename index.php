@@ -2,7 +2,7 @@
 $page = 'Inicio'?>
 <!doctype html>
 <html lang="es">
-
+<script> var page = 'inicio'; </script>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -17,9 +17,8 @@ $page = 'Inicio'?>
   <?php include 'layout/menu.php' ?>
 
   <div class="container-fluid body">
-
     <section id="hero">
-      <div style="position: relative;" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <?php
           // Colocarle un nombre más corto al array
@@ -36,11 +35,12 @@ $page = 'Inicio'?>
                       </div>';
           } ?>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <div class="overlay"></div>
+        <a class="carousel-control-prev" href="#slide_hero" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#slide_hero" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
