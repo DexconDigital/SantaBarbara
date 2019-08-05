@@ -1,4 +1,7 @@
-<?php require 'variables/variables.php' ?>
+<?php require 'variables/variables.php';
+require 'controllers/inmueblesController.php'; 
+$page='Inmuebles'?>
+
 <!doctype html>
 <html lang="en">
 
@@ -20,40 +23,13 @@
     <div id="propiedades">
         <div class="container">
             <div class="row">
-                <!-- propiedades -->
                 <div class="col-12">
-                    <div class="property-list">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <figure>
-                                    <a href="#">
-                                        <img src="img/no_image.png" alt="">
-                                        <span class="overlay-1"></span>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-12 col-md-6 row">
-                                <div class="col-12 col-md-8">
-                                    <h5 class="mb-0">Tipo de inmueble</h5>
-                                    <h5 class="text-muted"> <small> Barrio, Ciudad </small></h5>
-                                    <p>(añadir una pequeña descripción)</p>
-                                </div>
-                                <div class="col-12 col-md-4 text-md-right">
-                                    <h6 class="pr-2">$ Precio</h6>
-                                </div>
-                                <div class="col-12">
-                                    <ul id="list" class="row contenedor_icon" style="padding: 0%;">
-                                        <li class="col-6 col-md-auto">Código:</li>
-                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-ruler"></i> m<sup>2</sup></li>
-                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-bed mr-2"></i></li>
-                                        <li class="col-6 col-md-auto border-left"><i class="fas fa-bath mr-2"></i></li>
-                                        <li class="col-12 col-md-auto ml-auto"><a href="detalle_inmueble.php" class="btn btn-dark rounded-0">Ver más</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="text-center mb-4">Lista de Inmuebles</h1>
                 </div>
+                <!-- propiedades -->
+               <?php 
+                listar_inmuebles($api['Inmuebles']);
+               ?>
                 <!-- Fin de propiedades -->
                 <div class="col-12">
                     <nav aria-label="Page navigation example">

@@ -16,7 +16,6 @@ $page = 'Inicio'?>
 
 <body>
   <?php include 'layout/menu.php' ?>
-
   <div class="container-fluid body">
     <section id="hero">
       <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">

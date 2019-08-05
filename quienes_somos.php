@@ -1,4 +1,5 @@
-<?php require 'variables/variables.php' ?>
+<?php require 'variables/variables.php';
+$page = 'Quienes'?>
 <!doctype html>
 <html lang="en">
 

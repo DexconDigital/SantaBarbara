@@ -13,7 +13,7 @@
 
     <script>
     $.ajax({
-    url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/9',
+    url: 'http://www.simi-api.com/ApiSimiweb/response/v2/inmueble/codInmueble/55',
 	type: 'GET',
 	beforeSend: function (xhr) {
 	xhr.setRequestHeader(

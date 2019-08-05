@@ -1,4 +1,4 @@
-if (page == 'inicio') {
+if (page == 'inicio' && page != undefined) {
     $('#slide_hero').carousel({
         interval: 3500,
         pause: false

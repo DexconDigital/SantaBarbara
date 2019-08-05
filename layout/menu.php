@@ -56,16 +56,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.php"> Inicio <span class="sr-only">(current)</span></a>
+      <li class="nav-item <?php if($page=='Inicio'){echo 'active';}?>">
+        <a class="nav-link" href="index.php"> Inicio </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page=='Quienes'){echo 'active';}?>">
         <a class="nav-link" href="quienes_somos.php">Quienes Somos</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page=='Servicios'){echo 'active';}?>">
         <a class="nav-link" href="servicios.php"> Servicios</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page=='Inmuebles'){echo 'active';}?> ">
         <a class="nav-link" href="inmueble.php"> Inmuebles</a>
       </li>
       <li class="nav-item dropdown">
@@ -76,10 +76,10 @@
           <a class="dropdown-item" href="#">Arrendatarios</a>
           <a class="dropdown-item" href="#">Propietarios</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page=='Noticias'){echo 'active';}?>">
         <a class="nav-link" href="noticias.php">Noticias</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item <?php if($page=='Contacto'){echo 'active';}?>">
         <a class="nav-link" href="contactos.php">Contáctanos</a>
       </li>
     </ul>

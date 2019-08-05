@@ -1,4 +1,5 @@
-<?php require 'variables/variables.php' ?>
+<?php require 'variables/variables.php';
+$page = 'Noticias' ?>
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
 
     <?php include 'layout/archivosheader.php' ?>
 
-    <title>Contacto</title>
+    <title>Noticias</title>
 </head>
 
 <body>
