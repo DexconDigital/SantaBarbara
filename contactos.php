@@ -73,13 +73,13 @@ $page = 'Contacto' ?>
                 <div>
 
                 </div>
-                
+
               </div>
             </div>
             <div class="col-7 container" style="margin-left: 246px;">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
-                </div>
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+            </div>
             <div class="col-md-12 d-flex justify-content-center p-4">
               <button id="estilo_button_contacto" type="submit" class="btn-1 flat-btn ">
                 <span>ENVIAR</span>
@@ -87,10 +87,10 @@ $page = 'Contacto' ?>
             </div>
             </form>
           </div>
-          <div class="row" >
-          
-            <div class="" >
-            <iframe style="object-fit: contain; background-attachment: fixed;    position: absolute;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="1350" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="row">
+
+            <div class="">
+              <iframe style="object-fit: contain; background-attachment: fixed;    position: absolute;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="1350" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="contenedor" id="noticia">
               <div class="card" style="width: 18rem;">
@@ -101,30 +101,58 @@ $page = 'Contacto' ?>
               </div>
             </div>
           </div>
-          <div class="container" style=" margin-top: 265px;">
+          <div class="container " style=" margin-top: 265px;">
             <div class="col-12 p-4 mt-4 ">
               <h2 class="main-title text-center"> Datos de Contacto</h2>
             </div>
-            <div class="row mt-5">
-              <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="row mt-5 d-flex justify-content-center">
+              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
+                <i  class="fas fa-map-marker-alt mr-2 icon "></i>
                 <h5>Dirección:</h5>
-                <p>Contact our Corporate HQ.</p>
-                <a href="mailto:press@domain.com" class="link">ejemplo@dominio.com</a>
+                <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
               </div>
-              <div class="col-xs-12 col-sm-4 col-md-3">
-                <h5>Telefono:</h5>
-                <p>Send a request to our Communications team.</p>
-                <a href="#" class="link">+012.822.9058</a>
+              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
+                <i  class="fas fa-phone-alt mr-2 icon"  ></i>
+                <h5>Telefono 1:</h5>
+
+                <p><?php echo $datos_contacto['telefono_fijo_1']['link'] ?></p>
+                <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
+
               </div>
-              <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
+                <i class="fas fa-phone-alt mr-2 icon"></i>
+                <h5>Telefono 2:</h5>
+
+                <p><?php echo $datos_contacto['telefono_fijo_2']['link'] ?></p>
+                <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
+
+              </div>
+              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
+                <i class="fas fa-phone-alt mr-2 icon"></i>
+                <h5>Telefono 3:</h5>
+                <p><?php echo $datos_contacto['telefono_fijo_3']['link'] ?></p>
+                <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
+                <p><?php echo $datos_contacto['telefono_fijo_3']['icono'] ?></p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
+                <i class="far fa-envelope m-2 icon"></i>
                 <h5>Correo:</h5>
-                <p>Report a technical issue with our site or apps.</p>
-                <a href="mailto:feedback@domain.com" class="link">ejemplo@dominio.com</a>
+                <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+
               </div>
-              <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
+                <i class="fas fa-mobile-alt mr-2 icon"></i>
                 <h5>Celular:</h5>
-                <p>WhatsApp:</p>
-                <a href="#" class="link">+012.822.9058</a>
+                <p><?php echo $datos_contacto['celular']['link'] ?></p>
+                <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
+                <p></p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
+                <i class="fab fa-whatsapp mr-2 icon"></i>
+                <h5>WhatsApp:</h5>
+                <p><?php echo $datos_contacto['whatsapp']['link'] ?></p>
+                <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+
               </div>
             </div>
           </div>
