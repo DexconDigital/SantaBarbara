@@ -20,7 +20,7 @@ $page = 'Contacto' ?>
       <h2 class="main-title text-center">Escríbenos</h2>
     </div>
     <div class="col-12 d-flex justify-content-around">
-      <p class="text-center"> Pronto un asesor se contactará contigo, formulario de contacto con los campos:</p>
+      <p class="text-center"> Pronto un asesor se contactará contigo:</p>
     </div>
     <div class="container-fluid ">
       <div class="row">
@@ -54,13 +54,13 @@ $page = 'Contacto' ?>
                 </div>
                 <div class="form-group">
                   <label id="label" for="exampleInputPassword1">
-                    Telefono (Opcional:)
+                    Teléfono (Opcional:)
                   </label>
                   <input type="password" class="form-control rounded-0" id="exampleInputPassword1" />
                 </div>
 
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 ">
             </div>
             <div class="container-fluid">
               <div class="row">
@@ -70,8 +70,16 @@ $page = 'Contacto' ?>
                   <label id="label">Mesaje</label>
                   <textarea id="texarea_contacto"></textarea>
                 </div>
+                <div>
+
+                </div>
+                
               </div>
             </div>
+            <div class="col-7 container" style="margin-left: 246px;">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+                </div>
             <div class="col-md-12 d-flex justify-content-center p-4">
               <button id="estilo_button_contacto" type="submit" class="btn-1 flat-btn ">
                 <span>ENVIAR</span>
@@ -79,8 +87,10 @@ $page = 'Contacto' ?>
             </div>
             </form>
           </div>
-          <div id='parallax'>
-            <div class="overlay">
+          <div class="row" >
+          
+            <div class="" >
+            <iframe style="object-fit: contain; background-attachment: fixed;    position: absolute;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="1350" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="contenedor" id="noticia">
               <div class="card" style="width: 18rem;">
@@ -91,7 +101,7 @@ $page = 'Contacto' ?>
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" style=" margin-top: 265px;">
             <div class="col-12 p-4 mt-4 ">
               <h2 class="main-title text-center"> Datos de Contacto</h2>
             </div>

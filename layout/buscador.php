@@ -7,7 +7,7 @@
         <form>
             <div class="form-row justify-content-center">
                 <div class="col-3 form-group ">
-                    <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="codigo">
+                    <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="Código">
                 </div>
                 <div class="col-3 form-group">
                     <select id="ciudad_buscar" class="form-control rounded-0">
@@ -30,10 +30,10 @@
                     </select>
                 </div>
                 <div class="col-4 form-group">
-                        <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Area Minima">
+                        <input type="text" id='precio_minimo_buscar' class="form-control rounded-0" placeholder="Precio Mínimo">
                 </div>
                 <div class="col-4 form-group">
-                        <input type="text" id='area_maxima_buscar' class="form-control rounded-0"placeholder="Area Maxima">
+                        <input type="text" id='precio_maximo_buscar' class="form-control rounded-0"placeholder="Precio Máximo">
                 </div>
                 <div class="col-4 form-group">
                     <button type="submit" class="btn btn-dark btn-lg btn-block rounded-0">Buscar</button>

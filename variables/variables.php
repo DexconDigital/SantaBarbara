@@ -116,16 +116,16 @@ $imagenes_slide_principal = array(
 
 //revisar el documento enviado por el cliente para saber si hay títulos y subtitulos, viñetas, etc
 $texto_quienes_somos = array(
-	"titulo" => "Reseña Historica",
+	"titulo" => "Reseña Histórica",
 	"parrafos" => array(
 		0 => "Somos una Empresa con más de 30 años de experiencia en el sector Inmobiliario, arrendando y vendiendo en Bogotá, nos caracterizamos por la honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial un servicio profesional a nuestros clientes.",		
 		
 	),
 	"mision" => array(
-		0 => "MISIÓN: Crear una nueva y buena imagen del sector inmobiliario ofreciendo un servicio amable, cercano, eficiente y honesto que haga felices a nuestros clientes.",
+		0 =>  "<strong>MISIÓN:</strong> Crear una nueva y buena imagen del sector inmobiliario ofreciendo un servicio amable, cercano, eficiente y honesto que haga felices a nuestros clientes.",
 	),
 	"vision" => array(
-		0 => "VISIÓN: Ser la Empresa líder en el sector Inmobiliario en Bogotá a través de valores como la honestidad, cumplimiento e innovación.",
+		0 => "<strong>VISIÓN:</strong> Ser la Empresa líder en el sector Inmobiliario en Bogotá a través de valores como la honestidad, cumplimiento e innovación.",
 	),
 	"slogan" => "Respaldo, Seguridad y confianza"
 );
@@ -179,7 +179,7 @@ $texto_servicios = array(
 		"parrafo" => "Contamos con personal calificado que le brindará asesoría en todo el proceso de venta de su bien inmueble, haciendo que éste, sea rápido y seguro.",
 	),
 	"requisitos" => array(
-		"titulo" => "Requisitos para consignar su inmueble en venta:",
+		"titulo" => "<strong>Requisitos para consignar su inmueble en venta:</strong>",
 		0 => "Certificado de tradición y libertad actualizado ( máximo dos meses )",
 		1 => "Recibo del impuesto predial ( último )",
 		2 => "Fotocopia de la Escritura.",

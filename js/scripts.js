@@ -76,7 +76,7 @@ if (page == 'inicio' && page != undefined) {
                 items: 2
             },
             1000: {
-                items: 4
+                items: 3
             }
         }
     });

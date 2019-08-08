@@ -49,7 +49,7 @@
 <!-- Inicio menu -->
 <nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="<?php echo $logo;?>" alt="" height="52px">
+    <img src="<?php echo $logo;?>" alt="" height="70px">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@
         <a class="nav-link" href="index.php"> Inicio </a>
       </li>
       <li class="nav-item <?php if($page=='Quienes'){echo 'active';}?>">
-        <a class="nav-link" href="quienes_somos.php">Quienes Somos</a>
+        <a class="nav-link" href="quienes_somos.php">Quiénes Somos</a>
       </li>
       <li class="nav-item <?php if($page=='Servicios'){echo 'active';}?>">
         <a class="nav-link" href="servicios.php"> Servicios</a>
@@ -84,7 +84,7 @@
       </li>
     </ul>
     <a class="navbar-brand" href="#">
-      <img src="img/logopse.png" width="60" height="60" alt="">
+      <img style="width: 50px;height: auto;" src="img/logopse.png" width="50" height="50" alt="">
     </a>
   </div>
 </nav>

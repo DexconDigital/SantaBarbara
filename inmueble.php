@@ -38,7 +38,7 @@ $page='Inmuebles'?>
                                 <a class="page-link" href="#">Atras</a>
                             </li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Siguiente</a>
+                                <a class="page-link"  style="color:black"  href="#">Siguiente</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,7 +46,6 @@ $page='Inmuebles'?>
             </div>
         </div>
     </div>
-
 
 
 

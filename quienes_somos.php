@@ -22,40 +22,53 @@ $page = 'Quienes'?>
       <figure>
         <span class="efecto_somos">
         </span>
-        <h1 class="text-center">Quienes Somos</h1>
+        <h1 class="text-center">Quiénes Somos</h1>
       </figure>
     </section>
 
-    <div class="col-12  section-padding">
+    <div class="col-12  section-padding p-5">
       <div class="container">
         <h2 class="text-center titulo main-title"><?php echo $texto_quienes_somos['titulo'] ?></h2>
         <div class="row ">
           <div id="texto_reseña" class="col-12 col-md-6 ">
             <?php for ($i = 0; $i < count($texto_quienes_somos['parrafos']); $i++) {
-              echo '<p>' . $texto_quienes_somos['parrafos'][$i] . '</p> ';
-            }
-            ?>
+              echo '<p>' . $texto_quienes_somos['parrafos'][$i] . '</p> ';}?>
           </div>
+
           <div class="col-12 col-md-6 row data text-center">
             <div class="col-12 col-md-6">
               <div class="counter-wrapper bg4">
-                <h2>Founded</h2>
+                <h2>Experiencia</h2>
                 <p class="font1"><span class="counter">1998</span></p>
               </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="counter-wrapper bg4">
-                <h2>total properties</h2>
+                <h2>Total Inmuebles</h2>
+                <p class="font1"><span class="counter">900</span>B</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="counter-wrapper bg4">
+                <h2>Inmuebles en arriendo</h2>
+                <p class="font1"><span class="counter">900</span>B</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="counter-wrapper bg4">
+                <h2>Inmuebles en venta</h2>
                 <p class="font1"><span class="counter">900</span>B</p>
               </div>
             </div>
           </div>
+          
+          
         </div>
       </div>
     </div>
 
-    <div class="col-12 p-4 ">
-      <section id='parallax' class="img_static ">
+    <div id='parallax' class="img_static ">
+      <section >
         <figure>
           <span class="efecto_somos2">
           </span>
