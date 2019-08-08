@@ -1,3 +1,22 @@
+// Boton de subir
+$(document).ready(function() {
+
+        $('.subir').click(function() {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('.subir').fadeIn(500);
+            } else {
+                $('.subir').fadeOut(500);
+            }
+        });
+});
+// fin de boton subir
+
 if (page == 'inicio' && page != undefined) {
     $('#slide_hero').carousel({
         interval: 3500,
@@ -67,7 +86,7 @@ if (page == 'inicio' && page != undefined) {
     $('#aliados_slide').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
         responsive: {
             0: {
                 items: 2

@@ -1,3 +1,4 @@
+<i class="fas fa-angle-double-up subir"></i>
 <footer>
   <section>
     <div class="container ">
