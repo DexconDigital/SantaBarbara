@@ -1,0 +1,14 @@
+.subir {
+    display: none;
+    padding: 15px;
+    background-color: $rojo;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    -webkit-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+    -moz-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+    box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+}

@@ -154,20 +154,26 @@ var busqueda = function(){
     barrio_buscar = $('#barrio_buscar option:selected').val();
     gestion_buscar = $('#tipo_gestion_buscar option:selected').val();
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
+    precio_minimo = $('#precio_minimo_buscar').val();
+    precio_maximo = $('#precio_maximo_buscar').val();
 
     // Si no trae nada del buscador definirla en cero
     ciudad_buscar = existeCampo(ciudad_buscar);
     barrio_buscar = existeCampo(barrio_buscar);
     gestion_buscar = existeCampo(gestion_buscar);
     tipo_inmueble_buscar = existeCampo(tipo_inmueble_buscar);
+    precio_minimo = existeCampo(precio_minimo);
+    precio_maximo =existeCampo(precio_maximo);
 
     if (code !== "") {
-        window.location.href = 'detalle-inmueble.php?co=' + code + '';
+        window.location.href = 'detalle_inmueble.php?co=' + code + '';
     }else{
-        window.location.href = 'inmuebles.php?ci='+ciudad_buscar+
+        window.location.href = 'inmueble.php?ci='+ciudad_buscar+
         '&bar='+barrio_buscar+
         '&ge='+gestion_buscar+
         '&in='+tipo_inmueble_buscar+
+        '&premin='+precio_minimo+
+        '&premax='+precio_maximo+
         '&';
     }
 }

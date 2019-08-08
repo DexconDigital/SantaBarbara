@@ -49,20 +49,12 @@ function modelo_inmueble($r, $cantidad_inmuebles)
               </div>
               <div class=" row col-12">
                 <div class="col-12">
-                  <p class="mb-1">Ubicación: ' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</p>
+                  <p class="mb-1"><b>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . '</b></p>
                 </div>
                 <div class="col-12">
-                  <p class="mb-1"> <small>
-                      Tipo de gestión: ' . $api['Gestion'] . '
-                    </small>
-                  </p>
+                  <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i>' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</p>
                 </div>
-                <div class="col-12">
-                  <p class="mb-1"> <small>
-                      Tipo de Inmueble: ' . $api['Tipo_Inmueble'] . '
-                    </small>
-                  </p>
-                </div>
+                <hr>
                 <div class="col-12">
                   <p class="mb-1"> <small>
                       Código:' . $codigo . '
