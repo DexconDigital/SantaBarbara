@@ -15,7 +15,7 @@ $page = 'Contacto' ?>
 
 <body>
   <?php include 'layout/menu.php' ?>
-  <div class="contaider body">
+  <div class="contaider body" id='page_contacto'>
     <div class="col-12 p-4 " id="contenedor_contacto">
       <h2 class="main-title text-center">Escríbenos</h2>
     </div>
@@ -23,7 +23,7 @@ $page = 'Contacto' ?>
       <p class="text-center"> Pronto un asesor se contactará contigo:</p>
     </div>
     <div class="container-fluid ">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-2">
@@ -88,75 +88,111 @@ $page = 'Contacto' ?>
             </form>
           </div>
           <div class="row">
-
-            <div class="">
-              <iframe style="object-fit: contain; background-attachment: fixed;    position: absolute;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="1350" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="contenedor" id="noticia">
-              <div class="card" style="width: 18rem;">
-                <h3 id="titulo_not" class="text-center">Horario de atención </h3>
-                <div class="card-body">
-                  <p class="card-text"></p>
+            <div class="col-12 p-0">
+              <div class="contenedor-mapa_contacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="contenedor-overlay">
+                  <div class="card" style="width=18rem;">
+                    <h3 id="titulo_not" class="text-center">Horario de atención </h3>
+                    <div class="card-body">
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container " style=" margin-top: 265px;">
-            <div class="col-12 p-4 mt-4 ">
-              <h2 class="main-title text-center"> Datos de Contacto</h2>
-            </div>
-            <div class="row mt-5 d-flex justify-content-center">
-              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
-                <i  class="fas fa-map-marker-alt mr-2 icon "></i>
-                <h5>Dirección:</h5>
-                <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
+          
+        </div>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 p-4 mt-4 ">
+                <h2 class="main-title text-center"> Datos de Contacto</h2>
               </div>
-              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
-                <i  class="fas fa-phone-alt mr-2 icon"  ></i>
-                <h5>Telefono 1:</h5>
-
-                <p><?php echo $datos_contacto['telefono_fijo_1']['link'] ?></p>
-                <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
-
-              </div>
-              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
-                <i class="fas fa-phone-alt mr-2 icon"></i>
-                <h5>Telefono 2:</h5>
-
-                <p><?php echo $datos_contacto['telefono_fijo_2']['link'] ?></p>
-                <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
-
-              </div>
-              <div class="col-12 col-sm-4 col-md-3 row border border-primary">
-                <i class="fas fa-phone-alt mr-2 icon"></i>
-                <h5>Telefono 3:</h5>
-                <p><?php echo $datos_contacto['telefono_fijo_3']['link'] ?></p>
-                <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
-                <p><?php echo $datos_contacto['telefono_fijo_3']['icono'] ?></p>
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
-                <i class="far fa-envelope m-2 icon"></i>
-                <h5>Correo:</h5>
-                <p><?php echo $datos_contacto['correo']['correo'] ?></p>
-
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
-                <i class="fas fa-mobile-alt mr-2 icon"></i>
-                <h5>Celular:</h5>
-                <p><?php echo $datos_contacto['celular']['link'] ?></p>
-                <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
-                <p></p>
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-3 row border border-primary">
-                <i class="fab fa-whatsapp mr-2 icon"></i>
-                <h5>WhatsApp:</h5>
-                <p><?php echo $datos_contacto['whatsapp']['link'] ?></p>
-                <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+              <div class="col-12 row justify-content-center">
+                <div class="col-3 text-center">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        Dirección
+                      </h5>
+                      <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 text-center">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-phone-alt mr-2 icon"></i>
+                        Telefono 1
+                      </h5>
+                      <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-phone-alt mr-2 icon"></i>
+                        Telefono 2
+                      </h5>
+                      <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-phone-alt mr-2 icon"></i>
+                        Telefono 3
+                      </h5>
+                      <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                      <i class="far fa-envelope m-2 icon"></i>
+                        Correo
+                      </h5>
+                      <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                      <i class="fas fa-mobile-alt mr-2 icon"></i>
+                        Celular
+                      </h5>
+                      <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 justify-content-center" >
+                  <div class="card" style="">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                      <i class="fab fa-whatsapp mr-2 icon"></i>
+                        WhatsApp:
+                      </h5>
+                      <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+                    </div>
+                  </div>
+                </div>
 
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <div id="enviar_contactos" style="" class="mt-4 ">
           <div class="container ">
             <div class="row d-flex justify-content-center">
