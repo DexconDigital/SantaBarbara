@@ -22,13 +22,13 @@ $page = 'Contacto' ?>
     <div class="col-12 d-flex justify-content-around">
       <p class="text-center"> Pronto un asesor se contactará contigo:</p>
     </div>
-    <div class="container-fluid ">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
+    <div class="container-fluid  ">
+      <div class="row justify-content-cente ">
+        <div class="col-md-12 ">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 ">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ">
               <form role="form">
                 <div class="form-group">
                   <label id="label" for="exampleInputEmail1">
@@ -44,7 +44,7 @@ $page = 'Contacto' ?>
                 </div>
               </form>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 ">
               <form role="form">
                 <div class="form-group">
                   <label id="label" for="exampleInputEmail1">
@@ -58,27 +58,32 @@ $page = 'Contacto' ?>
                   </label>
                   <input type="password" class="form-control rounded-0" id="exampleInputPassword1" />
                 </div>
-
             </div>
             <div class="col-md-2 ">
             </div>
-            <div class="container-fluid">
+            <div class="container-fluid ">
               <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 ">
                 </div>
                 <div class="col-md-8">
                   <label id="label">Mesaje</label>
                   <textarea id="texarea_contacto"></textarea>
                 </div>
                 <div>
-
                 </div>
-
               </div>
             </div>
-            <div class="col-7 container" style="margin-left: 246px;">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+            <div class="container-fluid ">
+              <div class="row">
+                <div class="col-md-2 ">
+                </div>
+                <div class="col-md-9 col-10">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+                </div>
+                <div>
+                </div>
+              </div>
             </div>
             <div class="col-md-12 d-flex justify-content-center p-4">
               <button id="estilo_button_contacto" type="submit" class="btn-1 flat-btn ">
@@ -102,16 +107,16 @@ $page = 'Contacto' ?>
               </div>
             </div>
           </div>
-          
+
         </div>
         <section>
-          <div class="container">
-            <div class="row">
-              <div class="col-12 p-4 mt-4 ">
+          <div class="container  col-lg-12 col-md-12 col-sm-12 col-12   ">
+            <div class="row" style="    margin-bottom: 16px;">
+              <div class=" col-lg-12 col-md-12 col-sm-12 col-12 p-4 mt-4  ">
                 <h2 class="main-title text-center"> Datos de Contacto</h2>
               </div>
-              <div class="col-12 row justify-content-center">
-                <div class="col-3 text-center">
+              <div class="col-lg-12 col-md.12 col-12  row justify-content-center ">
+                <div class="col-lg-3 col-md-3 col-12 text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
@@ -122,7 +127,7 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-lg-3 col-md-3 col-12 text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
@@ -133,7 +138,7 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-3 col-12 text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
@@ -144,7 +149,7 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-3 col-12 text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
@@ -155,33 +160,33 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-lg-4 col-md-4 col-12  text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
-                      <i class="far fa-envelope m-2 icon"></i>
+                        <i class="far fa-envelope m-2 icon"></i>
                         Correo
                       </h5>
                       <p><?php echo $datos_contacto['correo']['correo'] ?></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-12  text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
-                      <i class="fas fa-mobile-alt mr-2 icon"></i>
+                        <i class="fas fa-mobile-alt mr-2 icon"></i>
                         Celular
                       </h5>
                       <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-4 justify-content-center" >
+                <div class="col-lg-4 col-md-4 col-12 text-center ">
                   <div class="card" style="">
                     <div class="card-body">
                       <h5 class="card-title">
-                      <i class="fab fa-whatsapp mr-2 icon"></i>
+                        <i class="fab fa-whatsapp mr-2 icon"></i>
                         WhatsApp:
                       </h5>
                       <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
@@ -194,22 +199,19 @@ $page = 'Contacto' ?>
           </div>
         </section>
         <div id="enviar_contactos" style="" class="mt-4 ">
-          <div class="container ">
-            <div class="row d-flex justify-content-center">
-              <div style="margin-top:-22px; margin-right: -55px;">
-                <p class="tit_foot2 text-white justify-content-center">Suscríbete a nuestro boletín</p>
+          <div class="container  ">
+            <div class="row ">
+              <div class="col-lg-6 col-md-6 col-12 ">
+                <p class="tit_foot2 text-white text-center">Suscríbete a nuestro boletín</p>
               </div>
-              <div class="col-6 d-flex align-items-center justify-content-center">
-                <div>
-                  <div class="form-group border border-secondary">
-                    <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
+              <div class=" row col-12 col-lg-6 col-md-6  align-items-center justify-content-center ">
 
-                  </div>
+                <div class=" row col-md-6 form-group ">
+                  <input type="email" class="col-md-12 col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
                 </div>
-                <div class="form-group border border-secondary">
-                  <button style=" padding: 12px;" type="button" class="btn btn-dark rounded-0 " name=""><span>Enviar</span></button>
+                <div class=" col-md-6 col-12 row form-group">
+                  <button style="    padding: 11px;;" type="button" class="btn btn-dark rounded-0 col-12 col-md-6" name=""><span>Enviar</span></button>
                 </div>
-
               </div>
             </div>
           </div>

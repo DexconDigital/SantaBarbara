@@ -2,23 +2,26 @@
 <footer>
   <section>
     <div class="container ">
-      <div class="footer-wrapper section-padding">
+      <div class="footer-wrapper section-padding ">
         <div class="row">
-          <div class="col-4">
-            <img src="img/logo.png" alt="" height="50px">
-            <p  class="text-center mt-4" style="    font-size: 13px;" >Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
-            <ul class="estilo_foot_list2" style=" padding:36px;">
-              <li class="col-12 d-flex">
-                <div class="contenedor_icon" style="">
-                  <i class="<?php echo $redes_sociales['facebook']['icono'] ?> mr-2 border border-secondary" id="estilo_icono_foot"></i>
-                  <i class="fab fa-twitter-square mr-2 border border-secondary" id="estilo_icono_foot"></i>
-                  <i class="fab fa-instagram mr-2 border border-secondary" id="estilo_icono_foot"></i>
-                  <i class="fab fa-youtube mr-2 border border-secondary" id="estilo_icono_foot"></i>
+          <div class="col-6 col-lg-4 col-md-6 col-sm-6 ">
+            <div class="col-12 col-lg-12 col-sm-10">
+              <img src="img/logo.png" alt="" class="" style="object-fit: contain; width: 100%;">
+            </div>
+            <p class="text-center mt-4" style="    font-size: 13px;">Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
+            <ul style="list-style: none;"> 
+              <!--style="font-size: 35px; padding: 3px;"-->
+              <li class=" col-lg-12 ">
+                <div class=" col-md-12 row col-sm-2" style="justify-content: center;">
+                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"><i class="fab fa-facebook-f "></i> </div>
+                  <div class="col-3 col-sm-2 mr-2" style="font-size: 25px; padding: 3px;"><i class="fab fa-twitter "></i> </div>
+                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"> <i class="fab fa-instagram "></i> </div>
+                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"> <i class="fab fa-youtube "></i>  </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-2" style="width: 25%;">
+          <div class="col-6 col-lg-2 col-md-6 col-sm-6 " style="width: 25%;">
             <h6 class="tit_foot">Menú</h6>
             <ul class="estilo_foot_list" style="">
               <li class="li_foot"><a class="color_a nav-link" href="index.php">Inicio</a></li>
@@ -29,10 +32,9 @@
               <li class="li_foot"><a class="color_a nav-link" href="">Propietarios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="noticias.php">Noticias</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="contactos.php">Contáctanos</a></li>
-              
             </ul>
           </div>
-          <div class="col-3" style="width: 25%; ">
+          <div class="col-6 col-lg-3 col-md-6 col-sm-6 " style="width: 25%; ">
             <h6 class="tit_foot"> Formularios aseguradoras</h6>
             <ul class="estilo_foot_list">
               <li class="li_foot">Link</li>
@@ -41,7 +43,7 @@
               <li class="li_foot">Link</li>
             </ul>
           </div>
-          <div class="col-3" style="width: 25%;">
+          <div class="col-6 col-lg-3 col-md-6 col-sm-6 " style="width: 25%;">
             <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
             <p>Déjanos saber de ti, y estemos en contacto.</p>
             <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">

@@ -74,24 +74,24 @@ $page = 'Inicio' ?>
     <section id="" class="separador-p bg-gris">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="extra-info separador">
+          <div class="">
+            <div class="extra-info separador col-lg-12 col-md-12 col-sm-12">
               <figure id="targeta" class="extra-info-image pull-right">
                 <img id="card_img" src="img/quienes_somos.jpg">
               </figure>
-              <div id="cuadro_cards" class="extra-info-text margin-control">
-                <h3> Inmobiliaria Santa Bárbara</h3>
-                <p> Somos una Empresa con más de 30 años de
-                  experiencia en el sector Inmobiliario, arrendando y vendiendo en Bogotá, nos caracterizamos por la
-                  honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial
-                  un servicio profesional a nuestros clientes.</p>
-                <a href="quienes_somos.php" class="btn btn-danger rounded-0">Ver más</a>
-              </div>
+            </div>
+            <div id="cuadro_cards" class="extra-info-text margin-control">
+              <h3> Inmobiliaria Santa Bárbara</h3>
+              <p> Somos una Empresa con más de 30 años de
+                experiencia en el sector Inmobiliario, arrendando y vendiendo en Bogotá, nos caracterizamos por la
+                honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial
+                un servicio profesional a nuestros clientes.</p>
+              <a href="quienes_somos.php" class="btn btn-danger rounded-0">Ver más</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="extra-info separador">
               <figure id="targeta2" class="extra-info-image pull-right">
                 <?php $r = $imagenes['banner_servicios_home'];
@@ -157,14 +157,14 @@ $page = 'Inicio' ?>
 
         <div class="container mt-5 ">
           <div class="card-deck">
-            <div class="card" id="cad" >
+            <div class="card" id="cad">
               <?php $r = $imagenes['banner_clientes_home']['propietarios'];
               echo '
                <img src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
-               <div>
-               <h3 class="text-center">Propietarios</h3>
-               </div>
-              
+              <div>
+                <h3 class="text-center">Propietarios</h3>
+              </div>
+
             </div>
             <div class="card" id="cad">
               <?php $r = $imagenes['banner_clientes_home']['arrendatarios'];

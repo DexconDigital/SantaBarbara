@@ -48,9 +48,12 @@
 
 <!-- Inicio menu -->
 <nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="<?php echo $logo;?>" alt="" height="70px">
-  </a>
+  <div class=" row col-lg-6 col-md-6 col-8" >
+  
+    <img style=" object-fit: contain;width: 100%;" src="<?php echo $logo;?>" alt="" height="70px">
+  
+  </div>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

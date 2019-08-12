@@ -695,7 +695,7 @@ figure{
     margin-top: 80px;
 }
 #contenedor_contacto{
-    margin-top: 78px;
+    margin-top: 20px;
 }
 #label{
     margin-bottom: 0px;
@@ -744,15 +744,10 @@ figure{
     list-style:none;
      padding:12%;
 }
-.estilo_foot_list2{
-    margin-top: 5px;
-     display: inline-block;
-      list-style:none;
-      
-}
-#estilo_icono_foot{
+
+.estilo_icono_foot{
     font-size: 35px; 
-    padding: 7px;
+    padding: 3px;
 }
 .imagen_zona{
     object-fit: cover;
@@ -815,3 +810,13 @@ figure{
     margin-top: 5px;
 }
 
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 1000px) { 
+    
+    #medida_nav{
+    }
+ }
