@@ -30,13 +30,13 @@ $page = 'Quienes' ?>
       <div class="container">
         <h2 class="text-center titulo main-title"><?php echo $texto_quienes_somos['titulo'] ?></h2>
         <div class="row ">
-          <div style="text-align: justify;" id="texto_reseña" class="col-12 col-md-6 ">
+          <div style="text-align: justify;" id="texto_reseña" class="col-12 col-md-12 ">
             <?php for ($i = 0; $i < count($texto_quienes_somos['parrafos']); $i++) {
               echo '<p>' . $texto_quienes_somos['parrafos'][$i] . '</p> ';
             } ?>
           </div>
 
-          <div class="col-12 col-md-6 row data text-center">
+          <div class="col-12 col-md-12 row data text-center">
             <div class="col-12 col-md-6 ">
               <div class="counter-wrapper bg4">
                 <h2>Experiencia</h2>

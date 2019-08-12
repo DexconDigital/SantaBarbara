@@ -56,7 +56,7 @@ $page = 'Servicios' ?>
                             <?php echo $texto_servicios['arriendos']['titulo'] ?>
                         </h6>
                         <div class="rate"></div>
-                        <div class="container" style="text-align: justify;padding: 17px;">
+                        <div class="container venta_container">
                             <?php echo $texto_servicios['arriendos']['parrafo'] ?> </h6>
 
                         </div>

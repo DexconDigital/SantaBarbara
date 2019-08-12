@@ -37,8 +37,8 @@ $page = 'Contacto' ?>
                   <input type="text" class="form-control rounded-0" id="exampleInputEmail1" />
                 </div>
                 <div class="form-group">
-                  <label id="label" for="exampleInputEmail1">
-                    Correo electrónico:
+                <label id="label" for="exampleInputEmail1">
+                    Apellido:
                   </label>
                   <input type="email" class="form-control rounded-0" id="exampleInputEmail1" />
                 </div>
@@ -47,8 +47,8 @@ $page = 'Contacto' ?>
             <div class="col-md-4 ">
               <form role="form">
                 <div class="form-group">
-                  <label id="label" for="exampleInputEmail1">
-                    Apellido:
+                <label id="label" for="exampleInputEmail1">
+                    Correo electrónico:
                   </label>
                   <input type="email" class="form-control rounded-0" id="exampleInputEmail1" />
                 </div>
@@ -119,38 +119,38 @@ $page = 'Contacto' ?>
                 <h2 class="main-title text-center"> Datos de Contacto</h2>
               </div>
               <div class="col-lg-12 col-md.12 col-12  row justify-content-center ">
-                <div class="col-lg-3 col-md-3 col-12 text-center ">
+                <div class="col-lg-4 col-md-4 col-12 text-center ">
                 <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"><i class="fas fa-map-marker-alt mr-2 icon"></i></div>
-                      <div class="col-7 col-md-12"><p><?php echo $datos_contacto['direccion']['direccion'] ?></p></div>
+                      <div class="col-auto col-md-12 "><i class="fas fa-map-marker-alt mr-2 icon"></i></div>
+                      <div class="col-9 col-md-12"><p><?php echo $datos_contacto['direccion']['direccion'] ?></p></div>
                    </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center  ">
+                <div class="col-lg-4 col-md-4 col-12 text-center  ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
                         <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center ">
+                <div class="col-lg-4 col-md-4 col-12 text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
                         <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center ">
+                <div class="col-lg-4 col-md-4 col-12 text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
                         <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
                       </div>
@@ -160,8 +160,8 @@ $page = 'Contacto' ?>
                 <div class="col-lg-4 col-md-4 col-12  text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"><i class="far fa-envelope mr-2 icon"></i></div>
-                      <div class="col-7 col-md-12">
+                      <div class="col-auto col-md-12 "><i class="far fa-envelope mr-2 icon"></i></div>
+                      <div class="col-auto col-md-12">
                         <p><?php echo $datos_contacto['correo']['correo'] ?></p>
                       </div>
                     </div>
@@ -170,8 +170,8 @@ $page = 'Contacto' ?>
                 <div class="col-lg-4 col-md-4 col-12  text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"><i class="fas fa-mobile-alt mr-2 icon"></i></div>
-                      <div class="col-7 col-md-12">
+                      <div class="col-auto col-md-12 "><i class="fas fa-mobile-alt mr-2 icon"></i></div>
+                      <div class="col-5 col-md-12">
                         <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
                       </div>
                     </div>
@@ -180,8 +180,8 @@ $page = 'Contacto' ?>
                 <div class="col-lg-4 col-md-4 col-12 text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-5 col-md-12 style_info_cont"><i class="fab fa-whatsapp mr-2 icon"></i></div>
-                      <div class="col-7 col-md-12">
+                      <div class="col-auto col-md-12 "><i class="fab fa-whatsapp mr-2 icon"></i></div>
+                      <div class="col-5 col-md-12">
                         <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
                       </div>
                     </div>

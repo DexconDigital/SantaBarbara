@@ -183,7 +183,7 @@ $page = 'Inicio' ?>
       </div>
     </section>
 
-    <section id='parallax'>
+    <section id='parallax4'>
       <div class="overlay">
       </div>
       <div class="contenedor" id="noticia">
