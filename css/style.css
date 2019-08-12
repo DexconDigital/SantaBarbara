@@ -311,14 +311,6 @@ figure {
 .li_foot {
   margin-bottom: 15px; }
 
-.tit_foot {
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 18px;
-  margin-bottom: 17px;
-  margin: 31px 0px -37px 21px;
-  line-height: 1.4; }
-
 .tit_foot2 {
   font-weight: 700;
   text-transform: capitalize;
@@ -327,44 +319,12 @@ figure {
   margin: 33px 0px 30px 2px;
   line-height: 1.4; }
 
-#targeta {
-  overflow: hidden;
-  width: 50%;
-  float: right;
-  position: relative; }
-
 #card_img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
   border: 0px;
   width: 100%; }
-
-#cuadro_cards {
-  overflow: hidden;
-  width: 50%;
-  float: left;
-  background-color: #ffffff;
-  padding: 30px 40px;
-  position: relative;
-  margin: 60px 0px 97px;
-  right: -100px; }
-
-#targeta2 {
-  overflow: hidden;
-  width: 50%;
-  float: left;
-  position: relative; }
-
-#cuadro_cards2 {
-  overflow: hidden;
-  width: 50%;
-  float: left;
-  background-color: #ffffff;
-  padding: 30px 40px;
-  position: relative;
-  margin: 60px 0px 97px;
-  left: -100px; }
 
 .fifth-banner-wrapper {
   padding-top: 0px;
@@ -692,7 +652,7 @@ figure {
   margin-top: 80px; }
 
 #contenedor_contacto {
-  margin-top: 78px; }
+  margin-top: 20px; }
 
 #label {
   margin-bottom: 0px;
@@ -741,14 +701,9 @@ figure {
   list-style: none;
   padding: 12%; }
 
-.estilo_foot_list2 {
-  margin-top: 5px;
-  display: inline-block;
-  list-style: none; }
-
-#estilo_icono_foot {
+.estilo_icono_foot {
   font-size: 35px;
-  padding: 7px; }
+  padding: 3px; }
 
 .imagen_zona {
   object-fit: cover;
@@ -807,6 +762,81 @@ a:hover {
 .icon {
   margin-top: 5px; }
 
+@media (max-width: 575.98px) {
+  #targeta {
+    overflow: hidden;
+    position: relative; }
+
+  #cuadro_cards {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 30px 40px; }
+
+  #targeta2 {
+    overflow: hidden;
+    position: relative; }
+
+  #cuadro_cards2 {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    position: relative;
+    margin: 60px 0px 97px; }
+
+  .tit_foot {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 17px;
+    margin: 31px 0px -37px 22px;
+    line-height: 1.4; }
+
+  .icon_foot {
+    font-size: 17px;
+    padding: 3px; } }
+@media (min-width: 576px) {
+  #targeta {
+    overflow: hidden;
+    width: 50%;
+    float: right;
+    position: relative; }
+
+  #cuadro_cards {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    position: relative;
+    right: -100px; }
+
+  #targeta2 {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    position: relative; }
+
+  #cuadro_cards2 {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    position: relative;
+    margin: 60px 0px 97px;
+    left: -100px; }
+
+  .tit_foot {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 17px;
+    margin: 31px 0px -37px 37px;
+    line-height: 1.4; }
+
+  .icon_foot {
+    font-size: 25px;
+    padding: 3px; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;

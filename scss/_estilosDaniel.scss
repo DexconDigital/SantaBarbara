@@ -308,14 +308,7 @@ figure{
 .li_foot{
     margin-bottom: 15px;
 }
-.tit_foot{
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: 18px;
-    margin-bottom: 17px;
-    margin: 31px 0px -37px 21px;
-    line-height: 1.4;
-}
+
 .tit_foot2{
     font-weight: 700;
     text-transform: capitalize;
@@ -324,44 +317,13 @@ figure{
     margin: 33px 0px 30px 2px;
     line-height: 1.4;
 }
-#targeta{
-    overflow: hidden;
-    width: 50%;
-    float: right;
-    position: relative;
-}
+
 #card_img{
     height: auto;
     max-width: 100%;
     vertical-align: middle;
     border: 0px;
     width: 100%;
-}
-#cuadro_cards{
-    overflow: hidden;
-    width: 50%;
-    float: left;
-    background-color: #ffffff;
-    padding: 30px 40px;
-    position: relative;
-    margin: 60px 0px 97px;
-    right: -100px;
-}
-#targeta2{
-    overflow: hidden;
-    width: 50%;
-    float: left;
-    position: relative;
-}
-#cuadro_cards2{
-    overflow: hidden;
-    width: 50%;
-    float: left;
-    background-color: #ffffff;
-    padding: 30px 40px;
-    position: relative;
-    margin: 60px 0px 97px;
-    left: -100px;
 }
 .fifth-banner-wrapper{
     padding-top: 0px;
@@ -812,11 +774,88 @@ figure{
 
 
 
-
-
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 1000px) { 
-    
-    #medida_nav{
+@media (max-width: 575.98px) { 
+    // Estos estilos solo van a funcionar hasta que la pantalla sea menor o igual a 100px;
+    #targeta {
+        overflow: hidden;
+        position: relative;
+    }
+    #cuadro_cards {
+        overflow: hidden;
+        background-color: #ffffff;
+        padding: 30px 40px;
+        
+    }
+    #targeta2{
+        overflow: hidden;
+        position: relative;
+    }
+    #cuadro_cards2{
+        overflow: hidden;
+       background-color: #ffffff;
+        padding: 30px 40px;
+        position: relative;
+        margin: 60px 0px 97px;
+        
+    }
+    .tit_foot{
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+        margin-bottom: 17px;
+        margin: 31px 0px -37px 22px;
+        line-height: 1.4;
+    }
+    .icon_foot{
+        font-size: 17px;
+         padding: 3px;
+    }
+}
+ @media (min-width: 576px) { 
+    // funcionar cuando la pantalla sea igual o mayor a mil pixeles
+    #targeta{
+        overflow: hidden;
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    #cuadro_cards{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        background-color: #ffffff;
+        padding: 30px 40px;
+        position: relative;
+        right: -100px;
+
+    }
+    #targeta2{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    #cuadro_cards2{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        background-color: #ffffff;
+        padding: 30px 40px;
+        position: relative;
+        margin: 60px 0px 97px;
+        left: -100px;
+    }
+    .tit_foot{
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+        margin-bottom: 17px;
+        margin: 31px 0px -37px 37px;
+        line-height: 1.4;
+    }
+    .icon_foot{
+        font-size: 25px;
+         padding: 3px;
     }
  }

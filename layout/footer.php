@@ -1,7 +1,7 @@
 <i class="fas fa-angle-double-up subir"></i>
 <footer>
   <section>
-    <div class="container ">
+    <div class="container">
       <div class="footer-wrapper section-padding ">
         <div class="row">
           <div class="col-6 col-lg-4 col-md-6 col-sm-6 ">
@@ -10,13 +10,13 @@
             </div>
             <p class="text-center mt-4" style="    font-size: 13px;">Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
             <ul style="list-style: none;"> 
-              <!--style="font-size: 35px; padding: 3px;"-->
-              <li class=" col-lg-12 ">
+              
+              <li class=" col-lg-12 col-md-12 col-12 ">
                 <div class=" col-md-12 row col-sm-2" style="justify-content: center;">
-                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"><i class="fab fa-facebook-f "></i> </div>
-                  <div class="col-3 col-sm-2 mr-2" style="font-size: 25px; padding: 3px;"><i class="fab fa-twitter "></i> </div>
-                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"> <i class="fab fa-instagram "></i> </div>
-                  <div class="col-3 col-sm-2 mr-1" style="font-size: 25px; padding: 3px;"> <i class="fab fa-youtube "></i>  </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><i class="fab fa-facebook-f "></i> </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><i class="fab fa-twitter "></i> </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"> <i class="fab fa-instagram "></i> </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"> <i class="fab fa-youtube "></i>  </div>
                 </div>
               </li>
             </ul>
