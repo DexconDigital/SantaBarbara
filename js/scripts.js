@@ -89,7 +89,7 @@ if (page == 'inicio' && page != undefined) {
         nav: false,
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             600: {
                 items: 2

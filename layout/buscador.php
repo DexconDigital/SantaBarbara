@@ -2,7 +2,7 @@
 <div class="jumbotron  text-white bg-danger" style="border-radius: inherit;">
     <div class="container">
         <div class="col-lg-12 col-md-12  col-sm-12" >
-            <h4 class="display-4 text-center "> Encuentra tu inmueble ideal </h4>
+            <h4 style="font-size: 1.7rem;    margin-bottom: 26px;" class="display-4 text-center "> Encuentra tu inmueble ideal </h4>
         </div>
         <!--buscador-->
         <form>

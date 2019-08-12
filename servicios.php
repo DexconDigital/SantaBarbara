@@ -16,15 +16,13 @@ $page = 'Servicios' ?>
 <body>
     <?php include 'layout/menu.php' ?>
     <div class="pricing-wrapper index inner-section-padding text-center">
-        <div class="container contenedor_servicio">
+        <div class="container">
             <div class="col-12 p-4  ">
                 <h2 class="main-title text-center"> Nuestros Servicios</h2>
             </div>
-            <div class="col-12">
-
-            </div>
+            
             <div class="row">
-                <div class="col-12  col-md-6 p-4">
+            <div class="col-12 col-md-6 p-4">
                     <div class="pricing">
                         <figure>
                             <i class="<?php echo $iconos_servicios['ventas'] ?> mr-2 " id="estilo_icono_foot2"></i>
@@ -37,7 +35,7 @@ $page = 'Servicios' ?>
                             <?php echo $texto_servicios['ventas']['parrafo'] ?> </h6>
                         </div>
                         <div style="margin-top: 10px;    margin-bottom: 8px;">
-                            <?php echo $texto_servicios ['requisitos']['titulo'] ?>
+                            <?php echo $texto_servicios['requisitos']['titulo'] ?>
                         </div>
                         <ul style="text-align: -webkit-auto;">
                             <li style="color: #dc3545;"><a style="color:black"><?php echo $texto_servicios['requisitos'][0]; ?></a></li>
@@ -66,6 +64,9 @@ $page = 'Servicios' ?>
                     </div>
                 </div>
             </div>
+            
+               
+            
         </div>
 
     </div>

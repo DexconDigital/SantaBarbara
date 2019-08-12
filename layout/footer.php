@@ -1,10 +1,10 @@
 <i class="fas fa-angle-double-up subir"></i>
 <footer>
   <section>
-    <div class="container">
+    <div class="container ">
       <div class="footer-wrapper section-padding ">
         <div class="row">
-          <div class="col-6 col-lg-4 col-md-6 col-sm-6 ">
+          <div class="col-12 col-lg-4 col-md-6 col-sm-6 ">
             <div class="col-12 col-lg-12 col-sm-10">
               <img src="img/logo.png" alt="" class="" style="object-fit: contain; width: 100%;">
             </div>
@@ -21,7 +21,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 col-lg-2 col-md-6 col-sm-6 " style="width: 25%;">
+          <div class="col-12 col-lg-2 col-md-6 col-sm-6 " style="width: 25%;">
             <h6 class="tit_foot">Menú</h6>
             <ul class="estilo_foot_list" style="">
               <li class="li_foot"><a class="color_a nav-link" href="index.php">Inicio</a></li>
@@ -34,7 +34,7 @@
               <li class="li_foot"><a class="color_a nav-link" href="contactos.php">Contáctanos</a></li>
             </ul>
           </div>
-          <div class="col-6 col-lg-3 col-md-6 col-sm-6 " style="width: 25%; ">
+          <div class="col-12 col-lg-3 col-md-6 col-sm-6 " style="width: 25%; ">
             <h6 class="tit_foot"> Formularios aseguradoras</h6>
             <ul class="estilo_foot_list">
               <li class="li_foot">Link</li>
@@ -43,18 +43,21 @@
               <li class="li_foot">Link</li>
             </ul>
           </div>
-          <div class="col-6 col-lg-3 col-md-6 col-sm-6 " style="width: 25%;">
-            <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
+          <div class="col-12 col-lg-3 col-md-6 col-sm-6 " style="width: 25%;">
+          <div class="container" style="    margin: 13px;margin: 6px 0px 4px 2px;">
+          <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
             <p>Déjanos saber de ti, y estemos en contacto.</p>
             <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
             <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-12" name=""><span>Enviar</span></button>
+          </div>
+           
           </div>
         </div>
       </div>
     </div>
   </section>
   <hr style=" width:82%">
-  <div class="container text-center">
+  <div class="container text-center" style="    padding: 28px;">
     <p class="">
       Copyright © 2019 <a style="color:#e5120b;" href="">Dexcon Digital</a>. Todos los derechos reservados.
     </p>

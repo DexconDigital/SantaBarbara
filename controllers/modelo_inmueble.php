@@ -89,7 +89,7 @@ function modelo_inmueble2($r)
                 <div class="property-list">
                     <div class="row">
                         <div class="col-12 col-md-4">
-                        <div>
+                        <div style="margin-bottom: 13px;">
                           <figure style="height: 230px;">
                                 <a href="#">
                                     <img src="'.$imagen.'" alt="">
@@ -103,7 +103,7 @@ function modelo_inmueble2($r)
                             <div class="col-12 col-md-8">
                            <h5 class="mb-0 "> <strong>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . '</strong> </h5>
                                 <h5 class="text-muted"> <small> ' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </small></h5>
-                                <p>' . $descripcion . '</p>
+                                <p style="text-align: justify;">' . $descripcion . '</p>
                             </div>
                             <div class="col-12 col-md-4 text-md-right">
                                 <h6 class="pr-2">$';

@@ -117,7 +117,7 @@ $page = 'Inicio' ?>
         <div class="col-12">
           <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
         </div>
-        <div class="col-12 row justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
           <div class="col-12 col-md-6 col-lg-4  ">
             <div class="card" style="">
               <div class="property">

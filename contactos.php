@@ -77,9 +77,12 @@ $page = 'Contacto' ?>
               <div class="row">
                 <div class="col-md-2 ">
                 </div>
-                <div class="col-md-9 col-10">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+                <div class="col-md-9 col-12">
+                  <div class="container">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</label>
+                  </div>
+
                 </div>
                 <div>
                 </div>
@@ -117,79 +120,70 @@ $page = 'Contacto' ?>
               </div>
               <div class="col-lg-12 col-md.12 col-12  row justify-content-center ">
                 <div class="col-lg-3 col-md-3 col-12 text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        Dirección
-                      </h5>
-                      <p> <?php echo $datos_contacto['direccion']['direccion'] ?> </p>
+                <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"><i class="fas fa-map-marker-alt mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12"><p><?php echo $datos_contacto['direccion']['direccion'] ?></p></div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12 text-center  ">
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-phone-alt mr-2 icon"></i>
-                        Telefono 1
-                      </h5>
-                      <p><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></p>
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-12 text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-phone-alt mr-2 icon"></i>
-                        Telefono 2
-                      </h5>
-                      <p><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-12 text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-phone-alt mr-2 icon"></i>
-                        Telefono 3
-                      </h5>
-                      <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"> <i class="fas fa-phone-alt mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12  text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="far fa-envelope m-2 icon"></i>
-                        Correo
-                      </h5>
-                      <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"><i class="far fa-envelope mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12  text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-mobile-alt mr-2 icon"></i>
-                        Celular
-                      </h5>
-                      <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"><i class="fas fa-mobile-alt mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['celular']['imprimir'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12 text-center ">
-                  <div class="card" style="">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fab fa-whatsapp mr-2 icon"></i>
-                        WhatsApp:
-                      </h5>
-                      <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+                  <div class="col-12 card  style_info" style="">
+                    <div class=" row card-body ">
+                      <div class="col-5 col-md-12 style_info_cont"><i class="fab fa-whatsapp mr-2 icon"></i></div>
+                      <div class="col-7 col-md-12">
+                        <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -204,13 +198,13 @@ $page = 'Contacto' ?>
               <div class="col-lg-6 col-md-6 col-12 ">
                 <p class="tit_foot2 text-white text-center">Suscríbete a nuestro boletín</p>
               </div>
-              <div class=" row col-12 col-lg-6 col-md-6  align-items-center justify-content-center ">
+              <div class=" col-12 col-lg-6 col-md-6  align-items-center justify-content-center ">
 
-                <div class=" row col-md-6 form-group ">
-                  <input type="email" class="col-md-12 col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
+                <div class="col-md-12 form-group col-12 ">
+                  <input type="email" class="col-md-12 " placeholder="ejemplo@dominio.com" id="supscrp_foot">
                 </div>
-                <div class=" col-md-6 col-12 row form-group">
-                  <button style="    padding: 11px;;" type="button" class="btn btn-dark rounded-0 col-12 col-md-6" name=""><span>Enviar</span></button>
+                <div class=" col-md-12 col-12 form-group">
+                  <button style="padding: 4px;" type="button" class="btn btn-dark rounded-0 col-md-12 col-12" name=""><span>Enviar</span></button>
                 </div>
               </div>
             </div>
