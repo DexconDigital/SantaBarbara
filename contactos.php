@@ -54,7 +54,7 @@ $page = 'Contacto' ?>
                 </div>
                 <div class="form-group">
                   <label id="label" for="exampleInputPassword1">
-                    Teléfono (Opcional:)
+                    Teléfono (Opcional):
                   </label>
                   <input type="password" class="form-control rounded-0" id="exampleInputPassword1" />
                 </div>
@@ -66,7 +66,7 @@ $page = 'Contacto' ?>
                 <div class="col-md-2 ">
                 </div>
                 <div class="col-md-8">
-                  <label id="label">Mesaje</label>
+                  <label id="label">Mensaje:</label>
                   <textarea id="texarea_contacto"></textarea>
                 </div>
                 <div>
