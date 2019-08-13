@@ -838,9 +838,9 @@ a:hover {
     width: 50%;
     float: left;
     background-color: #ffffff;
-    padding: 30px 40px;
+    padding: 0px 40px;
     position: relative;
-    right: -100px; }
+    margin-bottom: 28px; }
 
   #targeta2 {
     overflow: hidden;
@@ -853,10 +853,8 @@ a:hover {
     width: 50%;
     float: left;
     background-color: #ffffff;
-    padding: 30px 40px;
-    position: relative;
-    margin: 60px 0px 97px;
-    left: -100px; }
+    padding: 48px 40px;
+    position: relative; }
 
   .tit_foot {
     font-weight: 700;
@@ -888,7 +886,20 @@ a:hover {
     color: #ffffff;
     position: absolute;
     top: 50%;
-    width: 100%; } }
+    width: 100%; }
+
+  .card-body {
+    padding: 0rem; }
+
+  .correo_style {
+    margin-left: -12px;
+    max-width: 110%; }
+
+  .correo_conter {
+    max-width: 110%; }
+
+  .container_ico {
+    margin-top: 8px; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -909,7 +920,15 @@ a:hover {
 
   .venta_container {
     text-align: justify;
-    padding: 7px; } }
+    padding: 7px; }
+
+  #cuadro_cards {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+    padding: 0px 40px;
+    position: relative; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -930,7 +949,27 @@ a:hover {
 
   .venta_container {
     text-align: justify;
-    padding: 17px; } }
+    padding: 17px; }
+
+  #cuadro_cards {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    position: relative;
+    right: -100px;
+    top: 40px; }
+
+  #cuadro_cards2 {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    position: relative;
+    margin: 60px 0px 97px;
+    left: -100px; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;
@@ -948,10 +987,9 @@ a:hover {
       left: 0;
       right: 0;
       bottom: 0;
-      width: 60%;
+      width: 7%;
       height: 2px;
-      background-color: #dc3545;
-      margin: auto; }
+      background-color: #dc3545; }
 
 textarea:focus, textarea[type]:focus, input:focus, input[type]:focus {
   border-color: #dc3545 !important;

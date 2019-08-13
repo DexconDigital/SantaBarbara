@@ -157,12 +157,12 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12  text-center ">
+                <div class="col-lg-4 col-md-4 col-12 text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-auto col-md-12 "><i class="far fa-envelope mr-2 icon"></i></div>
-                      <div class="col-auto col-md-12">
-                        <p><?php echo $datos_contacto['correo']['correo'] ?></p>
+                      <div class="col-auto col-md-12 "><i class="fab fa-whatsapp mr-2 icon"></i></div>
+                      <div class="col-5 col-md-12">
+                        <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
                       </div>
                     </div>
                   </div>
@@ -177,12 +177,12 @@ $page = 'Contacto' ?>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12 text-center ">
+                <div class="col-lg-4 col-md-4 col-12  text-center ">
                   <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
-                      <div class="col-auto col-md-12 "><i class="fab fa-whatsapp mr-2 icon"></i></div>
-                      <div class="col-5 col-md-12">
-                        <p><?php echo $datos_contacto['whatsapp']['imprimir'] ?></p>
+                      <div class="col-auto col-md-12 container_ico "><i class="far fa-envelope mr-2 icon"></i></div>
+                      <div class="col-auto col-md-12 correo_conter">
+                        <p class="correo_style"><?php echo $datos_contacto['correo']['correo'] ?></p>
                       </div>
                     </div>
                   </div>
@@ -200,10 +200,10 @@ $page = 'Contacto' ?>
               </div>
               <div class=" col-12 col-lg-6 col-md-6  align-items-center justify-content-center ">
 
-                <div class="col-md-12 form-group col-12 ">
+                <div class="col-md-11 form-group col-12 ">
                   <input type="email" class="col-md-12 " placeholder="ejemplo@dominio.com" id="supscrp_foot">
                 </div>
-                <div class=" col-md-12 col-12 form-group">
+                <div class=" col-md-11 col-12 form-group">
                   <button style="padding: 4px;" type="button" class="btn btn-dark rounded-0 col-md-12 col-12" name=""><span>Enviar</span></button>
                 </div>
               </div>

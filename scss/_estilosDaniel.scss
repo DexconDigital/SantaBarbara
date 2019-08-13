@@ -863,9 +863,9 @@ figure{
         width: 50%;
         float: left;
         background-color: #ffffff;
-        padding: 30px 40px;
+        padding: 0px 40px;
         position: relative;
-        right: -100px;
+        margin-bottom: 28px;
 
     }
     #targeta2{
@@ -879,10 +879,9 @@ figure{
         width: 50%;
         float: left;
         background-color: #ffffff;
-        padding: 30px 40px;
+        padding: 48px 40px;
         position: relative;
-        margin: 60px 0px 97px;
-        left: -100px;
+        
     }
     .tit_foot{
         font-weight: 700;
@@ -917,6 +916,19 @@ figure{
         top: 50%;
         width: 100%;
     }
+    .card-body{
+        padding: 0rem;
+    }
+    .correo_style{
+        margin-left: -12px;
+        max-width: 110%;
+    }
+    .correo_conter{
+        max-width: 110%;
+    }
+    .container_ico{
+        margin-top: 8px;
+    }
     
  }
 
@@ -944,6 +956,19 @@ figure{
         text-align: justify;
         padding: 7px;
     }
+    #cuadro_cards{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        background-color: #ffffff;
+        padding: 0px 40px;
+        position: relative;
+      
+
+    }
+   
+    
+    
  }
 
  @media (min-width: 992px) { 
@@ -969,5 +994,26 @@ figure{
     .venta_container{
         text-align: justify;
         padding: 17px;
+    }
+    #cuadro_cards{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        background-color: #ffffff;
+        padding: 30px 40px;
+        position: relative;
+        right: -100px;
+        top: 40px;
+
+    }
+    #cuadro_cards2{
+        overflow: hidden;
+        width: 50%;
+        float: left;
+        background-color: #ffffff;
+        padding: 30px 40px;
+        position: relative;
+        margin: 60px 0px 97px;
+        left: -100px;
     }
  }
