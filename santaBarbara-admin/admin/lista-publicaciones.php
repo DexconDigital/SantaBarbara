@@ -6,8 +6,8 @@ include 'layout/layout.php';
 ?>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-10">
-            <h2 class="text-center">Lista de noticias</h2>
+        <div class="col-10" style="    margin-top: 27px;">
+            <h2 style="margin-bottom: 35px;" class="text-center">Lista de noticias</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>

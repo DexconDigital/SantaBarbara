@@ -13,6 +13,7 @@ $color_fondo = "";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
         .altologin {
             height: 100vh;
@@ -58,7 +59,7 @@ $color_fondo = "";
                     <div class="card-header img_container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-12 col-lg-10">
-                                <img src="<?php echo $imagen_login ?>" alt="..." class="" style="width:300px; height:auto;">
+                                <img style="    object-fit: contain;height: 100%;width: 100%;" src="<?php echo $imagen_login ?>" alt="..." class="" style="width:300px; height:auto;">
                             </div>
                         </div>
 

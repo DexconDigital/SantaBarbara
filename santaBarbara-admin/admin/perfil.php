@@ -11,8 +11,8 @@ $usuario =  mysqli_fetch_array($sql);
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-9">
-            <h2 class="text-center">Perfil</h2>
+        <div class="col-9" style="    margin-top: 27px;">
+            <h2 style=" margin-bottom: 35px;" class="text-center">Perfil</h2>
             <form class="form-horizontal" method="post" action="updateperfil.php" enctype="multipart/form-data" >
                     <input type="hidden" name="id" value="<?php echo $usuario[0]; ?>" >
                     <input type="hidden" name="usuario" value="<?php echo $usuario[1]; ?>">

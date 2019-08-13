@@ -5,8 +5,8 @@ include 'layout/layout.php';
 ?>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-9">
-            <h2 class="text-center">Agregar Publicacion</h2>
+        <div class="col-9" style="    margin-top: 27px;">
+            <h2 style="margin-bottom: 35px;" class="text-center">Agregar Publicacion</h2>
             <form method="post" action="guardar.php" enctype="multipart/form-data">
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Titulo Publicacion</label>
