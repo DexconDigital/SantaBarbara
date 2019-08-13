@@ -10,7 +10,7 @@ $nombre=$_REQUEST["user"];
 $password=$_REQUEST["pass"];
 
 
-$qry="SELECT usuario FROM usuarios WHERE usuario ='$nombre' and password ='$password' and id_inmobiliaria1 = '$id_inmobiliaria'";
+$qry="SELECT usuario FROM usuarios WHERE usuario ='$nombre' and password ='$password'";
 $sql=mysqli_query($con,$qry);
 
 $row = mysqli_fetch_row($sql);

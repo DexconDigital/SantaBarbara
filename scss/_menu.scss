@@ -18,10 +18,12 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                width: 100%;
+                width: 5%;
                 height: 2px;
                 background-color: $rojo;
-                
+                @include media(xl){
+                    width: 100%;
+                }
             }
         }
     }
