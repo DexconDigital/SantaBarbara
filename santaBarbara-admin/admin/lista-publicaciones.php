@@ -1,13 +1,13 @@
 <?php $page = "Lista de Noticias";
 require("seguridad.php");
 require_once("conexion.php");
-require_once('id_inmobiliaria/inmobiliaria.php');
 include 'layout/layout.php';
+$id_inmobiliria = 1;
 ?>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-10" style="    margin-top: 27px;">
-            <h2 style="margin-bottom: 35px;" class="text-center">Lista de noticias</h2>
+        <div class="col-10" style=" margin-top: 27px;">
+            <h2 class="text-center">Lista de noticias</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -20,14 +20,14 @@ include 'layout/layout.php';
                 <tbody>
                 <?php 
                             $con=Conect();
-                            $qry="select * from noticias where id_inmobiliaria2 = '$id_inmobiliaria' order by id DESC ";
+                            $qry="select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
                             $sql=mysqli_query($con,$qry);
                             while($res=  mysqli_fetch_array($sql)){
                             echo '<tr>
                                 <td>'.$res["id"].'</td>
                                 <td>'.$res["nombre"].'</td>
-                                <td><a href="actualizarpublicacion.php?id='.$res["id"].'"><i class="fas fa-pen-square"></i></a></td>
-                                <td><a href="eliminar.php?id='.$res["id"].'"><i class="fa fa-times"></i></a></td>
+                                <td><a href="actualizarpublicacion.php?id='.$res["id"].'"><i style="color:black;" class="fas fa-edit"></i></a></td>
+                                <td><a href="eliminar.php?id='.$res["id"].'"><i style="color:black;"class="fas fa-trash-alt"></i></a></td>
                             </tr>';}
                             ?>
                 </tbody>

@@ -1,5 +1,5 @@
-<?php require 'variables/variables.php';
-$page = 'Noticias' ?>
+<?php $page = 'Noticias'; require 'variables/variables.php';
+require 'controllers/noticiasController.php' ?>
 <!doctype html>
 <html lang="es">
 
@@ -24,22 +24,13 @@ $page = 'Noticias' ?>
             <section class="container mt-5 ">
                 <div class="card-deck">
                     <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
+                        
                         <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
+                        <?php modelo_noticia($noticias_array);?>  
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
-                        <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
-                        <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
-                        </div>
+                   
+                    
                     </div>
                 </div>
             </section>

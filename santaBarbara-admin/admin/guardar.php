@@ -1,6 +1,5 @@
 <?php
 require_once 'conexion.php';
-require_once('id_inmobiliaria/inmobiliaria.php');
 
 $nombre=$_REQUEST["titulo"];
 $descripcion=$_REQUEST["descripcion"];
@@ -11,7 +10,7 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $nombre_foto = str_replace(" ","",$foto);
 $destino="fotos/".$nombre_foto;
 $fecha = date("Y-m-d");
-$id_inmo = $id_inmobiliaria;
+$id_inmo = 1;
 
 $nombre_ar = $_FILES['archivo']['name'];
 if($nombre_ar != ""){

@@ -899,7 +899,10 @@ a:hover {
     max-width: 110%; }
 
   .container_ico {
-    margin-top: 8px; } }
+    margin-top: 8px; }
+
+  .color_aa {
+    color: black; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");

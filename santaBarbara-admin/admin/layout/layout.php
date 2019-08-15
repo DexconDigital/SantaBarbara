@@ -46,7 +46,7 @@ $imagen_inicio = $usuario[7];
         }
 
         .color_nv {
-            background-color: #e5120b;
+            background-color: black;
         }
 
         .colo_ico {
