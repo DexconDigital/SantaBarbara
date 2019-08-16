@@ -14,13 +14,15 @@ while ($field = mysqli_fetch_array($result)) {
     $imagen = $field['imagen'];
     $noticia = $field['noticia'];
     $fecha = $field['fecha'];
+    $archivo = $field['archivo'];
     $noticias_array[] = array(
         'titulo' => $nombre,
         'id' => $id,
         'descripcion' => $descripcion,
         'imagen' => $imagen,
         'noticia' => $noticia,
-        'fecha' => $fecha
+        'fecha' => $fecha,
+        'archivo' => $archivo
     );
 }
 
@@ -59,6 +61,12 @@ function modelo_noticia($r)
                     <div class="w-100 d-flex justify-content-center">
                     <a href="./detalle-noticia.php?co=' . $r[$i]['id'] . '" class="btn btn-danger rounded-0 text-center">Ver más</a>
                     </div>
+                    <div class="col-12 col-md-5">
+                   
+                  
+                        
+                    
+                </div>
                     <p style="margin-top: 28px; " class="card-text"><small class="text-muted">Publicado el: ' . $r[$i]['fecha'] . '</small></p>
                 </div>
             </div>
