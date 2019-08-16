@@ -1,4 +1,5 @@
-<?php $page = 'Noticias'; require 'variables/variables.php';
+<?php $page = 'Noticias';
+require 'variables/variables.php';
 require 'controllers/noticiasController.php' ?>
 <!doctype html>
 <html lang="es">
@@ -15,30 +16,19 @@ require 'controllers/noticiasController.php' ?>
 
 <body>
     <?php include 'layout/menu.php' ?>
-    <div class="contaider-fluid body">
 
+    <div class="contaider-fluid body">
         <div class="row d-flex justify-content-around  p-4  ">
-            <div id="titulo_noticias" class="col-12  ">
+            <div id="titulo_noticias" class="col-12 ">
                 <h2 class="main-title text-center">Noticias</h2>
             </div>
-            <section class="container mt-5 ">
-                <div class="card-deck">
-                    <div class="card">
-                        
-                        <div class="col-12">
-                        <?php modelo_noticia($noticias_array);?>  
-                        </div>
-                    </div>
-                   
-                    
-                    </div>
+            <div class="col-12">
+                <div class="row">
+                    <?php modelo_noticia($noticias_array); ?>
                 </div>
-            </section>
-
+            </div>
         </div>
-
     </div>
-
 
     <?php include 'layout/footer.php' ?>
 

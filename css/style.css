@@ -892,17 +892,14 @@ a:hover {
     padding: 0rem; }
 
   .correo_style {
-    margin-left: -12px;
+    margin-left: -16px;
     max-width: 110%; }
 
   .correo_conter {
     max-width: 110%; }
 
   .container_ico {
-    margin-top: 8px; }
-
-  .color_aa {
-    color: black; } }
+    margin-top: 8px; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -931,10 +928,7 @@ a:hover {
     float: left;
     background-color: #ffffff;
     padding: 0px 40px;
-    position: relative; }
-
-  .color_aa {
-    color: black; } }
+    position: relative; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -1058,6 +1052,7 @@ textarea:focus, textarea[type]:focus, input:focus, input[type]:focus {
   right: 20px;
   -webkit-box-shadow: -2px 2px 5px 3px #bdbdbd;
   -moz-box-shadow: -2px 2px 5px 3px #bdbdbd;
-  box-shadow: -2px 2px 5px 3px #bdbdbd; }
+  box-shadow: -2px 2px 5px 3px #bdbdbd;
+  z-index: 2; }
 
 /*# sourceMappingURL=style.css.map */

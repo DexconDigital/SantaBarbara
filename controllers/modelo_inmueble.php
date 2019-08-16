@@ -91,7 +91,7 @@ function modelo_inmueble2($r)
                         <div class="col-12 col-md-4">
                         <div style="margin-bottom: 13px;">
                           <figure style="height: 230px;">
-                                <a href="#">
+                                <a href="">
                                     <img src="'.$imagen.'" alt="">
                                     <span class="overlay-1"></span>
                                 </a>

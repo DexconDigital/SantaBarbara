@@ -123,7 +123,7 @@ $page = 'Contacto' ?>
                 <div class="col-12 card  style_info" style="">
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "><i class="fas fa-map-marker-alt mr-2 icon"></i></div>
-                      <div class="col-9 col-md-12"><a class="color_aa" href="map:Avenida Cra 15 No. 124-17 Oficinas 705 y 706 - Bogotá"><?php echo $datos_contacto['direccion']['direccion'] ?></a></div>
+                      <div class="col-9 col-md-12"><a><?php echo $datos_contacto['direccion']['direccion'] ?></a></div>
                    </div>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
-                        <a class="color_aa"  href="tel:<?php echo $datos_contacto['telefono_fijo_1']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></a>
+                        <a style="color:black;" href="tel:<?php echo $datos_contacto['telefono_fijo_1']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_1']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
-                        <a class="color_aa"  href="tel:<?php echo $datos_contacto['telefono_fijo_2']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></a>
+                        <a style="color:black;"  href="tel:<?php echo $datos_contacto['telefono_fijo_2']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_2']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
@@ -152,7 +152,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "> <i class="fas fa-phone-alt mr-2 icon"></i></div>
                       <div class="col-7 col-md-12">
-                        <a class="color_aa"  href="tel:<?php echo $datos_contacto['telefono_fijo_3']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></a>
+                        <a style="color:black;"  href="tel:<?php echo $datos_contacto['telefono_fijo_3']['link'] ?>"><?php echo $datos_contacto['telefono_fijo_3']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
@@ -162,7 +162,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "><i class="fab fa-whatsapp mr-2 icon"></i></div>
                       <div class="col-5 col-md-12">
-                        <a class="color_aa"  href="tel:<?php echo $datos_contacto['whatsapp']['link'] ?>"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
+                        <a style="color:black;"  href="tel:<?php echo $datos_contacto['whatsapp']['link'] ?>"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "><i class="fas fa-mobile-alt mr-2 icon"></i></div>
                       <div class="col-5 col-md-12">
-                        <a class="color_aa"  href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><?php echo $datos_contacto['celular']['imprimir'] ?></a>
+                        <a style="color:black;"  href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><?php echo $datos_contacto['celular']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 container_ico "><i class="far fa-envelope mr-2 icon"></i></div>
                       <div class="col-auto col-md-12 correo_conter">
-                        <a class="color_aa"  href="mailto:<?php echo  $datos_contacto['correo']['correo'] ?>" class="correo_style"><?php echo $datos_contacto['correo']['correo'] ?></a>
+                        <a style="color:black;"  href="mailto:<?php echo  $datos_contacto['correo']['correo'] ?>" class="correo_style"><?php echo $datos_contacto['correo']['correo'] ?></a>
                       </div>
                     </div>
                   </div>
