@@ -54,12 +54,12 @@ function modelo_noticia($r)
             <div class="card">
                 <img src="' . $ruta_imagen . '" class="card-img-top" alt="...">  
                 <div class="col-12">
-                    <h5 class="card-title">' . $r[$i]['titulo'] . '</h5>
+                    <h4 style="margin-top: 12px;" class="card-title">' . $r[$i]['titulo'] .'</h4>
                     <p class="card-text">' . $r[$i]['descripcion'] . '</p>
                     <div class="w-100 d-flex justify-content-center">
                     <a href="./detalle-noticia.php?co=' . $r[$i]['id'] . '" class="btn btn-danger rounded-0 text-center">Ver más</a>
                     </div>
-                    <p style="margin-top: 28px;" class="card-text"><small class="text-muted">Publicado el: ' . $r[$i]['fecha'] . '</small></p>
+                    <p style="margin-top: 28px; " class="card-text"><small class="text-muted">Publicado el: ' . $r[$i]['fecha'] . '</small></p>
                 </div>
             </div>
         </div>

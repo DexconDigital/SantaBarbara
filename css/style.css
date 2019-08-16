@@ -81,7 +81,7 @@ body.p {
 .property .precio {
   position: absolute;
   top: 33px;
-  left: -28px;
+  left: -102px;
   color: #ffffff;
   padding: 1px 60px;
   transform: rotate(-42deg);
@@ -507,20 +507,15 @@ figure {
   font-size: 60%;
   margin-top: 10px; }
 
-.property-title h3 {
-  font-size: 22px;
-  margin: -33px 0px 5px 407px;
-  color: red; }
-
 .sidebar-title {
   padding: 18px 20px 20px 20px; }
 
 .sidebar-title {
-  background-color: #1a1a1a;
+  background-color: #dc3545;
   margin: 0px;
   color: #ffffff;
   font-size: 20px;
-  padding: 20px; }
+  padding: 13px; }
 
 .search-box {
   padding: 20px;
@@ -565,11 +560,11 @@ figure {
 
 .sidebar-title {
   padding: 18px 20px 20px 20px;
-  background-color: #1a1a1a;
+  background-color: #dc3545;
   margin: 0px;
   color: #ffffff;
   font-size: 20px;
-  padding: 20px; }
+  padding: 13px; }
 
 .side-bar-agent-detail {
   display: inline-block;
@@ -594,9 +589,10 @@ figure {
   width: 100%; }
 
 .daily-email {
-  padding: 30px 20px 40px 19px;
+  padding: 14px 15px 18px 9px;
   color: #ffffff;
-  background-color: #dc3545; }
+  background-color: #dc3545;
+  margin-bottom: 9px; }
 
 .daily-email h4 {
   margin-bottom: 16px;
@@ -629,9 +625,6 @@ figure {
 .col-md-offset-3 {
   margin-left: 25%;
   width: 50%; }
-
-#contenido_total {
-  margin-top: 80px; }
 
 #contenedor_contacto {
   margin-top: 20px; }
@@ -825,7 +818,18 @@ a:hover {
     margin-left: 41px; }
 
   .style_info_cont {
-    max-width: 10.666667%; } }
+    max-width: 10.666667%; }
+
+  .tipo_inm {
+    font-size: 24px; }
+
+  .precio {
+    font-size: 18px;
+    margin-left: 35px;
+    margin-top: 5px; }
+
+  .p_detalle {
+    font-size: 13px; } }
 @media (min-width: 576px) {
   #targeta {
     overflow: hidden;
@@ -899,7 +903,13 @@ a:hover {
     max-width: 110%; }
 
   .container_ico {
-    margin-top: 8px; } }
+    margin-top: 8px; }
+
+  .precio {
+    margin-left: 31px; }
+
+  .tipo_inm {
+    font-size: 24px; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -928,7 +938,26 @@ a:hover {
     float: left;
     background-color: #ffffff;
     padding: 0px 40px;
-    position: relative; } }
+    position: relative; }
+
+  .property-title h3 {
+    font-size: 22px;
+    margin: -33px 0px 5px 407px;
+    color: red; }
+
+  .precio {
+    margin-left: 31px; }
+
+  .tipo_inm {
+    font-size: 24px; }
+
+  .precio {
+    font-size: 19px;
+    margin-top: 2px;
+    margin-left: 25px; }
+
+  .p_detalle {
+    font-size: 13px; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -969,7 +998,16 @@ a:hover {
     padding: 30px 40px;
     position: relative;
     margin: 60px 0px 97px;
-    left: -100px; } }
+    left: -100px; }
+
+  .property-title h3 {
+    font-size: 22px;
+    margin: -33px 0px 5px 407px;
+    color: red; }
+
+  .precio {
+    margin-left: 66px;
+    margin-top: 12px; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;

@@ -19,7 +19,7 @@ require 'controllers/noticiasController.php' ?>
 
     <div class="contaider-fluid body">
         <div class="row d-flex justify-content-around  p-4  ">
-            <div id="titulo_noticias" class="col-12 ">
+            <div id="main-title titulo_noticias" style="margin-bottom: 26px;" class="col-12 ">
                 <h2 class="main-title text-center">Noticias</h2>
             </div>
             <div class="col-12">

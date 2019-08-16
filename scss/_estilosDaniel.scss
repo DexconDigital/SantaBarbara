@@ -71,7 +71,7 @@ body.p{
 .property .precio{
     position: absolute;
     top: 33px;
-    left: -28px;
+    left: -102px;
     color: #ffffff;
     padding: 1px 60px;
     transform: rotate(-42deg);
@@ -514,20 +514,16 @@ figure{
     font-size: 60%;
     margin-top: 10px;   
 }
-.property-title h3{
-    font-size: 22px;
-    margin: -33px 0px 5px 407px;
-    color: red;
-}
+
 .sidebar-title{
     padding: 18px 20px 20px 20px;
 }
 .sidebar-title{
-    background-color: #1a1a1a;
+    background-color: #dc3545;
     margin: 0px;
     color: #ffffff;
     font-size: 20px;
-    padding: 20px;
+    padding: 13px;
 }
 .search-box{
     padding: 20px;
@@ -572,11 +568,11 @@ figure{
 }
 .sidebar-title{
     padding: 18px 20px 20px 20px;
-    background-color: #1a1a1a;
+    background-color: #dc3545;
     margin: 0px;
     color: #ffffff;
     font-size: 20px;
-    padding: 20px;
+    padding: 13px;
 }
 .side-bar-agent-detail{
     display: inline-block;
@@ -600,10 +596,12 @@ figure{
     border: 0px;
     width: 100%;
 }
+
 .daily-email{
-    padding: 30px 20px 40px 19px;
+    padding: 14px 15px 18px 9px;
     color: #ffffff;
     background-color: #dc3545;
+    margin-bottom: 9px;
 }
 .daily-email h4{
     margin-bottom: 16px;
@@ -637,9 +635,7 @@ figure{
     margin-left: 25%;
     width: 50%;
 }
-#contenido_total{
-    margin-top: 80px;
-}
+
 #contenedor_contacto{
     margin-top: 20px;
 }
@@ -848,6 +844,17 @@ figure{
     .style_info_cont{
         max-width: 10.666667%;
     }
+    .tipo_inm{
+        font-size: 24px;
+    }
+    .precio{
+        font-size: 18px;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+    .p_detalle{
+        font-size: 13px;
+    }
 }
  @media (min-width: 576px) { 
     // funcionar cuando la pantalla sea igual o mayor a mil pixeles
@@ -928,8 +935,12 @@ figure{
     .container_ico{
         margin-top: 8px;
     }
-    
-    
+    .precio{
+        margin-left: 31px;
+    }
+    .tipo_inm{
+        font-size: 24px;
+    }
     
  }
 
@@ -967,8 +978,27 @@ figure{
       
 
     }
-   
-   
+    .property-title h3{
+        font-size: 22px;
+        margin: -33px 0px 5px 407px;
+        color: red;
+    }
+    .precio{
+        margin-left: 31px;
+        
+    }
+    .tipo_inm{
+        font-size: 24px;
+    }
+    
+    .precio{
+        font-size: 19px;
+        margin-top: 2px;
+        margin-left: 25px;
+    }
+    .p_detalle{
+        font-size: 13px;
+    }
     
     
  }
@@ -1017,5 +1047,14 @@ figure{
         position: relative;
         margin: 60px 0px 97px;
         left: -100px;
+    }
+    .property-title h3{
+        font-size: 22px;
+        margin: -33px 0px 5px 407px;
+        color: red;
+    }
+    .precio{
+        margin-left: 66px;
+        margin-top: 12px;
     }
  }
