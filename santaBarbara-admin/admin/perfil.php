@@ -63,7 +63,7 @@ $usuario =  mysqli_fetch_array($sql);
                     <div class="panel-footer">
                         <div class="row">
                             <div class="col-8 offset-2">
-                                <button class="btn btn-primary">Actualizar Perfil</button>
+                                <button class="btn btn-danger">Actualizar Perfil</button>
                                 <a href="index.php" class="btn btn-secondary">Cancelar</a>
                             </div>
                         </div>

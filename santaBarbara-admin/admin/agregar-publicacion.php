@@ -10,20 +10,20 @@ include 'layout/layout.php';
             <form method="POST" action="guardar.php" enctype="multipart/form-data">
             
                <div class="form-group row">
-                    <label for="" class="col-sm-2 col-form-label">Titulo Publicacion</label>
+                    <label for="" class="col-sm-2 col-form-label">Título Publicación</label>
                     <div class="col-sm-10">
-                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Titulo Noticia"  required>
+                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Título Noticia"  required>
                     </div>
                 </div>
                 
                 <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Descripcion Corta</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Descripción Corta</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripcion Corta" required>
+                        <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción Corta" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Publicacion:</label>
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Publicación:</label>
                     <div class="col-sm-10">
                         <textarea name="noticia" id="noticia"></textarea>
                     </div>
@@ -46,7 +46,7 @@ include 'layout/layout.php';
                 <input type="hidden" id="fecha" name="fecha">
                 <div class="form-group row">
                     <div class="col-8 offset-2">
-                        <button class="btn btn-dark" value="crear">Crear Publicacion</button>
+                        <button class="btn btn-danger" value="crear">Crear Publicación</button>
                     </div>
                 </div>
             </form>

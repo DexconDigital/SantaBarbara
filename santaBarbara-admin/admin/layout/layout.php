@@ -52,6 +52,7 @@ $imagen_inicio = $usuario[7];
         .colo_ico {
             color: white;
         }
+
         .colo_ico2 {
             color: white;
         }
@@ -113,9 +114,9 @@ $imagen_inicio = $usuario[7];
 <body id="page-top">
 
     <nav class="navbar navbar-expand static-top color_nv">
-
-        <a class="navbar-brand mr-1" href="layout.html"></a>
-
+        <div style="width: 15%;">
+            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/logo.png" alt=""></a>
+        </div>
 
 
         <!-- Navbar Search -->

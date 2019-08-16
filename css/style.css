@@ -949,7 +949,7 @@ a:hover {
     margin-left: 31px; }
 
   .tipo_inm {
-    font-size: 24px; }
+    font-size: 28px; }
 
   .precio {
     font-size: 19px;
@@ -957,7 +957,7 @@ a:hover {
     margin-left: 25px; }
 
   .p_detalle {
-    font-size: 13px; } }
+    font-size: 19px; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");

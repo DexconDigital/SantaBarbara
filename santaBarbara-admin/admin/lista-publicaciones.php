@@ -26,8 +26,8 @@ $id_inmobiliria = 1;
                             echo '<tr>
                                 <td>'.$res["id"].'</td>
                                 <td>'.$res["nombre"].'</td>
-                                <td><a href="actualizarpublicacion.php?id='.$res["id"].'"><i style="color:black;" class="fas fa-edit"></i></a></td>
-                                <td><a href="eliminar.php?id='.$res["id"].'"><i style="color:black;"class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="actualizarpublicacion.php?id='.$res["id"].'"><i style="color:red;" class="fas fa-edit"></i></a></td>
+                                <td><a href="eliminar.php?id='.$res["id"].'"><i style="color:red;"class="fas fa-trash-alt"></i></a></td>
                             </tr>';}
                             ?>
                 </tbody>
