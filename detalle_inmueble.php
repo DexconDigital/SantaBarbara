@@ -19,7 +19,7 @@ $page = 'Inmuebles' ?>
     <div id="" class="contaider-fluid body">
         <div class="container" style="margin-top: 60px;">
             <div class="row">
-                <div class="col-md-7 border border-secondary ">
+                <div class="col-md-7">
                     <div class="col-md-12 d-flex bd-highlight">
                         <div class="col-6 mr-auto bd-highlight">
                             <h2 class="tipo_inm"><Strong><?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?></Strong></h2>
@@ -117,7 +117,7 @@ $page = 'Inmuebles' ?>
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-12 border border-secondary ">
+                <div class="col-lg-5 col-md-5 col-12 ">
 
                     <div class="search-porperties text-left">
                         <h6 class="sidebar-title text-center"> Encuentra tu inmueble ideal</h6>
@@ -140,7 +140,7 @@ $page = 'Inmuebles' ?>
                             <button type="submit" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
                         </form>
                     </div>
-                    <div class="col-md-12 border border-secondary">
+                    <div class="col-md-12">
                         <h6 class="sidebar-title text-center">Contacto con el asesor</h6>
                         <div class="side-bar-agent-detail mt-3">
                             <figure>
