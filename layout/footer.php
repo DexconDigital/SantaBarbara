@@ -13,10 +13,10 @@
               
               <li class=" col-lg-12 col-md-12 col-12 ">
                 <div class=" col-md-12 row col-sm-2" style="justify-content: center;">
-                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><i class="fab fa-facebook-f "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><i class="fab fa-twitter "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"> <i class="fab fa-instagram "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"> <i class="fab fa-youtube "></i>  </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href=""><i class="fab fa-facebook-f "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href=""><i class="fab fa-twitter "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href=""><i class="fab fa-instagram color_insta "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href=""><i class="fab fa-youtube color_you"></i> </a></div>
                 </div>
               </li>
             </ul>

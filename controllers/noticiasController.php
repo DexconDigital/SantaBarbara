@@ -53,8 +53,8 @@ function modelo_noticia($r)
         $ruta_imagen = "./SantaBarbara-Admin/admin/" . $r[$i]['imagen'];
         echo '
         <div class="col-11 col-md-6 col-lg-4">
-            <div class="card">
-                <img src="' . $ruta_imagen . '" class="card-img-top" alt="...">  
+            <div class="card" style="    height: 53%; width: 100%;">
+                <img style="object-fit: cover;width: 100%;height: 100%;"; src="' . $ruta_imagen . '" class="card-img-top" alt="...">  
                 <div class="col-12">
                     <h4 style="margin-top: 12px;" class="card-title">' . $r[$i]['titulo'] .'</h4>
                     <p class="card-text">' . $r[$i]['descripcion'] . '</p>

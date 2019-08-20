@@ -100,6 +100,18 @@ body.p {
 figure {
   margin: 0 0; }
 
+.color_you {
+  color: red; }
+
+.color_insta {
+  color: #cf3c6d; }
+
+.color_face {
+  color: #5172b9; }
+
+.color_tw {
+  color: #00aced; }
+
 .property {
   margin-bottom: 10px;
   overflow: hidden;

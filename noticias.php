@@ -22,7 +22,7 @@ require 'controllers/noticiasController.php' ?>
             <div id="main-title titulo_noticias" style="margin-bottom: 26px;" class="col-12 ">
                 <h2 class="main-title text-center">Noticias</h2>
             </div>
-            <div class="col-12">
+            <div class=" container">
                 <div class="row">
                     <?php modelo_noticia($noticias_array); ?>
                 </div>

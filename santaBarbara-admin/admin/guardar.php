@@ -14,16 +14,24 @@ $id_inmo = 1;
 
 
 $nombre_ar = $_FILES['archivo']['name'];
+$limite_kb = 850;
 if($nombre_ar != ""){
     $tipo = $_FILES['archivo']['type'];
     $tamanio = $_FILES['archivo']['size'];
     $rutas = $_FILES['archivo']['tmp_name'];
     $nombre_archivo = str_replace(" ","",$nombre_ar);
     $destinos="archivo/".$nombre_archivo; 
-    
+    if($tamanio <= $limite_kb * 1024){
+        $nombre_archivo = str_replace(" ","",$nombre_ar);
+        $destinos="archivo/".$nombre_archivo; 
+    }else{
+        echo "Archivo demaciado Grande";
+    }
     $con = Conect();
         copy($rutas,$destinos);
 }
+
+
 
 $con = Conect();
     copy($ruta,$destino);

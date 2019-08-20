@@ -12,13 +12,20 @@ $comparador_fotos="fotos/";
 
 
 $nombre_ar = $_FILES['archivo']['name'];
+$limite_kb = 850;
 $tipo = $_FILES['archivo']['type'];
 $tamanio = $_FILES['archivo']['size'];
 $rutas = $_FILES['archivo']['tmp_name'];
 $nombre_archivo = str_replace(" ","-",$nombre_ar);
 $destinos="archivos/".$nombre_archivo;
 $comparador_archivo="archivos/";
-
+if($tamanio <= $limite_kb * 1024){
+    $nombre_archivo = str_replace(" ","",$nombre_ar);
+    $destinos="archivo/".$nombre_archivo; 
+}else{
+    echo "Archivo demaciado Grande";
+    
+}
 // No actualizar ni archivos ni noticias
 if($destino == $comparador_fotos && $destinos == $comparador_archivo){
     $con1 = Conect();

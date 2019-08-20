@@ -17,7 +17,7 @@ $page = 'Inmuebles' ?>
 <body>
     <?php include 'layout/menu.php' ?>
     <div id="" class="contaider-fluid body">
-        <div class="container" style="margin-top: 22px;">
+        <div class="container" style="margin-top: 60px;">
             <div class="row">
                 <div class="col-md-7 border border-secondary ">
                     <div class="col-md-12 d-flex bd-highlight">
@@ -40,28 +40,44 @@ $page = 'Inmuebles' ?>
                     <div>
                         <div class="col-md-12 col-12 col-lg-12">
 
-                            <div id="carouselExampleFade" class=" mt-3 carousel slide carousel-fade " data-ride="carousel">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <?php
                                     if (!isset($r['fotos']) || count($r['fotos']) == 0) {
-                                        echo 'div class="carousel-item ">
-                                            <img src="images/no_image.png" class="" alt="...">
+                                        echo 'div style="margin-bottom: -118px;" class="carousel-item ">
+                                            <img style="    object-fit: contain;
+                                            width: 100%;
+                                            height: 100%;" src="images/no_image.png" class="" alt="...">
                                             </div>
                                         ';
                                     } else {
-                                        echo '<div class="carousel-item active">
-                                            <img src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
+                                        echo '<div style="margin-bottom: -118px;" class="carousel-item active">
+                                            <img style="    object-fit: contain;
+                                            width: 100%;
+                                            height: 100%;" src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         for ($i = 1; $i < count($r['fotos']); $i++) {
-                                            echo '<div class="carousel-item">
-                                            <img src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
+                                            echo '<div style="margin-bottom: -118px;" class="carousel-item">
+                                            <img style="    object-fit: contain;
+                                            width: 100%;
+                                            height: 100%;" src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         }
                                     }; ?>
                                 </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
+                         
+                            
 
 
                         </div>
