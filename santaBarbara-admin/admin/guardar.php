@@ -12,12 +12,13 @@ $destino="fotos/".$nombre_foto;
 $fecha = date("Y-m-d");
 $id_inmo = 1;
 
+
 $nombre_ar = $_FILES['archivo']['name'];
 if($nombre_ar != ""){
     $tipo = $_FILES['archivo']['type'];
     $tamanio = $_FILES['archivo']['size'];
     $rutas = $_FILES['archivo']['tmp_name'];
-    $nombre_archivo = str_replace(" ","-",$nombre_ar);
+    $nombre_archivo = str_replace(" ","",$nombre_ar);
     $destinos="archivo/".$nombre_archivo; 
     
     $con = Conect();

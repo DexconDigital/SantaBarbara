@@ -16,7 +16,7 @@
         $noticia = $field['noticia'];
         $fecha_complete = $field['fecha'];
     }
-    $comparador='./SantaBarbara-Admin/admin-noticias/admin/';
+    $comparador='./SantaBarbara-Admin/admin/';
     $ruta_imagen='./SantaBarbara-Admin/admin/'.$imagen;
     $ruta_archivo= $comparador.$archivo;
 

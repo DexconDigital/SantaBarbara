@@ -24,7 +24,7 @@ require_once('controllers/detalle_noticiasController.php'); ?>
             </div>
             <div class="col-12">
                 <div class="col-12 p-0 text-center">
-                    <h3 class=""><?php echo $nombre ?></h3>
+                    <h3 style="color:red"><?php echo $nombre ?></h3>
                 </div>
                 <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2" style="text-align: justify;">
                  <?php echo $noticia ?>
@@ -36,7 +36,7 @@ require_once('controllers/detalle_noticiasController.php'); ?>
                         </div>
                         <div class="col-12 col-md-5">
                             <?php if ($ruta_archivo != $comparador.'null') {
-                                echo'<a href="'.$ruta_archivo.'"></a><i class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto';
+                                echo'<a style="color:black;" href="'.$ruta_archivo.'" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
                              } ?>
                         </div>
                     </div>
