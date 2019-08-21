@@ -13,23 +13,26 @@ require_once('controllers/detalle_noticiasController.php'); ?>
 </head>
 
 <body>
-<?php include 'layout/menu.php' ?>
+    <?php include 'layout/menu.php' ?>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 p-0 row">
-                <div class="col-2 col-md-2 col-lg-2" ></div>
-                <div class=" col-md-8 col-8 col-lg-8 w-100 contenedor-img text-center"  style="height: 100%;width: 100%;">
-                    <img style="object-fit: contain;width: 50%;height: 100%;" src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid">
+
+
+            <div class="col-11 col-md-6 col-lg-4">
+                <div class="card text-center" style="height: 100%; width: 100%;">
+                    <img style="object-fit: contain ;width: 100%;height: 100%;" src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid-top">
+                    <div class="col-12">
+                    </div>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2" ></div>
             </div>
+
             <div class="col-12">
                 <div class="col-12 p-0 text-center">
                     <h3 style="color:red"><?php echo $nombre ?></h3>
                 </div>
                 <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2" style="text-align: justify;">
-                 <?php echo $noticia ?>
+                    <?php echo $noticia ?>
                 </div>
                 <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 borde-detalle-inmueble">
                     <div class="row mb-4">
@@ -37,9 +40,9 @@ require_once('controllers/detalle_noticiasController.php'); ?>
                             Publicado el: <?php echo $fecha_complete; ?>
                         </div>
                         <div class="col-12 col-md-5">
-                            <?php if ($ruta_archivo != $comparador.'null') {
-                                echo'<a style="color:black;" href="'.$ruta_archivo.'" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
-                             } ?>
+                            <?php if ($ruta_archivo != $comparador . 'null') {
+                                echo '<a style="color:black;" href="' . $ruta_archivo . '" download="Noticias.pdf"><i style="color:red;" class="fas fa-file-pdf mr-3"></i>Descargar Archivo Adjunto</a>';
+                            } ?>
                         </div>
                     </div>
                 </div>
@@ -47,7 +50,7 @@ require_once('controllers/detalle_noticiasController.php'); ?>
         </div>
     </div>
     <footer>
-    <?php include 'layout/footer.php' ?>
+        <?php include 'layout/footer.php' ?>
     </footer>
 
     <?php include('layout/archivosfooter.php'); ?>
