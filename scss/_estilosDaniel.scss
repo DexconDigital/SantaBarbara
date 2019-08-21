@@ -597,11 +597,7 @@ figure{
     width: 31%;
     float: left;
 }
-.side-bar-agent{
-    width: 63%;
-    float: left;
-    margin-left: -3%;
-}
+
 #img_inmueble{
     height: auto;
     max-width: 100%;
@@ -868,6 +864,11 @@ figure{
     .p_detalle{
         font-size: 13px;
     }
+    .side-bar-agent{
+        width: 66%;
+        float: right;
+        
+    }
 }
  @media (min-width: 576px) { 
     // funcionar cuando la pantalla sea igual o mayor a mil pixeles
@@ -1007,12 +1008,16 @@ figure{
     .precio{
         font-size: 17fpx;
         margin-top: 2px;
-        margin-left: 25px;
+        margin-left: 55px;
     }
     .p_detalle{
         font-size: 19px;
     }
-    
+    .side-bar-agent{
+        width: 66%;
+        float: right;
+        
+    }
     
  }
 
@@ -1069,5 +1074,10 @@ figure{
     .precio{
         margin-left: 14px;
         margin-top: 12px;
+    }
+    .side-bar-agent{
+        width: 63%;
+        float: left;
+        margin-left: -3%;
     }
  }

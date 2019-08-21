@@ -17,10 +17,12 @@ require_once('controllers/detalle_noticiasController.php'); ?>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 p-0">
-                <div class="w-100 contenedor-img text-center mb-4">
-                    <img src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid">
+            <div class="col-12 p-0 row">
+                <div class="col-2 col-md-2 col-lg-2" ></div>
+                <div class=" col-md-8 col-8 col-lg-8 w-100 contenedor-img text-center"  style="height: 100%;width: 100%;">
+                    <img style="object-fit: contain;width: 50%;height: 100%;" src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid">
                 </div>
+                <div class="col-2 col-md-2 col-lg-2" ></div>
             </div>
             <div class="col-12">
                 <div class="col-12 p-0 text-center">

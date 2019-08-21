@@ -588,11 +588,6 @@ figure {
   width: 31%;
   float: left; }
 
-.side-bar-agent {
-  width: 63%;
-  float: left;
-  margin-left: -3%; }
-
 #img_inmueble {
   height: auto;
   max-width: 100%;
@@ -841,7 +836,11 @@ a:hover {
     margin-top: 5px; }
 
   .p_detalle {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .side-bar-agent {
+    width: 66%;
+    float: right; } }
 @media (min-width: 576px) {
   #targeta {
     overflow: hidden;
@@ -966,10 +965,14 @@ a:hover {
   .precio {
     font-size: 17fpx;
     margin-top: 2px;
-    margin-left: 25px; }
+    margin-left: 55px; }
 
   .p_detalle {
-    font-size: 19px; } }
+    font-size: 19px; }
+
+  .side-bar-agent {
+    width: 66%;
+    float: right; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -1019,7 +1022,12 @@ a:hover {
 
   .precio {
     margin-left: 14px;
-    margin-top: 12px; } }
+    margin-top: 12px; }
+
+  .side-bar-agent {
+    width: 63%;
+    float: left;
+    margin-left: -3%; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;

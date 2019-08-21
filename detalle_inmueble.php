@@ -19,7 +19,7 @@ $page = 'Inmuebles' ?>
     <div id="" class="contaider-fluid body">
         <div class="container" style="margin-top: 60px;">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-12 col-lg-7" >
                     <div class="col-md-12 d-flex bd-highlight">
                         <div class="col-6 mr-auto bd-highlight">
                             <h2 class="tipo_inm"><Strong><?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?></Strong></h2>
@@ -44,24 +44,24 @@ $page = 'Inmuebles' ?>
                                 <div class="carousel-inner">
                                     <?php
                                     if (!isset($r['fotos']) || count($r['fotos']) == 0) {
-                                        echo 'div style="margin-bottom: -118px;" class="carousel-item ">
+                                        echo 'div  class="carousel-item ">
                                             <img style="    object-fit: contain;
-                                            width: 100%;
-                                            height: 100%;" src="images/no_image.png" class="" alt="...">
+                                            width: 50%;
+                                            " src="images/no_image.png" class="" alt="...">
                                             </div>
                                         ';
                                     } else {
-                                        echo '<div style="margin-bottom: -118px;" class="carousel-item active">
+                                        echo '<div  class="carousel-ite active">
                                             <img style="    object-fit: contain;
-                                            width: 100%;
-                                            height: 100%;" src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
+                                            width: 50%;
+                                            " src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         for ($i = 1; $i < count($r['fotos']); $i++) {
-                                            echo '<div style="margin-bottom: -118px;" class="carousel-item">
+                                            echo '<div  class="carousel-item">
                                             <img style="    object-fit: contain;
-                                            width: 100%;
-                                            height: 100%;" src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
+                                            width: 50%;
+                                            " src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         }
@@ -117,12 +117,12 @@ $page = 'Inmuebles' ?>
                     </div>
                 </div>
 
-                <div class="col-lg-5 col-md-5 col-12 ">
+                <div class="col-lg-5 col-md-12 col-12 ">
 
                     <div class="search-porperties text-left">
                         <h6 class="sidebar-title text-center"> Encuentra tu inmueble ideal</h6>
                         <form class="search-box">
-                            <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="Codigo">
+                            <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="Código">
                             <select id="ciudad_buscar" class="form-control rounded-0">
                                 <option selected>Ciudad</option>
                             </select>
@@ -135,8 +135,8 @@ $page = 'Inmuebles' ?>
                             <select id="tipo_gestion_buscar" class="form-control rounded-0">
                                 <option selected>Tipo de gestión</option>
                             </select>
-                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Area Minima">
-                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Area Maxima">
+                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Area Mínima">
+                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Area Máxima">
                             <button type="submit" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
                         </form>
                     </div>
