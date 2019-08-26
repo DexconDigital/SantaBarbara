@@ -42,7 +42,6 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                         <header>Garaje:</header>
                         <figure>' . $api['garaje'] . '</figure>
                       </li>
-                      
                     </ul>
                   </div>
                 </a>

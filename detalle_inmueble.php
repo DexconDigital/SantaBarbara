@@ -19,12 +19,11 @@ $page = 'Inmuebles' ?>
     <div id="" class="contaider-fluid body">
         <div class="container" style="margin-top: 60px;">
             <div class="row">
-                <div class="col-md-12 col-lg-7" >
+                <div class="col-md-12 col-lg-7">
                     <div class="col-md-12 d-flex bd-highlight">
                         <div class="col-6 mr-auto bd-highlight">
                             <h2 class="tipo_inm"><Strong><?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?></Strong></h2>
                             <h5 class="p_detalle"><?php echo $r['barrio'] . ', ' . $r['ciudad'] ?></h5>
-
                         </div>
                         <div class="col-6 bd-highlight precio" style="color: red;">
                             <?php if ($r['Gestion'] == 'Arriendo') {
@@ -76,11 +75,25 @@ $page = 'Inmuebles' ?>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-                         
-                            
+
+
 
 
                         </div>
+                        <div class="col-md-12 row  ">
+                            <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
+                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a></a><span class="letra_booton">Imprimir ficha</span></button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-6 col-sm-1 mr-2 icon_foot row">
+                                <h5 class="compartir">Compartir por :</h5>
+                            </div>
+                            <div class="col-md-2 row  d-flex flex-row-reverse bd-highlight container_icon_compartir">
+                                <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot  p-2 row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.dimensionesempresariales.com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.dimensionesempresariales.com.co%2Fdetalle_inmueble.php%3Fco%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                            </div>
+
+                        </div>
+
                         <div id="referencia_inmueble" class="col-md-12  ">
                             <h4 class="property-single-detail-title"><strong>Descripción</strong></h4>
                             <p style="text-align: justify;"><?php echo $r['descripcionlarga']; ?></p>

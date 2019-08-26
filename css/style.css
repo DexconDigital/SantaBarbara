@@ -840,7 +840,25 @@ a:hover {
 
   .side-bar-agent {
     width: 66%;
-    float: right; } }
+    float: right; }
+
+  .compartir_boton {
+    margin-top: 18px;
+    padding: 0%; }
+
+  .letra_booton {
+    font-size: 14px; }
+
+  .contenerdor_booton_conta {
+    text-align: center; }
+
+  .icon_foot {
+    font-size: 17px;
+    padding: 27px; }
+
+  .container_icon_compartir {
+    margin-top: -64px;
+    margin-left: 29px; } }
 @media (min-width: 576px) {
   #targeta {
     overflow: hidden;
@@ -950,6 +968,13 @@ a:hover {
     background-color: #ffffff;
     padding: 0px 40px;
     position: relative; }
+
+  .compartir {
+    margin-top: 16px;
+    margin-left: 39px; }
+
+  .container_icon_compartir {
+    padding: 5px; }
 
   .property-title h3 {
     font-size: 22px;

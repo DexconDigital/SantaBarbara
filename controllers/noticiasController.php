@@ -5,7 +5,7 @@ require_once("conexion.php");
 $link = Conect();
 $array = array();
 
-$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 1 order by id desc";
+$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 7 order by id desc";
 $result = mysqli_query($link, $sql) or die(mysqli_error($link));
 while ($field = mysqli_fetch_array($result)) {
     $nombre = $field['nombre'];

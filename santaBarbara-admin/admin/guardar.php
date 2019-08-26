@@ -10,7 +10,7 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $nombre_foto = str_replace(" ","",$foto);
 $destino="fotos/".$nombre_foto;
 $fecha = date("Y-m-d");
-$id_inmo = 1;
+$id_inmo = 7;
 
 
 $nombre_ar = $_FILES['archivo']['name'];
