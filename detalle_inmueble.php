@@ -11,7 +11,7 @@ $page = 'Inmuebles' ?>
 
     <?php include 'layout/archivosheader.php' ?>
     <link rel="stylesheet" href="css/carousel.inmueble.css">
-    <title>Clientes</title>
+    <title>Detalle | Inmueble</title>
 </head>
 
 <body>
