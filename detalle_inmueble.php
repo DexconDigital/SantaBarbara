@@ -112,12 +112,33 @@ $page = 'Inmuebles' ?>
                             }
                             ?>
                         </div>
-                        <div class="col-md-12">
-                            <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasExternas']) > 0) {
+                                echo '
+                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
+                                            <ul">';
+                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>';
+                            }
+                            ?>
                         </div>
-                        <div class="col-12  mb-3">
-                        <h4 class="property-single-detail-title"><strong>Video</strong></h4>
-                          <iframe class="tamaño_video" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                echo '
+                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
+                                            <ul">';
+                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>';
+                            }
+                            ?>
                         </div>
                         <div class="col-md-12  p-0">
                             <div class="row">
