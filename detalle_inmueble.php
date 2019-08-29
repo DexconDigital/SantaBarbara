@@ -40,26 +40,26 @@ $page = 'Inmuebles' ?>
                         <div class="col-md-12 col-12 col-lg-12">
 
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <?php
+                                <div class="carousel-inner tamaño_cont_carrousel">
+                                <?php
                                     if (!isset($r['fotos']) || count($r['fotos']) == 0) {
                                         echo 'div  class="carousel-item ">
-                                            <img style="    object-fit: contain;
-                                            width: 50%;
+                                            <img style="    object-fit: cover;
+                                            width: 100%;
                                             " src="images/no_image.png" class="" alt="...">
                                             </div>
                                         ';
                                     } else {
-                                        echo '<div  class="carousel-ite active">
-                                            <img style="    object-fit: contain;
-                                            width: 50%;
+                                        echo '<div  class="carousel-item active">
+                                            <img style="    object-fit: cover;
+                                            width: 100%;
                                             " src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         for ($i = 1; $i < count($r['fotos']); $i++) {
                                             echo '<div  class="carousel-item">
-                                            <img style="    object-fit: contain;
-                                            width: 50%;
+                                            <img style="    object-fit: cover;
+                                            width: 100%;
                                             " src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
@@ -115,14 +115,17 @@ $page = 'Inmuebles' ?>
                         <div class="col-md-12">
                             <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
                         </div>
-                        <div class="col-12">
-                            <!-- videos -->
+                        <div class="col-12  mb-3">
+                        <h4 class="property-single-detail-title"><strong>Video</strong></h4>
+                          <iframe class="tamaño_video" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col-md-12  p-0">
                             <div class="row">
                                 <div style="width: 100%;">
                                     <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="" height="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                                 </div>
+                                
+                    
                             </div>
 
                         </div>

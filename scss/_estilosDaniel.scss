@@ -616,6 +616,37 @@ figure{
     margin-bottom: 16px;
     color: #ffffff;
 }
+.tamaño_cont_carrousel{
+    height: 520px;
+}
+.page-item.active .page-link{
+    z-index: 1;
+    color: #fff;
+    background-color: #ed4c48;
+    border-color: #ef5e5a;
+
+}
+.page-link{
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.tamaño_video{
+    width: inherit;
+}
+.color_politicas{
+    color: #ef5e5a;
+}
+.page-link:hover{
+    border-color: #ef5e5a;
+    color: red;
+}
+
 .color_zona_cliente{
     color: black;
 }
