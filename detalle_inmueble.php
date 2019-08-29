@@ -82,7 +82,7 @@ $page = 'Inmuebles' ?>
                         </div>
                         <div class="col-md-12 row  ">
                             <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
-                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a></a><span class="letra_booton">Imprimir ficha</span></button>
+                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=813-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
                             </div>
                             <div class="col-md-4 col-lg-4 col-6 col-sm-1 mr-2 icon_foot row">
                                 <h5 class="compartir">Compartir por :</h5>
@@ -125,7 +125,7 @@ $page = 'Inmuebles' ?>
                                 echo  '</ul>';
                             }
                             ?>
-                            <<<<<<< HEAD </div> <div class="col-md-12" style="margin-bottom: 12px;;">
+                           </div> <div class="col-md-12" style="margin-bottom: 12px;;">
                                 <?php
                                 if (count($r['caracteristicasAlrededores']) > 0) {
                                     echo '
@@ -154,23 +154,9 @@ $page = 'Inmuebles' ?>
                             </div>
                                 ';
                             } ?>
-                            =======
+                            
                         </div>
-                        <div class="col-md-12" style="margin-bottom: 12px;;">
-                            <?php
-                            if (count($r['caracteristicasAlrededores']) > 0) {
-                                echo '
-                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
-                                            <ul">';
-                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                    echo '<li>' . $caracteristicas . '</li>';
-                                }
-                                echo  '</ul>';
-                            }
-                            ?>
-                            >>>>>>> da0b170f7c2fe735c8883253573f2091b05d8d23
-                        </div>
+                        
                         <div class="col-md-12  p-0">
                             <div class="row">
                                 <div style="width: 100%;">

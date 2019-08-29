@@ -407,6 +407,7 @@ figure{
 .data .counter-wrapper h2, .data .counter-wrapper p{
     margin-bottom: 0px;
 }
+
 .container2{
     padding-right: 15px;
     padding-left: 15px;
@@ -1012,6 +1013,9 @@ figure{
     .tipo_inm{
         font-size: 24px;
     }
+    .color_blanco_url{
+        color: white;
+    }
     
  }
 
@@ -1051,7 +1055,7 @@ figure{
     }
     .compartir{
         margin-top: 16px;
-        margin-left: 39px;
+        margin-left: 32px;
     }
     .container_icon_compartir{
         padding: 5px;
@@ -1146,6 +1150,10 @@ figure{
         width: 63%;
         float: left;
         margin-left: -3%;
+    }
+    .color_blanco_url{
+        color: white;
+        font-size: 13px;
     }
     
  }
