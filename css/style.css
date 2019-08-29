@@ -976,6 +976,9 @@ a:hover {
     font-size: 24px; }
 
   .color_blanco_url {
+    color: white; }
+
+  .color_blanco_url:hover {
     color: white; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
@@ -1097,7 +1100,8 @@ a:hover {
 
   .color_blanco_url {
     color: white;
-    font-size: 13px; } }
+    font-size: 13px;
+    color: white; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;

@@ -80,16 +80,25 @@ $page = 'Inmuebles' ?>
 
 
                         </div>
+                        <!--
+                        <div class=" col-md-12 row border border-secondary">
+                          <div class="col-md-6"><a > </a> Código:</div>
+                          <div class="col-md-6"><a ><i class="fas fa-ruler"></i></a> Área: < ?php $r[''] ?></div>
+                          <div class="col-md-4"><a ><i class="fas fa-bed"></i> </a> Alcobas</div>
+                          <div class="col-md-4"><a ><i class="fas fa-bath"></i> </a> Baños</div>
+                          <div class="col-md-4"><a ><i class="fa fa-car icon_noti"></i> </a> Garajes</div>
+                        </div>
+                                -->
                         <div class="col-md-12 row  ">
                             <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
-                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=813-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
+                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=60-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
                             </div>
                             <div class="col-md-4 col-lg-4 col-6 col-sm-1 mr-2 icon_foot row">
                                 <h5 class="compartir">Compartir por :</h5>
                             </div>
                             <div class="col-md-2 row  d-flex flex-row-reverse bd-highlight container_icon_compartir">
-                                <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot  p-2 row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.dimensionesempresariales.com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
-                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.dimensionesempresariales.com.co%2Fdetalle_inmueble.php%3Fco%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot  p-2 row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.inmobiliariasantabarbara.com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.inmobiliariasantabarbara.com.co%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
                             </div>
 
                         </div>
@@ -125,19 +134,20 @@ $page = 'Inmuebles' ?>
                                 echo  '</ul>';
                             }
                             ?>
-                           </div> <div class="col-md-12" style="margin-bottom: 12px;;">
-                                <?php
-                                if (count($r['caracteristicasAlrededores']) > 0) {
-                                    echo '
+                        </div>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                echo '
                                             <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
                                             <ul">';
-                                    for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                        $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                        echo '<li>' . $caracteristicas . '</li>';
-                                    }
-                                    echo  '</ul>';
+                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
                                 }
-                                ?>
+                                echo  '</ul>';
+                            }
+                            ?>
                         </div>
                         <div class="col-12  mb-3">
                             <?php if ($r['video'] != "") {
@@ -154,7 +164,7 @@ $page = 'Inmuebles' ?>
                             </div>
                                 ';
                             } ?>
-                            
+
                         </div>
                         
                         <div class="col-md-12  p-0">
