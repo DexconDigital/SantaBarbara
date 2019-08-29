@@ -54,7 +54,7 @@
     </a>
   </div>
 
-  <button  class="navbar-toggler boton_nogg" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler boton_nogg" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
@@ -90,7 +90,7 @@
       <li class="nav-item <?php if ($page == 'Noticias') {
                             echo 'active';
                           } ?>">
-        <a class="nav-link" href="noticias.php">Noticias</a>
+        <a class="nav-link" href="noticia.php">Noticias</a>
       </li>
       <li class="nav-item <?php if ($page == 'Contacto') {
                             echo 'active';
