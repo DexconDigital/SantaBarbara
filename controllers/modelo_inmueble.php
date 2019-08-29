@@ -75,8 +75,9 @@ function modelo_inmueble2($r)
     $imagen = existeImagen(($r[$i]['foto1']));
     $codigo = str_ireplace("60-", "", $r[$i]['Codigo_Inmueble']);
     $api = $r[$i];
+    
     $descripcion = $api['descripcionlarga'];
-    $limite_de_cadena = 150;
+    $limite_de_cadena = 10;
     // recortar cadena
     if (strlen($descripcion) <= $limite_de_cadena) {
       $descripcion = substr($descripcion, 0, $limite_de_cadena) . '...';
