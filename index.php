@@ -156,27 +156,35 @@ $page = 'Inicio' ?>
 
         <div class="container mt-5 ">
           <div class="card-deck">
-            <div class="card" id="cad">
-              <?php $r = $imagenes['banner_clientes_home']['propietarios'];
-              echo '
-               <img src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
+
+            <div class="card contenedor_img_zona" id="cad">
+              <a href="" target="_blank">
+                <?php $r = $imagenes['banner_clientes_home']['propietarios'];
+                echo '
+               <img  src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
+              </a>
               <div>
-                <h3 class="text-center">Propietarios</h3>
+                <h3 class="text-center"><a class=" color_zona_cliente " href="" target="_blank">Propietarios</a></h3>
               </div>
 
             </div>
-            <div class="card" id="cad">
-              <?php $r = $imagenes['banner_clientes_home']['arrendatarios'];
-              echo '
+
+            <div class="card contenedor_img_zona" id="cad">
+              <a href="" target="_blank">
+                <?php $r = $imagenes['banner_clientes_home']['arrendatarios'];
+                echo '
                <img src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
-              <h3 class="text-center">Arrendatarios</h3>
+              </a>
+              <h3 class="text-center"> <a class=" color_zona_cliente " target="_blank" href="">Arrendatarios</a></h3>
             </div>
 
-            <div class="card" id="cad">
-              <?php $r = $imagenes['banner_clientes_home']['pagos_pse'];
-              echo '
+            <div class="card contenedor_img_zona" id="cad">
+              <a href="" target="_blank">
+                <?php $r = $imagenes['banner_clientes_home']['pagos_pse'];
+                echo '
                <img style="object-fit: contain;" src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
-              <h3 class="text-center">Pagos en Línea</h3>
+              </a>
+              <h3 class="text-center"> <a class=" color_zona_cliente " href="" target="_blank">Pagos en Línea</a></h3>
             </div>
           </div>
         </div>

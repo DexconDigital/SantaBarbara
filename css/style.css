@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/Lato-Regular.ttf"); }
+  src: url("../fonts/DidactGothic-Regular.ttf"); }
 @font-face {
   font-family: 'century-gotic';
   src: url("../fonts/DidactGothic-Regular.ttf"); }
@@ -604,6 +604,12 @@ figure {
 .daily-email h4 {
   margin-bottom: 16px;
   color: #ffffff; }
+
+.color_zona_cliente {
+  color: black; }
+
+.contenedor_img_zona {
+  height: 284px; }
 
 .daily-email input {
   margin-bottom: 13px; }
