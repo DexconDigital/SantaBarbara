@@ -40,8 +40,8 @@ $page = 'Inmuebles' ?>
                         <div class="col-md-12 col-12 col-lg-12">
 
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner tamaño_cont_carrousel">
-                                <?php
+                                <div id="container_tamaño_img" class="carousel-inner tamaño_cont_carrousel ">
+                                    <?php
                                     if (!isset($r['fotos']) || count($r['fotos']) == 0) {
                                         echo 'div  class="carousel-item ">
                                             <img style="    object-fit: cover;
@@ -79,6 +79,7 @@ $page = 'Inmuebles' ?>
 
 
 
+
                         </div>
                         <div class="col-md-12 row  ">
                             <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
@@ -112,20 +113,59 @@ $page = 'Inmuebles' ?>
                             }
                             ?>
                         </div>
-                        <div class="col-md-12">
-                            <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasExternas']) > 0) {
+                                echo '
+                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
+                                            <ul">';
+                                for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>';
+                            }
+                            ?>
                         </div>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                echo '
+                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
+                                            <ul">';
+                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>';
+                            }
+                            ?>
+                        </div>
+
+
                         <div class="col-12  mb-3">
-                        <h4 class="property-single-detail-title"><strong>Video</strong></h4>
-                          <iframe class="tamaño_video" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <?php if ($r['video'] != "") {
+                                echo
+                                    '<div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Video</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                        <iframe src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                ';
+                            } ?>
                         </div>
                         <div class="col-md-12  p-0">
                             <div class="row">
                                 <div style="width: 100%;">
                                     <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="" height="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                                 </div>
-                                
-                    
+
+
                             </div>
 
                         </div>

@@ -4,7 +4,7 @@ require_once("conexion.php");
 include 'layout/layout.php';
 $id=$_GET["id"];
             $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 1";
+            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 7";
             $sql=mysqli_query($con,$qry);
             $res=  mysqli_fetch_array($sql) ; 
 ?>

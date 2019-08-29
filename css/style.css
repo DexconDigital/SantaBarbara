@@ -1032,7 +1032,10 @@ a:hover {
 
   .side-bar-agent {
     width: 66%;
-    float: right; } }
+    float: right; }
+
+  #container_tamaño_img {
+    height: 510px; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
