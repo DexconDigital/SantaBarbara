@@ -71,7 +71,7 @@ body.p{
 .property .precio{
     position: absolute;
     top: 33px;
-    left: -28px;
+    left: -75px;
     color: #ffffff;
     padding: 1px 60px;
     transform: rotate(-42deg);
@@ -90,6 +90,19 @@ body.p{
 
 figure{
     margin:0 0;
+}
+.color_you{
+    color: red;
+}
+.color_insta{
+    color: #cf3c6d;
+}
+.color_face{
+    color: #5172b9;
+    
+}
+.color_tw{
+    color: #00aced;
 }
 .property {
     margin-bottom: 10px;
@@ -514,20 +527,16 @@ figure{
     font-size: 60%;
     margin-top: 10px;   
 }
-.property-title h3{
-    font-size: 22px;
-    margin: -33px 0px 5px 407px;
-    color: red;
-}
+
 .sidebar-title{
     padding: 18px 20px 20px 20px;
 }
 .sidebar-title{
-    background-color: #1a1a1a;
+    background-color: #dc3545;
     margin: 0px;
     color: #ffffff;
     font-size: 20px;
-    padding: 20px;
+    padding: 13px;
 }
 .search-box{
     padding: 20px;
@@ -572,11 +581,11 @@ figure{
 }
 .sidebar-title{
     padding: 18px 20px 20px 20px;
-    background-color: #1a1a1a;
+    background-color: #dc3545;
     margin: 0px;
     color: #ffffff;
     font-size: 20px;
-    padding: 20px;
+    padding: 13px;
 }
 .side-bar-agent-detail{
     display: inline-block;
@@ -588,11 +597,7 @@ figure{
     width: 31%;
     float: left;
 }
-.side-bar-agent{
-    width: 63%;
-    float: left;
-    margin-left: -3%;
-}
+
 #img_inmueble{
     height: auto;
     max-width: 100%;
@@ -600,14 +605,22 @@ figure{
     border: 0px;
     width: 100%;
 }
+
 .daily-email{
-    padding: 30px 20px 40px 19px;
+    padding: 14px 15px 18px 9px;
     color: #ffffff;
     background-color: #dc3545;
+    margin-bottom: 9px;
 }
 .daily-email h4{
     margin-bottom: 16px;
     color: #ffffff;
+}
+.color_zona_cliente{
+    color: black;
+}
+.contenedor_img_zona{
+    height: 284px;
 }
 .daily-email input{
     margin-bottom: 13px;
@@ -637,9 +650,7 @@ figure{
     margin-left: 25%;
     width: 50%;
 }
-#contenido_total{
-    margin-top: 80px;
-}
+
 #contenedor_contacto{
     margin-top: 20px;
 }
@@ -834,6 +845,7 @@ figure{
         display: block;
         
     }
+    
     .fifth-banner-wrapper h1{
         font-size: 23px;
         font-weight: 600;
@@ -848,7 +860,40 @@ figure{
     .style_info_cont{
         max-width: 10.666667%;
     }
-    
+    .tipo_inm{
+        font-size: 24px;
+    }
+    .precio{
+        font-size: 18px;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+    .p_detalle{
+        font-size: 13px;
+    }
+    .side-bar-agent{
+        width: 66%;
+        float: right;
+        
+    }
+    .compartir_boton{
+        margin-top: 18px;
+        padding: 0%;
+    }
+    .letra_booton{
+        font-size: 14px;
+    }
+    .contenerdor_booton_conta {
+        text-align: center;
+    }
+    .icon_foot{
+    font-size: 17px;
+    padding: 27px;
+    }
+    .container_icon_compartir{
+        margin-top: -64px;
+        margin-left: 29px;
+    }
 }
  @media (min-width: 576px) { 
     // funcionar cuando la pantalla sea igual o mayor a mil pixeles
@@ -920,7 +965,7 @@ figure{
         padding: 0rem;
     }
     .correo_style{
-        margin-left: -12px;
+        margin-left: -16px;
         max-width: 110%;
     }
     .correo_conter{
@@ -928,6 +973,12 @@ figure{
     }
     .container_ico{
         margin-top: 8px;
+    }
+    .precio{
+        margin-left: 31px;
+    }
+    .tipo_inm{
+        font-size: 24px;
     }
     
  }
@@ -966,8 +1017,39 @@ figure{
       
 
     }
-   
+    .compartir{
+        margin-top: 16px;
+        margin-left: 39px;
+    }
+    .container_icon_compartir{
+        padding: 5px;
+    }
+    .property-title h3{
+        font-size: 22px;
+        margin: -33px 0px 5px 407px;
+        color: red;
+    }
+    .precio{
+        margin-left: 31px;
+        
+    }
+    .tipo_inm{
+        font-size: 28px;
+    }
     
+    .precio{
+        font-size: 17fpx;
+        margin-top: 2px;
+        margin-left: 55px;
+    }
+    .p_detalle{
+        font-size: 19px;
+    }
+    .side-bar-agent{
+        width: 66%;
+        float: right;
+        
+    }
     
  }
 
@@ -993,7 +1075,7 @@ figure{
     }
     .venta_container{
         text-align: justify;
-        padding: 17px;
+        padding: 29px;
     }
     #cuadro_cards{
         overflow: hidden;
@@ -1015,5 +1097,19 @@ figure{
         position: relative;
         margin: 60px 0px 97px;
         left: -100px;
+    }
+    .property-title h3{
+        font-size: 22px;
+        margin: -33px 0px 5px 407px;
+        color: red;
+    }
+    .precio{
+        margin-left: 14px;
+        margin-top: 12px;
+    }
+    .side-bar-agent{
+        width: 63%;
+        float: left;
+        margin-left: -3%;
     }
  }

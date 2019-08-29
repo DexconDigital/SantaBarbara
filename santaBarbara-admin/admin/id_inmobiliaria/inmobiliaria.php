@@ -1,3 +1,3 @@
 <?php 
-    $id_inmobiliaria = 4;
+    $id_inmobiliaria = 7;
 ?>

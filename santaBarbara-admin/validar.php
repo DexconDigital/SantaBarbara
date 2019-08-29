@@ -1,16 +1,16 @@
 <?php
 
 require("admin/conexion.php");
-require('admin/id_inmobiliaria/inmobiliaria.php');
+
 
 $con=conect();
 
 
 $nombre=$_REQUEST["user"];
 $password=$_REQUEST["pass"];
+$id_inmobiliaria = 7;
 
-
-$qry="SELECT usuario FROM usuarios WHERE usuario ='$nombre' and password ='$password' and id_inmobiliaria1 = '$id_inmobiliaria'";
+$qry="SELECT * FROM usuarios WHERE usuario ='$nombre' and password ='$password' and id_inmobiliaria1 = '$id_inmobiliaria'";
 $sql=mysqli_query($con,$qry);
 
 $row = mysqli_fetch_row($sql);

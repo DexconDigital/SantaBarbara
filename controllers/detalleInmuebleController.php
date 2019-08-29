@@ -22,6 +22,8 @@ $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
 
 
+
+
 function similares($ciudad, $inmueble)
 {
     $ch = curl_init();

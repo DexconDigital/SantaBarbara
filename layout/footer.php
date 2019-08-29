@@ -13,10 +13,10 @@
               
               <li class=" col-lg-12 col-md-12 col-12 ">
                 <div class=" col-md-12 row col-sm-2" style="justify-content: center;">
-                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><i class="fab fa-facebook-f "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><i class="fab fa-twitter "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"> <i class="fab fa-instagram "></i> </div>
-                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"> <i class="fab fa-youtube "></i>  </div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href="<?php echo $redes_sociales ['facebook']['link'] ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales ['twiter']['link'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales ['instagram']['link'] ?>" target="_blank"><i class="fab fa-instagram color_insta "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href="<?php echo $redes_sociales ['youtube']['link'] ?>" target="_blank"><img src="images/youtube.png" alt=""><i class="fab fa-youtube color_you"></i> </a></div>
                 </div>
               </li>
             </ul>
@@ -28,8 +28,8 @@
               <li class="li_foot"><a class="color_a nav-link" href="quienes_somos.php">Quiénes Somos</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="servicios.php">Servicios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="inmuebles.php">Inmuebles</a></li>
-              <li class="li_foot"><a class="color_a nav-link" href="">Arrendatarios</a></li>
-              <li class="li_foot"><a class="color_a nav-link" href="">Propietarios</a></li>
+              <li class="li_foot"><a class="color_a nav-link" href=""  target="_blank">Arrendatarios</a></li>
+              <li class="li_foot"><a class="color_a nav-link" href=""  target="_blank">Propietarios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="noticias.php">Noticias</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="contactos.php">Contáctanos</a></li>
             </ul>

@@ -99,7 +99,7 @@ $(document).ready(function () {
             var gestion_resultados = " ";
             for (var i = 0; i < gestion.length; i++) {
                 gestion_resultados +=
-                '<option value="' + gestion[i].idGestion + '">' +
+                 '<option value="' + gestion[i].idGestion + '">' +
                     gestion[i].Nombre +
                     '</option>';
             }

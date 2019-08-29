@@ -1,6 +1,6 @@
 <?php
-$imagen_login = "./admin/images/logo_blanco.jpg";
-$color_fondo = "13223f";
+$imagen_login = "./admin/images/logo.png";
+$color_fondo = "";
 
 ?>
 
@@ -13,18 +13,40 @@ $color_fondo = "13223f";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <style>
         .altologin {
             height: 100vh;
         }
 
         .btn-success {
-            background-color: #13223f;
-            border-color: #13223f;
+            background-color: #737272;
+            border-color: #737272;
         }
+
         .btn-success:hover {
-            background-color: #112540;
-            border-color: #112540;
+            background-color: #e5120b;
+            border-color: #e5120b;
+        }
+
+        body {
+            background-image: url(../img/banner_noticias.png);
+            background-attachment: fixed;
+            height: 700px;
+            margin: 0px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            position: relative;
+        }
+
+        .form-control:focus {
+            border-color: #FF0000;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+        }
+        .img_container{
+            padding: 27px;
         }
     </style>
 </head>
@@ -32,12 +54,12 @@ $color_fondo = "13223f";
 <body>
     <div class="container-fluid altologin">
         <div class="row justify-content-md-center altologin" style="background:#<?php echo $color_fondo ?>">
-            <div class="col-md-4 align-self-center">
+            <div class="col-md-4 col-12 align-self-center">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header img_container">
                         <div class="row justify-content-center">
-                            <div class="col-10">
-                                <img src="<?php echo $imagen_login ?>" alt="..." class="" style="width:300px; height:auto;">
+                            <div class="col-12 col-md-12 col-lg-10">
+                                <img style="    object-fit: contain;height: 100%;width: 100%;" src="<?php echo $imagen_login ?>" alt="..." class="" style="width:300px; height:auto;">
                             </div>
                         </div>
 
@@ -65,9 +87,9 @@ $color_fondo = "13223f";
                                     <button type="submit" class="btn btn-success btn-md btn-block">
                                         Ingresar
                                     </button>
-                                <div class="col-6 offset-2"></div>
+                                    <div class="col-6 offset-2"></div>
                                     <a class="btn btn-success btn-md btn-block mt-2" href="../">
-                                            Incio
+                                        Incio
                                     </a>
                                 </div>
                             </div>

@@ -1,18 +1,17 @@
 <?php $page = "Lista de Noticias";
 require("seguridad.php");
 require_once("conexion.php");
-require_once('id_inmobiliaria/inmobiliaria.php');
 include 'layout/layout.php';
 $id=$_GET["id"];
             $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = $id_inmobiliaria";
+            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 1";
             $sql=mysqli_query($con,$qry);
             $res=  mysqli_fetch_array($sql) ; 
 ?>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-9">
-            <h2 class="text-center">Agregar Noticia</h2>
+        <div class="col-9" style=" margin-top: 27px;">
+            <h2 class="text-center">Editar Noticia</h2>
             <form method="post" action="uptade.php" enctype="multipart/form-data">
             <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                 <div class="form-group row">

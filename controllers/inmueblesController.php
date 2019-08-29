@@ -14,6 +14,7 @@ $gestion = 0;
 $inmueble = 0;
 $precio_minimo = 0;
 $precio_maximo = 0;
+$area_minimo = 0;
 
 if(isset($_GET['pag'])){
     $pag = $_GET['pag'];
@@ -39,6 +40,7 @@ $ch = curl_init();
     curl_close($ch);
     $api = json_decode($result, true);
 
+    
 function listar_inmuebles($r)
 {
     if (is_array($r)) {

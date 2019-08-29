@@ -1,6 +1,5 @@
 <?php
 require_once 'conexion.php';
-require_once('id_inmobiliaria/inmobiliaria.php');
 
 $nombre=$_REQUEST["titulo"];
 $descripcion=$_REQUEST["descripcion"];
@@ -11,19 +10,28 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $nombre_foto = str_replace(" ","",$foto);
 $destino="fotos/".$nombre_foto;
 $fecha = date("Y-m-d");
-$id_inmo = $id_inmobiliaria;
+$id_inmo = 7;
+
 
 $nombre_ar = $_FILES['archivo']['name'];
+$limite_kb = 850;
 if($nombre_ar != ""){
     $tipo = $_FILES['archivo']['type'];
     $tamanio = $_FILES['archivo']['size'];
     $rutas = $_FILES['archivo']['tmp_name'];
-    $nombre_archivo = str_replace(" ","-",$nombre_ar);
+    $nombre_archivo = str_replace(" ","",$nombre_ar);
     $destinos="archivo/".$nombre_archivo; 
-    
+    if($tamanio <= $limite_kb * 1024){
+        $nombre_archivo = str_replace(" ","",$nombre_ar);
+        $destinos="archivo/".$nombre_archivo; 
+    }else{
+        echo "Archivo demaciado Grande";
+    }
     $con = Conect();
         copy($rutas,$destinos);
 }
+
+
 
 $con = Conect();
     copy($ruta,$destino);

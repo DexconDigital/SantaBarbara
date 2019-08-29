@@ -1,7 +1,8 @@
-<?php require 'variables/variables.php';
-$page = 'Noticias' ?>
+<?php $page = 'Noticias';
+require 'variables/variables.php';
+require 'controllers/noticiasController.php' ?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -15,39 +16,19 @@ $page = 'Noticias' ?>
 
 <body>
     <?php include 'layout/menu.php' ?>
-    <div class="contaider-fluid body">
 
+    <div class="contaider-fluid body">
         <div class="row d-flex justify-content-around  p-4  ">
-            <div id="titulo_noticias" class="col-12  ">
+            <div id="main-title titulo_noticias" style="margin-bottom: 26px;" class="col-12 ">
                 <h2 class="main-title text-center">Noticias</h2>
             </div>
-            <section class="container mt-5 ">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
-                        <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
-                        <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/no_image.png" class="card-img-top img-fluid" alt="...">
-                        <div class="col-12">
-                            <p class="text-center">Texto explicativo</p>
-                        </div>
-                    </div>
+            <div class=" container">
+                <div class="row">
+                    <?php modelo_noticia($noticias_array); ?>
                 </div>
-            </section>
-
+            </div>
         </div>
-
     </div>
-
 
     <?php include 'layout/footer.php' ?>
 
