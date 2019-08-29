@@ -38,7 +38,6 @@ $page = 'Inmuebles' ?>
                     </div>
                     <div>
                         <div class="col-md-12 col-12 col-lg-12">
-
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div id="container_tamaño_img" class="carousel-inner tamaño_cont_carrousel ">
                                     <?php
@@ -126,23 +125,20 @@ $page = 'Inmuebles' ?>
                                 echo  '</ul>';
                             }
                             ?>
-                        </div>
-                        <div class="col-md-12" style="margin-bottom: 12px;;">
-                            <?php
-                            if (count($r['caracteristicasAlrededores']) > 0) {
-                                echo '
+                            <<<<<<< HEAD </div> <div class="col-md-12" style="margin-bottom: 12px;;">
+                                <?php
+                                if (count($r['caracteristicasAlrededores']) > 0) {
+                                    echo '
                                             <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
                                             <ul">';
-                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
-                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
-                                    echo '<li>' . $caracteristicas . '</li>';
+                                    for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>';
                                 }
-                                echo  '</ul>';
-                            }
-                            ?>
+                                ?>
                         </div>
-
-
                         <div class="col-12  mb-3">
                             <?php if ($r['video'] != "") {
                                 echo
@@ -158,6 +154,22 @@ $page = 'Inmuebles' ?>
                             </div>
                                 ';
                             } ?>
+                            =======
+                        </div>
+                        <div class="col-md-12" style="margin-bottom: 12px;;">
+                            <?php
+                            if (count($r['caracteristicasAlrededores']) > 0) {
+                                echo '
+                                            <h4 class="property-single-detail-title"><strong>Caracteristicas Alrededores</strong></h4>
+                                            <ul">';
+                                for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                    $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                    echo '<li>' . $caracteristicas . '</li>';
+                                }
+                                echo  '</ul>';
+                            }
+                            ?>
+                            >>>>>>> da0b170f7c2fe735c8883253573f2091b05d8d23
                         </div>
                         <div class="col-md-12  p-0">
                             <div class="row">
