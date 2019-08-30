@@ -195,8 +195,8 @@ $page = 'Inmuebles' ?>
                             <select id="tipo_gestion_buscar" class="form-control rounded-0">
                                 <option selected>Tipo de gestión</option>
                             </select>
-                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Area Mínima">
-                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Area Máxima">
+                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Área Mínima">
+                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Área Máxima">
                             <button type="button" style="background-color: gray;" class="btn  rounded-0 col-12" id="buscar">Buscar</button>
                         </form>
                     </div>
