@@ -37,7 +37,7 @@ $page = 'Inmuebles' ?>
                         </div>
                     </div>
                     <div>
-                    <div class="col-md-12 col-12 col-lg-12">
+                        <div class="col-md-12 col-12 col-lg-12">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div id="container_tamaño_img" class="carousel-inner tamaño_cont_carrousel ">
                                     <?php
@@ -83,7 +83,7 @@ $page = 'Inmuebles' ?>
 
                         <div class="col-md-12 row  ">
                             <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
-                            <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=60-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
+                                <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=60-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
                             </div>
                             <div class="col-md-4 col-lg-4 col-6 col-sm-1 mr-2 icon_foot row">
                                 <h5 class="compartir">Compartir por :</h5>
@@ -99,6 +99,24 @@ $page = 'Inmuebles' ?>
                             <h4 class="property-single-detail-title"><strong>Descripción</strong></h4>
                             <p style="text-align: justify;"><?php echo $r['descripcionlarga']; ?></p>
                         </div>
+                        <!-- descripcion -->
+                        <div class="col-md-12" style="margin-bottom: 12px;">
+                            <h4 class="property-single-detail-title"><strong>Características</strong></h4>
+                            <ul class="pl-4">
+                                <li>Código: <?php echo $co; ?></li>
+                                <li>Alcobas: <?php echo $alcobas; ?></li>
+                                <li>Baños: <?php echo $banios; ?></li>
+                                <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
+                                <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
+                                <li>Garaje: <?php echo $garaje; ?></li>
+                                <li>Estrato: <?php echo $estrato; ?></li>
+                                <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
+                                <?php if ($administracion != "") {
+                                    echo '<li>Administración: $' . $administracion . '</li>';
+                                } ?>
+                            </ul>
+                        </div>
+                        <!-- fin de descripcion -->
                         <div class="col-md-12" style="margin-bottom: 12px;;">
                             <?php
                             if (count($r['caracteristicasInternas']) > 0) {
@@ -113,6 +131,7 @@ $page = 'Inmuebles' ?>
                             }
                             ?>
                         </div>
+
                         <div class="col-md-12" style="margin-bottom: 12px;;">
                             <?php
                             if (count($r['caracteristicasExternas']) > 0) {
@@ -161,8 +180,8 @@ $page = 'Inmuebles' ?>
                         <div class="col-md-12  p-0">
                             <div class="row">
                                 <div style="width: 100%;">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.716021290003!2d-74.07164198555337!3d4.644658043435028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a365d3e3b6f%3A0x6db27910fb7175ad!2sCl.%2057%20%2318-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1566996675146!5m2!1ses-419!2sco" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>    
-                                
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.716021290003!2d-74.07164198555337!3d4.644658043435028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a365d3e3b6f%3A0x6db27910fb7175ad!2sCl.%2057%20%2318-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1566996675146!5m2!1ses-419!2sco" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+
                                 </div>
                             </div>
 
