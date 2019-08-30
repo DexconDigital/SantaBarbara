@@ -43,21 +43,21 @@ $page = 'Inmuebles' ?>
                                     <?php
                                     if (!isset($r['fotos']) || count($r['fotos']) == 0) {
                                         echo 'div  class="carousel-item ">
-                                            <img style="    object-fit: cover;
+                                            <img style="    object-fit: container;
                                             width: 100%;
                                             " src="images/no_image.png" class="" alt="...">
                                             </div>
                                         ';
                                     } else {
                                         echo '<div  class="carousel-item active">
-                                            <img style="    object-fit: cover;
+                                            <img style="    object-fit: container;
                                             width: 100%;
                                             " src="' . $r['fotos'][0]['foto'] . '" class="" alt="...">
                                             </div>
                                             ';
                                         for ($i = 1; $i < count($r['fotos']); $i++) {
                                             echo '<div  class="carousel-item">
-                                            <img style="    object-fit: cover;
+                                            <img style="    object-fit: container;
                                             width: 100%;
                                             " src="' . $r['fotos'][$i]['foto'] . '" class="" alt="...">
                                             </div>
@@ -198,12 +198,12 @@ $page = 'Inmuebles' ?>
                         <h6 class="sidebar-title text-center">Contacto con el asesor</h6>
                         <div class="side-bar-agent-detail mt-3">
                             <figure>
-                                <img id="img_inmueble" src="img/no_image.png" alt="">
+                                <img id="img_inmueble" src="<?php echo $asesor['FotoAsesor']; ?>" alt="">
                             </figure>
                             <ul class="side-bar-agent">
-                                <li><i class="fa fa-map-marker"></i> Nombre</li>
-                                <li><i class="fa fa-phone"></i> Teléfono</li>
-                                <li><a><i class="fa fa-envelope"></i> Correo</a></li>
+                                <li><?php echo $asesor['ntercero']; ?></li>
+                                <li><i class=""></i><a href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></li>
+                                <li><a><i class=""></i><?php echo $asesor['correo']; ?></a></li>
                             </ul>
                         </div>
 
