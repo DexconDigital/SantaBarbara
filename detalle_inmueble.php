@@ -90,7 +90,7 @@ $page = 'Inmuebles' ?>
                             </div>
                             <div class="col-md-2 row  d-flex flex-row-reverse bd-highlight container_icon_compartir">
                                 <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot  p-2 row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww..com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
-                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww..com.co%2Fdetalle_inmueble.php%3Fco%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a class="color_face" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww..com.co%2Fdetalle_inmueble.php%3Fco%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
                             </div>
 
                         </div>
@@ -177,6 +177,7 @@ $page = 'Inmuebles' ?>
                             } ?>
 
                         </div>
+                        <!-- Mapa de úbicación
                         <div class="col-md-12  p-0">
                             <div class="row">
                                 <div style="width: 100%;">
@@ -186,7 +187,7 @@ $page = 'Inmuebles' ?>
                             </div>
 
                         </div>
-
+                                    -->
                     </div>
                 </div>
 
@@ -208,8 +209,8 @@ $page = 'Inmuebles' ?>
                             <select id="tipo_gestion_buscar" class="form-control rounded-0">
                                 <option selected>Tipo de gestión</option>
                             </select>
-                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Area Mínima">
-                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Area Máxima">
+                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Área Mínima">
+                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Área Máxima">
                             <button type="submit" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
                         </form>
                     </div>
@@ -221,13 +222,13 @@ $page = 'Inmuebles' ?>
                             </figure>
                             <ul class="side-bar-agent">
                                 <li><?php echo $asesor['ntercero']; ?></li>
-                                <li><i class=""></i><a href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></li>
+                                <li><i class=""></i><a class="color_red" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></li>
                                 <li><a><i class=""></i><?php echo $asesor['correo']; ?></a></li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-3">
                         <div class="search-box daily-email bg2 text-center">
                             <h5 class="mb-0">Propiedades similares</h5>
                         </div>
@@ -237,6 +238,7 @@ $page = 'Inmuebles' ?>
                             </div>
                         </div>
                     </div>
+                    <hr style=" width:82%">
                 </div>
 
             </div>

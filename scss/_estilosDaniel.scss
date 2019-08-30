@@ -97,10 +97,7 @@ figure{
 .color_insta{
     color: #cf3c6d;
 }
-.color_face{
-    color: #5172b9;
-    
-}
+
 .color_tw{
     color: #00aced;
 }
@@ -631,6 +628,18 @@ figure{
 .color_black{
     color: black;
 }
+.color_red{
+    color:red;
+}
+.color_face{
+    color: #0c50a7;
+}
+.color_blanco_url{
+    color: white;
+}
+.color_blanco_url:hover{
+    color: white;
+}
 
 .page-link:focus{
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #ed4c48 !important;
@@ -944,6 +953,8 @@ figure{
         margin-top: -64px;
         margin-left: 29px;
     }
+    
+    
 }
  @media (min-width: 576px) { 
     // funcionar cuando la pantalla sea igual o mayor a mil pixeles
@@ -1030,12 +1041,7 @@ figure{
     .tipo_inm{
         font-size: 24px;
     }
-    .color_blanco_url{
-        color: white;
-    }
-    .color_blanco_url:hover{
-        color: white;
-    }
+    
     .property .precio{
         position: absolute;
     top: 33px;
