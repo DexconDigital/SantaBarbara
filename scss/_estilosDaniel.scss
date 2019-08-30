@@ -1035,6 +1035,19 @@ figure{
     .color_blanco_url:hover{
         color: white;
     }
+    .property .precio{
+        position: absolute;
+    top: 33px;
+    left: -102px;
+    color: #ffffff;
+    padding: 1px 60px;
+    transform: rotate(-42deg);
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    background-color: #212529;
+    }
     
  }
 
@@ -1113,16 +1126,16 @@ figure{
     }
     .property .precio{
         position: absolute;
-        top: 33px;
-        left: -103px;
-        color: #ffffff;
-        padding: 1px 60px;
-        transform: rotate(-42deg);
-        font-size: 12px;
-        font-weight: 700;
-        z-index: 1;
-        text-transform: uppercase;
-        background-color: #000;
+    top: 33px;
+    left: -112px;
+    color: #ffffff;
+    padding: 1px 60px;
+    transform: rotate(-42deg);
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    background-color: #212529;
     }
     
  }
@@ -1190,6 +1203,19 @@ figure{
         color: white;
         font-size: 13px;
         color: white;
+    }
+    .property .precio{
+        position: absolute;
+    top: 33px;
+    left: -70px;
+    color: #ffffff;
+    padding: 1px 60px;
+    transform: rotate(-42deg);
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    background-color: #212529;
     }
     
  }

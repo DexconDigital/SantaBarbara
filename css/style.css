@@ -993,7 +993,20 @@ a:hover {
     color: white; }
 
   .color_blanco_url:hover {
-    color: white; } }
+    color: white; }
+
+  .property .precio {
+    position: absolute;
+    top: 33px;
+    left: -102px;
+    color: #ffffff;
+    padding: 1px 60px;
+    transform: rotate(-42deg);
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    background-color: #212529; } }
 @media (min-width: 768px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -1063,7 +1076,7 @@ a:hover {
   .property .precio {
     position: absolute;
     top: 33px;
-    left: -103px;
+    left: -112px;
     color: #ffffff;
     padding: 1px 60px;
     transform: rotate(-42deg);
@@ -1071,7 +1084,7 @@ a:hover {
     font-weight: 700;
     z-index: 1;
     text-transform: uppercase;
-    background-color: #000; } }
+    background-color: #212529; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -1131,7 +1144,20 @@ a:hover {
   .color_blanco_url {
     color: white;
     font-size: 13px;
-    color: white; } }
+    color: white; }
+
+  .property .precio {
+    position: absolute;
+    top: 33px;
+    left: -70px;
+    color: #ffffff;
+    padding: 1px 60px;
+    transform: rotate(-42deg);
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: uppercase;
+    background-color: #212529; } }
 #medida_nav {
   background-color: #fff !important;
   -webkit-box-shadow: 0px 3px 8px 0px #c2c2c2;
