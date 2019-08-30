@@ -156,7 +156,6 @@ $page = 'Inicio' ?>
 
         <div class="container mt-5 ">
           <div class="card-deck">
-
             <div class="card contenedor_img_zona" id="cad">
               <a href="" target="_blank">
                 <?php $r = $imagenes['banner_clientes_home']['propietarios'];
@@ -166,7 +165,6 @@ $page = 'Inicio' ?>
               <div>
                 <h3 class="text-center"><a class=" color_zona_cliente " href="" target="_blank">Propietarios</a></h3>
               </div>
-
             </div>
 
             <div class="card contenedor_img_zona" id="cad">

@@ -89,7 +89,7 @@ $page = 'Quienes' ?>
       <div class="col-12">
         <div class="row">
           <div class="col-12 col-md-6 col-sm-12">
-            <div class="text_img">
+            <div class="text_img texto_misi_visio">
               <?php for ($i = 0; $i < count($texto_quienes_somos['mision']); $i++) {
                 echo '<p>' . $texto_quienes_somos['mision'][$i] . '</p> ';
               }

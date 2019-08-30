@@ -625,8 +625,23 @@ figure{
     color: #fff;
     background-color: #ed4c48;
     border-color: #ef5e5a;
-
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #ed4c48 !important;
 }
+.color_black{
+    color: black;
+}
+
+.page-link:focus{
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #ed4c48 !important;
+}
+
+.select_color:focus{
+    border-color: #ef5e5a;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #ed4c48 !important;
+}
+.option_color{
+    background : #fff ;
+    }
 
 .page-link{
     position: relative;
@@ -637,6 +652,7 @@ figure{
     color: #212529;
     background-color: #fff;
     border: 1px solid #dee2e6;
+    
 }
 .tamaño_video{
     width: inherit;
@@ -921,7 +937,7 @@ figure{
     }
     .icon_foot{
     font-size: 17px;
-    padding: 27px;
+    padding: 14px;
     }
     .container_icon_compartir{
         margin-top: -64px;
@@ -1089,8 +1105,24 @@ figure{
         float: right;
         
     }
+    .texto_misi_visio{
+        text-align: justify;
+    }
     #container_tamaño_img{
         height: 510px;
+    }
+    .property .precio{
+        position: absolute;
+        top: 33px;
+        left: -103px;
+        color: #ffffff;
+        padding: 1px 60px;
+        transform: rotate(-42deg);
+        font-size: 12px;
+        font-weight: 700;
+        z-index: 1;
+        text-transform: uppercase;
+        background-color: #000;
     }
     
  }
