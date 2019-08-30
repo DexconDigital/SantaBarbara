@@ -6,7 +6,7 @@ setTimeout(() => {
     var fecha = new Date();
     var ano = fecha.getFullYear();
    //  Colocar el año de creacion de la empresa
-    const CREATECOMPANY = 2006;
+    const CREATECOMPANY = 1989;
     var total = ano - CREATECOMPANY;
    //  Se busca la clase counter-expence para colocarel valor de los años
     $('.counter-experence').append(total);

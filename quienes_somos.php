@@ -39,26 +39,32 @@ $page = 'Quienes' ?>
           <div class="col-12 col-md-12 row data text-center">
             <div class="col-12 col-md-6 ">
               <div class="counter-wrapper bg4">
-                <h2>Experiencia</h2>
-               
+                <h1 class="counter-experence"></h1>
+                <h2>Años de Experiencia</h2>
               </div>
             </div>
             <div class="col-12 col-md-6 ">
               <div class=" counter-wrapper bg4">
+                <h1 class="counter-propertys"></h1>
                 <h2>Total Inmuebles</h2>
-               
               </div>
             </div>
-            <div class="col-12 col-md-6 ">
+            <div class="col-12 col-md-4 ">
               <div class="counter-wrapper bg4">
+                <h1 class="counter-rent"></span>
                 <h2>Inmuebles en arriendo</h2>
-                
               </div>
             </div>
-            <div class="col-12 col-md-6 ">
+            <div class="col-12 col-md-4 ">
               <div class="counter-wrapper bg4">
+                <h1 class="counter-sale"></h1>
                 <h2>Inmuebles en venta</h2>
-                
+              </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+              <div class="counter-wrapper bg4 pl-0 pr-0">
+                <h1 class="counter-sale-rent"></h1> 
+                <h2>Inmuebles en Arriendo/venta</h2>
               </div>
             </div>
           </div>
@@ -118,7 +124,7 @@ $page = 'Quienes' ?>
   <?php include 'layout/footer.php' ?>
 
   <?php include('layout/archivosfooter.php'); ?>
-
+  <script src="js/counter-propertys.js"></script>
 
 </body>
 

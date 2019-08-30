@@ -59,7 +59,7 @@
   <hr style=" width:82%">
   <div class="container text-center" style="    padding: 28px;">
     <p class="">
-      Copyright © 2019 <a style="color:#e5120b;" href="">Dexcon Digital</a>. Todos los derechos reservados.
+      Copyright © 2019 <a style="color:#e5120b;" href="https://www.dexcondigital.com.co" target="blank">Dexcon Digital</a>. Todos los derechos reservados.
     </p>
   </div>
 </footer>

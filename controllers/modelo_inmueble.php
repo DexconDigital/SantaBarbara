@@ -28,7 +28,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                     <ul class="additional-info">
                       <li>
                         <header>Areá:</header>
-                        <figure>' . $api['AreaConstruida'] . '<sup>2</sup></figure>
+                        <figure>' . $api['AreaConstruida'] . 'm<sup>2</sup></figure>
                       </li>
                       <li>
                         <header>Alcobas:</header>
