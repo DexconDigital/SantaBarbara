@@ -28,7 +28,13 @@ $page='Inmuebles'?>
                 </div>
                 <!-- propiedades -->
                <?php 
-                listar_inmuebles($api['Inmuebles']);
+               if(is_array($api)){
+                   listar_inmuebles($api['Inmuebles']);
+                } else {
+                    echo '<div class="col-12">
+                        <h2 class="text-center" >No se encontraron inmuebles</h2>
+                    </div>';
+                }
                ?>
                 <!-- Fin de propiedades -->
                 <div class="col-12 row">

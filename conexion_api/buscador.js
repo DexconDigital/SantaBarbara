@@ -166,9 +166,9 @@ var busqueda = function(){
     precio_maximo =existeCampo(precio_maximo);
 
     if (code !== "") {
-        window.location.href = 'detalle_inmueble.php?co=' + code + '';
+        window.location.href = './detalle_inmueble.php?co=' + code + '';
     }else{
-        window.location.href = 'inmueble.php?ci='+ciudad_buscar+
+        window.location.href = './inmueble.php?ci='+ciudad_buscar+
         '&bar='+barrio_buscar+
         '&ge='+gestion_buscar+
         '&in='+tipo_inmueble_buscar+

@@ -1,6 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/detalleInmuebleController.php';
-$page = 'Inmuebles' ?>
+$page='Inmuebles'?>
 <!doctype html>
 <html lang="en">
 
@@ -184,16 +184,16 @@ $page = 'Inmuebles' ?>
                         <form class="search-box">
                             <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="Código">
                             <select id="ciudad_buscar" class="form-control rounded-0">
-                                <option selected>Ciudad</option>
+                                <option value="0" selected>Ciudad</option>
                             </select>
                             <select id="barrio_buscar" class="form-control rounded-0">
-                                <option selected>Barrio</option>
+                                <option value="0" selected>Barrio</option>
                             </select>
                             <select id="tipo_inmueble_buscar" class="form-control rounded-0">
-                                <option selected> Tipo de Inmueble</option>
+                                <option value="0" selected> Tipo de Inmueble</option>
                             </select>
                             <select id="tipo_gestion_buscar" class="form-control rounded-0">
-                                <option selected>Tipo de gestión</option>
+                                <option value="0"  selected>Tipo de gestión</option>
                             </select>
                             <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Área Mínima">
                             <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Área Máxima">

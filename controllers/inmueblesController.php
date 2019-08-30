@@ -43,16 +43,17 @@ $ch = curl_init();
     
 function listar_inmuebles($r)
 {
-    if (is_array($r)) {
             modelo_inmueble2($r);
-    } else {
-        echo '<h2 class="text-center" >No se encontraron inmuebles</h2>';
-    }
+ 
+}
+$totalinmuebles=0;
+if(is_array($api)){
+    $totalinmuebles = $api['datosGrales']['totalInmuebles'];
 }
 
 $valor_reemplazar = '&pag='.$pag.'';
 $url_pagina = str_ireplace($valor_reemplazar, '', $url_pagina);
-$totalItems = $api['datosGrales']['totalInmuebles'];
+$totalItems = $totalinmuebles;
 $itemsPerPage = 12;
 $currentPage = $pag;
 $urlPattern = $url_pagina.'&pag=(:num)';
