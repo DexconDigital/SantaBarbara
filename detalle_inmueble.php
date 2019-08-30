@@ -220,11 +220,13 @@ $page = 'Inmuebles' ?>
                             <figure>
                                 <img id="img_inmueble" src="<?php echo $asesor['FotoAsesor']; ?>" alt="">
                             </figure>
-                            <ul class="side-bar-agent">
-                                <li><?php echo $asesor['ntercero']; ?></li>
-                                <li><i class=""></i><a class="color_red" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></li>
-                                <li><a><i class=""></i><?php echo $asesor['correo']; ?></a></li>
-                            </ul>
+                            <div class="col-12  mt-2 text-center">
+                                <div><?php echo $asesor['ntercero']; ?></div>
+                                <div><i class="fa fa-phone pr-1"></i><a class="color_red" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
+                                <div><i class="fa fa-envelope pr-1"></i><a class="color_red" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
+                    
+                            </div>
+                            
                         </div>
 
                     </div>
