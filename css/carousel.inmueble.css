@@ -10,10 +10,10 @@
     height: 100%;
 }
 .carousel-control-next-icon {
-    background-color: #dc3545;
+    background-color: #dc354500;
 }
 .carousel-control-prev-icon {
-    background-color: #dc3545;
+    background-color: #dc354500;
 }
 @media (min-width: 576px) {
     .carousel-inner{
