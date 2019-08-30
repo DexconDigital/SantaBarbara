@@ -888,8 +888,9 @@ a:hover {
     font-size: 13px; }
 
   .side-bar-agent {
-    width: 66%;
-    float: right; }
+    width: 77%;
+    float: right;
+    margin-top: -114px; }
 
   .compartir_boton {
     margin-top: 18px;
@@ -1064,7 +1065,8 @@ a:hover {
     font-size: 19px; }
 
   .side-bar-agent {
-    width: 66%;
+    margin-top: 2px;
+    width: 69%;
     float: right; }
 
   .texto_misi_visio {
@@ -1139,7 +1141,9 @@ a:hover {
   .side-bar-agent {
     width: 63%;
     float: left;
-    margin-left: -3%; }
+    margin-left: -7%;
+    font-size: 14px;
+    margin-top: 18px; }
 
   .color_blanco_url {
     color: white;
