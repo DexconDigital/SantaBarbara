@@ -20,8 +20,21 @@ curl_close($ch);
 $r = json_decode($result, true);
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
+$asesor =$r['asesor'][0];
 
-
+$administracion = $r['Administracion'];
+$area_construida = $r['AreaConstruida'];
+$area_privada = $r['AreaLote'];
+$edad_inmueble = $r['EdadInmueble'];
+$estrato = $r['Estrato'];
+$gestion = $r['Gestion'];
+$barrio = $r['barrio'];
+$tipo_inmueble = $r['Tipo_Inmueble'];
+$alcobas = $r['alcobas'];
+$banios = $r['banos'];
+$ciudad = $r['ciudad'];
+$descripcion = $r['descripcionlarga'];
+$garaje = $r['garaje'];
 
 
 function similares($ciudad, $inmueble)
@@ -49,8 +62,8 @@ function similares($ciudad, $inmueble)
         $result = curl_exec($ch);
         curl_close($ch);
         $respuesta = json_decode($result, true);
-        modelo_inmueble($respuesta['Inmuebles'], 3);
+        modelo_inmueble($respuesta['Inmuebles'], 2);
     }else{
-        modelo_inmueble($respuesta['Inmuebles'], 3);
+        modelo_inmueble($respuesta['Inmuebles'], 2);
     }
 }
