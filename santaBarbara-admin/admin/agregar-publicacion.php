@@ -3,7 +3,13 @@ require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
 ?>
-<div class="container">
+<style>
+.color_fondo{
+    background-color: white;
+}
+
+</style>
+<div class="container color_fondo">
     <div class="row justify-content-center">
         <div class="col-9" style="    margin-top: 27px;">
             <h2 style="margin-bottom: 35px;" class="text-center">Agregar Publicación</h2>

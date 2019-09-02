@@ -56,6 +56,11 @@ $imagen_inicio = $usuario[7];
         .colo_ico2 {
             color: white;
         }
+        #page-top{
+           background-image: url('images/banner.png');
+           background-size: cover;
+    background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -115,7 +120,7 @@ $imagen_inicio = $usuario[7];
 
     <nav class="navbar navbar-expand static-top color_nv">
         <div style="width: 15%;">
-            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/logo.png" alt=""></a>
+            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/logo_2.png" alt=""></a>
         </div>
 
 
@@ -172,7 +177,7 @@ $imagen_inicio = $usuario[7];
             </li>
         </ul>
 
-
+    </body>
 
 
 

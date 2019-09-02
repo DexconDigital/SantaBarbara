@@ -8,7 +8,13 @@ $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order 
 $sql = mysqli_query($con, $qry);
 
 ?>
-<div class="container">
+<style>
+  .fondo_color{
+    background-color: white;
+  }
+
+</style>
+<div class="container fondo_color">
   <!-- Modal -->
 
   <div class="row justify-content-center">

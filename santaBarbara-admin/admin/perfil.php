@@ -8,7 +8,12 @@ $qry = "SELECT * FROM usuarios where usuario ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
 ?>
+<style>
+  .container{
+    background-color: white;
+  }
 
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-9" style=" margin-top: 27px;">

@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-12 col-lg-4 col-md-6 col-sm-6 ">
             <div class="col-12 col-lg-12 col-sm-10 logo_inmobiliara_footer">
-             <a href="index.php"><img src="img/logo inmobiliaria.png" alt="" class="" style="object-fit: contain; width: 100%;"></a> 
+             <a href="index.php"><img src="img/logo_2.png" alt="" class="" style="object-fit: contain; width: 100%;"></a> 
             </div>
             <p class="text-center mt-4" style="    font-size: 13px;">Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
             <ul style="list-style: none;"> 
@@ -52,6 +52,7 @@
             <p>Déjanos saber de ti, y estemos en contacto.</p>
             <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
             <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-12" name=""><span>Enviar</span></button>
+            <!--Correo al cual debe llegar es Santabarbaraltda@hotmai.com -->
           </div>
            
           </div>

@@ -102,8 +102,10 @@ $page = 'Contacto' ?>
                 <div class="contenedor-overlay">
                   <div class="card" style="width=18rem;">
                     <h3 id="titulo_not" class="text-center">Horario de atención </h3>
-                    <div class="card-body">
-                      <p class="card-text"></p>
+                    <div class="card-body text-center">
+                    <h5>Lunes a Viernes de</h5>
+                    <h5>9:00 am a 6:00 pm</h5>
+                   
                     </div>
                   </div>
                 </div>
@@ -205,6 +207,7 @@ $page = 'Contacto' ?>
                 </div>
                 <div class=" col-md-9 col-12 form-group">
                   <button style="padding: 4px;" type="button" class="btn btn-dark rounded-0 col-md-12 col-12" name=""><span>Enviar</span></button>
+                  <!--Correo al cual debe llegar es Santabarbaraltda@hotmai.com -->
                 </div>
               </div>
             </div>

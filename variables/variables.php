@@ -1,12 +1,12 @@
 <?php
 
 $nombre_inmobiliaria = "Inmobiliaria Santa Bárbara";
-$logo = "img/logo inmobiliaria.png";
+$logo = "img/logo_2.png";
 
 
 //logo empresa
 $logo_empresa = array(
-	"src" => "img/logo inmobiliaria.png",
+	"src" => "img/logo_2.png",
 	"alt" => "Logo Inmobiliaria Santa Bárbara"
 ); 
 
@@ -20,17 +20,17 @@ $pse = array(
 // redes sociales, el cliente hasta ahora las va a crear, dejar indicado
 $redes_sociales = array(
 	"facebook" => array(
-		"link" => "https://www.facebook.com/",
+		"link" => "https://www.facebook.com/luzmarina.arizaariza.3",
 		"icono" => "fab fa-facebook-f",
 		"imagen" => "images/facebook.png"
 	),
 	"twiter" => array(
-		"link" => "https://www.twitter.com/",
+		"link" => "https://twitter.com/Inmobil35157323",
 		"icono" => "fab fa-twitter",
 		"imagen" => "images/twitter.png"
 	),
 	"instagram" => array(
-		"link" => "https://www.instagram.com/",
+		"link" => "https://www.instagram.com/santabarbaraltda/",
 		"icono" => "fab fa-instagram",
 		"imagen" => "images/instagram.png"
 	),
@@ -82,7 +82,7 @@ $datos_contacto = array(
 		"icono" => "far fa-envelope",
 	),
 	"horario" => array(
-		"horario" => "",
+		"horario" => "Lunes a Viernes de 9:00 am a 6:00 pm",
 		"icono" => "fas fa-calendar-alt",
 	),	
 );

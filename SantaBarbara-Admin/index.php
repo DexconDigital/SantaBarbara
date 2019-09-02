@@ -1,5 +1,5 @@
 <?php
-$imagen_login = "./admin/images/logo.png";
+$imagen_login = "./admin/images/logo_2.png";
 $color_fondo = "";
 
 ?>
