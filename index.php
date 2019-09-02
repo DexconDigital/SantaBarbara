@@ -31,7 +31,7 @@ $page = 'Inicio' ?>
                     <img src="' . $r[0]['imagen'] . '" class="w-100" alt="' . $r[0]['alt'] . '">
                   </div>';
           //iterar el array para imprimir todos los valores
-          for ($i = 1; $i < count($r) - 1; $i++) {
+          for ($i = 1; $i < count($r) -1 ; $i++) {
             $r = $r[$i];
             echo '<div class="carousel-item">
                         <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
@@ -216,7 +216,7 @@ $page = 'Inicio' ?>
         <div class="col-12">
           <div class="owl-carousel owl-theme" id="aliados_slide">
             <div class="item" style="height: 150px;">
-              <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">
+             <a href=""><img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt=""></a> 
             </div>
             <div class="item" style="height: 150px;">
               <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">

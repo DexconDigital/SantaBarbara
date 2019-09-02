@@ -1,12 +1,12 @@
 <?php
 
 $nombre_inmobiliaria = "Inmobiliaria Santa Bárbara";
-$logo = "img/logo.png";
+$logo = "img/logo inmobiliaria.png";
 
 
 //logo empresa
 $logo_empresa = array(
-	"src" => "img/logo.png",
+	"src" => "img/logo inmobiliaria.png",
 	"alt" => "Logo Inmobiliaria Santa Bárbara"
 ); 
 
@@ -38,6 +38,11 @@ $redes_sociales = array(
 		"link" => "https://www.youtube.com/",
 		"icono" => "fab fa-youtube",
 		"imagen" => "images/youtube.png"
+	),
+	"whatsapp" => array (
+		"link"=> "https://api.whatsapp.com/send?phone=573002667736&text=&source=&data=",
+		"imprimir" => "300 266 7736",
+		"icono" => "fab fa-whatsapp",
 	),
 );
 
@@ -101,11 +106,11 @@ $formularios_aseguradoras = array(
 // las imaganes no han sido proporcionadas por el cliente
 $imagenes_slide_principal = array(
 	0 => array(
-		'imagen' => 'img/slide_1.jpg',
+		'imagen' => 'img/slide_1.png',
 		'alt' => 'Imagenes del carousel'
 	),
 	1 => array(
-		'imagen' => 'img/slide_2.jpg',
+		'imagen' => 'img/slide_2.png',
 		'alt' => 'Imagenes del carousel'
 	),
 	2 => array(
@@ -118,7 +123,7 @@ $imagenes_slide_principal = array(
 $texto_quienes_somos = array(
 	"titulo" => "Reseña Histórica",
 	"parrafos" => array(
-		0 => "Somos una Empresa con más de 30 años de experiencia en el sector Inmobiliario, arrendando y vendiendo en Bogotá, nos caracterizamos por la honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial un servicio profesional a nuestros clientes.",		
+		0 => "Somos una Empresa con más de 30 años de experiencia en el sector Inmobiliario con matricula inmobiliaria R.A 865, arrendando y vendiendo en Bogotá, nos caracterizamos por la honestidad y cumplimiento en nuestras actividades y por prestar de manera personalizada y cordial un servicio profesional a nuestros clientes.",		
 		
 	),
 	"mision" => array(
@@ -133,7 +138,7 @@ $texto_quienes_somos = array(
 // las imaganes no han sido proporcionadas por el cliente
 $imagenes = array(
 	"banner_quienes_somos_home" => array(
-		'imagen' => 'images/quienes_somos.jpg',
+		'imagen' => 'img/banner_slogan.png',
 		'alt' => 'Imagen'
 	),
 	"banner_servicios_home" => array(

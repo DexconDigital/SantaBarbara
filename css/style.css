@@ -103,6 +103,9 @@ figure {
 .color_you {
   color: red; }
 
+.color_whapp {
+  color: #00ce65; }
+
 .color_insta {
   color: #cf3c6d; }
 
@@ -287,7 +290,7 @@ figure {
   padding: 3px 8px; }
 
 #parallax {
-  background-image: url("../img/banner_slogan.jpg");
+  background-image: url("../img/banner_slogan_2.png");
   background-attachment: fixed;
   height: 700px;
   margin: 0px;
@@ -371,7 +374,7 @@ figure {
   margin: 0px 5px 10px; }
 
 .bg4 {
-  background-color: #f5f5f5; }
+  background-color: #f1656945; }
 
 .data .counter-wrapper p {
   font-size: 48px;
@@ -618,6 +621,9 @@ figure {
 .color_red {
   color: red; }
 
+.color_red:hover {
+  color: black; }
+
 .color_face {
   color: #0c50a7; }
 
@@ -825,6 +831,13 @@ a:hover {
   position: absolute;
   top: 0;
   left: 10%; }
+
+.logo_inmobiliara_footer {
+  flex: 0 0 100%;
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 12%; }
 
 @media (max-width: 575.98px) {
   #targeta {
@@ -1186,6 +1199,8 @@ a:hover {
       @media (min-width: 1200px) {
         #medida_nav .nav-item.active .nav-link:before {
           width: 100%; } }
+  #medida_nav .nav-item .nav-link {
+    margin-right: 16px; }
 
 textarea:focus, textarea[type]:focus, input:focus, input[type]:focus {
   border-color: #dc3545 !important;

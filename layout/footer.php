@@ -5,8 +5,8 @@
       <div class="footer-wrapper section-padding ">
         <div class="row">
           <div class="col-12 col-lg-4 col-md-6 col-sm-6 ">
-            <div class="col-12 col-lg-12 col-sm-10">
-              <img src="img/logo.png" alt="" class="" style="object-fit: contain; width: 100%;">
+            <div class="col-12 col-lg-12 col-sm-10 logo_inmobiliara_footer">
+             <a href="index.php"><img src="img/logo inmobiliaria.png" alt="" class="" style="object-fit: contain; width: 100%;"></a> 
             </div>
             <p class="text-center mt-4" style="    font-size: 13px;">Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
             <ul style="list-style: none;"> 
@@ -17,6 +17,9 @@
                   <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales ['twiter']['link'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
                   <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales ['instagram']['link'] ?>" target="_blank"><i class="fab fa-instagram color_insta "></i></a></div>
                   <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href="<?php echo $redes_sociales ['youtube']['link'] ?>" target="_blank"><img src="images/youtube.png" alt=""><i class="fab fa-youtube color_you"></i> </a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href="<?php echo $redes_sociales ['whatsapp']['link'] ?>" target="_blank"><img src="" alt=""><i class="fab fa-whatsapp color_whapp"></i> </a></div>
+                
+                                                                                                                            
                 </div>
               </li>
             </ul>

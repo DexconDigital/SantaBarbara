@@ -48,9 +48,9 @@
 
 <!-- Inicio menu -->
 <nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
-  <div class=" row col-lg-6 col-md-6 col-8">
+  <div class=" row col-lg-5 col-md-5 col-5">
     <a href="index.php">
-      <img style=" object-fit: contain;width: 100%;" src="<?php echo $logo; ?>" alt="" height="70px">
+      <img style=" object-fit: contain;width: 100%;" src="<?php echo $logo; ?>" alt="" height="100px">
     </a>
   </div>
 
