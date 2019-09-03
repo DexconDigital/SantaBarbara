@@ -31,7 +31,7 @@ $page = 'Inicio' ?>
                     <img src="' . $r[0]['imagen'] . '" class="w-100" alt="' . $r[0]['alt'] . '">
                   </div>';
           //iterar el array para imprimir todos los valores
-          for ($i = 1; $i < count($r) -1 ; $i++) {
+          for ($i = 1; $i < count($r) - 1; $i++) {
             $r = $r[$i];
             echo '<div class="carousel-item">
                         <img src="' . $r['imagen'] . '" class="w-100" alt="' . $r['alt'] . '">
@@ -216,25 +216,20 @@ $page = 'Inicio' ?>
         <div class="col-12">
           <div class="owl-carousel owl-theme" id="aliados_slide">
             <div class="item" style="height: 150px;">
-             <a href=""><img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt=""></a> 
+              <a href="http://www.ellibertador.co/wps/portal/el-libertador/home/areas-interes/formularios-estudio-arrendamiento" target="_blank"><img style="height: 100%; object-fit: contain;" src="img/LOGO EL LIBERTADOR.png" alt=""></a>
             </div>
             <div class="item" style="height: 150px;">
-              <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">
+              <a href="http://www.fianzasdecolombia.com/descargar-solicitudes" target="_blank"><img style="height: 100%; object-fit: contain;" src="img/LOGO FIANZAS.png" alt=""></a>
             </div>
             <div class="item" style="height: 150px;">
-              <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">
+              <a href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" target="_blank"> <img style="height: 100%; object-fit: contain;" src="img/LOGO SURA.png" alt=""></a>
             </div>
             <div class="item" style="height: 150px;">
-              <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">
-            </div>
-            <div class="item" style="height: 150px;">
-              <img style="height: 100%; object-fit: contain;" src="img/no_image.png" alt="">
+              <a href="https://www.zuarriendo.com/" target="_blank"> <img style="height: 100%; object-fit: contain;" src="img/LOGO ZURICH.png" alt=""></a>
             </div>
           </div>
         </div>
       </div>
-
-
     </section>
 
   </div>

@@ -164,7 +164,7 @@ $page = 'Contacto' ?>
                     <div class=" row card-body ">
                       <div class="col-auto col-md-12 "><i class="fab fa-whatsapp mr-2 icon"></i></div>
                       <div class="col-5 col-md-12">
-                        <a style="color:black;"  href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
+                        <a style="color:black;" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
                       </div>
                     </div>
                   </div>
