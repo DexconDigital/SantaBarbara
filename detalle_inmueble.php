@@ -91,7 +91,7 @@ $page = 'Inmuebles' ?>
                             <div class="col-md-2 row  d-flex flex-row-reverse bd-highlight container_icon_compartir">
                                 <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a class="color_whapp" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.inmobiliariasantabarbara.com.co/detalleInmueble.php?codigo%3d' . $co ?>" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
                                 <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot  p-2 row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.inmobiliariasantabarbara.com.co%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
-                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a class="color_face" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.inmobiliariasantabarbara.com.co%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot  p-2 row"><a class="color_face" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.inmobiliariasantabarbara.com.co  %2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
                             </div>
 
                         </div>

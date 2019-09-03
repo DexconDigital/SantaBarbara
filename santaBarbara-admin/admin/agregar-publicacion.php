@@ -7,6 +7,11 @@ include 'layout/layout.php';
 .color_fondo{
     background-color: white;
 }
+input[type]:focus{
+    border-color: red; !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px red; !important;
+    outline: 0 none;
+    }
 
 </style>
 <div class="container color_fondo">

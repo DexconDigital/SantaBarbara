@@ -43,16 +43,16 @@
               <a href="http://www.ellibertador.co/wps/portal/el-libertador/home/areas-interes/formularios-estudio-arrendamiento" target="_blank" class="color_red">
                 <li class="li_foot"> El Libertador</li>
               </a>
-      
+
               <a href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" target="_blank" class="color_red">
                 <li class="li_foot"> Seguros Sura</li>
               </a>
-              
-              
+
+
               <a href="http://www.fianzasdecolombia.com/descargar-solicitudes" target="_blank" class="color_red">
                 <li class="li_foot"> Fianzas de Colombia</li>
               </a>
-              
+
               <a href="https://www.zuarriendo.com/" target="_blank" class="color_red">
                 <li class="li_foot"> Zurich Seguros</li>
               </a>
@@ -79,3 +79,4 @@
     </p>
   </div>
 </footer>
+

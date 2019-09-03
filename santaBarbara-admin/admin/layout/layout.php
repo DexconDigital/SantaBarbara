@@ -56,10 +56,11 @@ $imagen_inicio = $usuario[7];
         .colo_ico2 {
             color: white;
         }
-        #page-top{
-           background-image: url('images/banner.png');
-           background-size: cover;
-    background-repeat: no-repeat;
+
+        #page-top {
+            background-image: url('images/banner.png');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -162,27 +163,33 @@ $imagen_inicio = $usuario[7];
             <li class="nav-item ">
                 <a class="nav-link " href="./agregar-publicacion.php">
                     <i class="far fa-file colo_ico"></i>
-                    <span>Nueva Publicaión</span>
+                    <span> Nueva Publicaión</span>
                 </a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="lista-publicaciones.php">
                     <i class="fas fa-eye colo_ico"></i>
-                    <span>Ver publicaciones</span></a>
+                    <span> Ver publicaciones</span></a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="perfil.php">
                     <i class="fas fa-wrench colo_ico"></i>
-                    <span>Configuación</span></a>
+                    <span> Configuación</span></a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="perfil.php">
-                    <i class="fas fa-wrench colo_ico"></i>
-                    <span>Agregar asesor</span></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user colo_ico"></i>
+                    <span> Asesores </span></a>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="asesor.php">Crear asesor</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="lista_asesores.php">Lista de asesores</a>
+                </div>
             </li>
         </ul>
 
-    </body>
+</body>
 
 
 
@@ -190,11 +197,11 @@ $imagen_inicio = $usuario[7];
 
 
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Page level plugin JavaScript-->
+<!-- Page level plugin JavaScript-->
