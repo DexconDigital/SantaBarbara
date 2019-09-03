@@ -25,7 +25,7 @@ $page = 'Inmuebles' ?>
                             <h2 class="tipo_inm"><Strong><?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?></Strong></h2>
                             <h5 class="p_detalle"><?php echo $r['barrio'] . ', ' . $r['ciudad'] ?></h5>
                         </div>
-                        <div class="col-6 bd-highlight precio" style="color: #808184;">
+                        <div class="col-6 bd-highlight precio" style="color: #dc3545;">
                             <?php if ($r['Gestion'] == 'Arriendo') {
                                 echo '<h3 class="precio">$ ' . $r['ValorCanon'] . '</h3>';
                             } else if ($r['Gestion'] == 'Venta') {
