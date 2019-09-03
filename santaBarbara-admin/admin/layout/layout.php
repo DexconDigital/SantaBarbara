@@ -175,6 +175,11 @@ $imagen_inicio = $usuario[7];
                     <i class="fas fa-wrench colo_ico"></i>
                     <span>Configuación</span></a>
             </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="perfil.php">
+                    <i class="fas fa-wrench colo_ico"></i>
+                    <span>Agregar asesor</span></a>
+            </li>
         </ul>
 
     </body>

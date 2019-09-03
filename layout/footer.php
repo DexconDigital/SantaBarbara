@@ -41,28 +41,20 @@
             <h6 class="tit_foot"> Formularios aseguradoras</h6>
             <ul class="estilo_foot_list">
               <a href="http://www.ellibertador.co/wps/portal/el-libertador/home/areas-interes/formularios-estudio-arrendamiento" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Natural El Libertador</li>
+                <li class="li_foot"> El Libertador</li>
               </a>
-              <a href="http://www.ellibertador.co/wps/portal/el-libertador/home/areas-interes/formularios-estudio-arrendamiento" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Jurica El Libertador</li>
-              </a>
+      
               <a href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Natural Seguros Sura</li>
+                <li class="li_foot"> Seguros Sura</li>
               </a>
-              <a href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Jurica Seguros Sura</li>
-              </a>
+              
+              
               <a href="http://www.fianzasdecolombia.com/descargar-solicitudes" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Natural Fianzas de Colombia</li>
+                <li class="li_foot"> Fianzas de Colombia</li>
               </a>
-              <a href="http://www.fianzasdecolombia.com/descargar-solicitudes" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Jurica Fianzas de Colombia</li>
-              </a>
+              
               <a href="https://www.zuarriendo.com/" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Natural Zurich Seguros</li>
-              </a>
-              <a href="https://www.zuarriendo.com/" target="_blank" class="color_red">
-                <li class="li_foot_2"> Persona Jurica Zurich Seguros</li>
+                <li class="li_foot"> Zurich Seguros</li>
               </a>
             </ul>
           </div>
