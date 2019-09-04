@@ -1,10 +1,10 @@
-<?php $page = "Lista de Noticias";
+<?php $page = "Lista de Asesores";
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
 $id_inmobiliria = 7;
 $con = Conect();
-$qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
+$qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
 $sql = mysqli_query($con, $qry);
 
 ?>
@@ -19,12 +19,12 @@ $sql = mysqli_query($con, $qry);
 
   <div class="row justify-content-center">
     <div class="col-10" style=" margin-top: 27px;">
-      <h2 class="text-center">Lista de noticias</h2>
+      <h2 class="text-center">Lista de Asesores</h2>
       <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Nombre</th>
+            <th scope="col">Nombres</th>
             <th scope="col">Editar</th>
             <th scope="col">Eliminar</th>
           </tr>
@@ -35,7 +35,7 @@ $sql = mysqli_query($con, $qry);
             echo '<tr>
                                 <td>' . $res["id"] . '</td>
                                 <td>' . $res["nombre"] . '</td>
-                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:red;" class="fas fa-edit"></i></a></td>
+                                <td><a href="actualizarasesor.php?id=' . $res["id"] . '"><i style="color:red;" class="fas fa-edit"></i></a></td>
                                 <td><a type=""  data-toggle="modal" data-target="#exampleModal" "><i style="color:red;"class="fas fa-trash-alt"></i></a></td>
                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                          <div class="modal-dialog" role="document">
@@ -47,11 +47,11 @@ $sql = mysqli_query($con, $qry);
                                     </button>
                              </div>
                           <div class="modal-body">
-                            ¿Estas seguro de que quieres eliminar la noticia?
+                            ¿Estas seguro de que quieres eliminar el Asesor?
                            </div>
                      <div class="modal-footer">
                         <a type="button"style="color:white;" class="btn btn-secondary " data-dismiss="modal">Cancelar</a>
-                         <a type="button" class="btn btn-danger" href="eliminar.php?id=' . $res['id'] . '">Eliminar</a>
+                         <a type="button" class="btn btn-danger" href="eliminar_asesor.php?id=' . $res['id'] . '">Eliminar</a>
                      </div>
                  </div>
               </div>

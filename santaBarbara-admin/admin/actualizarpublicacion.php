@@ -8,7 +8,24 @@ $id=$_GET["id"];
             $sql=mysqli_query($con,$qry);
             $res=  mysqli_fetch_array($sql) ; 
 ?>
-<div class="container">
+<style>
+.contenedor_color{
+    background-color: white;
+}
+.conct_botton{
+    text-align: center;
+    
+}
+.botonarchivo{
+        margin-left: 25.66667%;
+}
+input[type]:focus{
+    border-color: red; !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px red; !important;
+    outline: 0 none;
+    }
+</style>
+<div class="container contenedor_color">
     <div class="row justify-content-center">
         <div class="col-9" style=" margin-top: 27px;">
             <h2 class="text-center">Editar Noticia</h2>
@@ -50,8 +67,8 @@ $id=$_GET["id"];
                 </div>
                 <input type="hidden" id="fecha" name="fecha">
                 <div class="form-group row">
-                    <div class="col-8 offset-2">
-                        <button class="btn btn-dark">Actualizar Noticia</button>
+                    <div class="col-8 offset-2 conct_botton">
+                        <button class="btn btn-danger">Actualizar Noticia</button>
                     </div>
                 </div>
             </form>
