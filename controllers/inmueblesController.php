@@ -46,7 +46,9 @@ function listar_inmuebles($r)
             modelo_inmueble2($r);
  
 }
+
 $totalinmuebles=0;
+
 if(is_array($api)){
     $totalinmuebles = $api['datosGrales']['totalInmuebles'];
 }
@@ -54,7 +56,7 @@ if(is_array($api)){
 $valor_reemplazar = '&pag='.$pag.'';
 $url_pagina = str_ireplace($valor_reemplazar, '', $url_pagina);
 $totalItems = $totalinmuebles;
-$itemsPerPage = 12;
+$itemsPerPage = 9;
 $currentPage = $pag;
 $urlPattern = $url_pagina.'&pag=(:num)';
 

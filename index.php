@@ -1,5 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/asesor_detalle.php' ?>
 $page = 'Inicio' ?>
 <!doctype html>
 <html lang="es">
@@ -119,28 +120,14 @@ $page = 'Inicio' ?>
         </div>
         <div class="col-12 d-flex justify-content-center">
           <div class="col-12 col-md-6 col-lg-4  ">
-            <div class="card" style="">
-              <div class="property">
-                <a href="">
-                  <div class="property-image">
-                    <img alt="" src="img/no_image.png"></div>
-                </a>
-              </div>
-              <div class=" row col-12 p-4">
-                <div class="col-12">
-                  <p class="mb-1">Nombre:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Apellido:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Celular:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Correo:</p>
-                </div>
-              </div>
-            </div>
+          <?php if(isset($noticias_array)){
+                        modelo_asesor($noticias_array);
+                    }else{
+                        echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                    }
+                    ?>
           </div>
         </div>
     </section>
