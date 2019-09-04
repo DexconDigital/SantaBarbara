@@ -53,7 +53,7 @@ input[type]:focus{
                     <label for="" class="col-sm-3 col-form-label">Foto Actual</label>
                     <label for="" class="col-sm-9 col-form-label"><?php echo $res[4];?></label>
                     <div class="col-sm-9 botonarchivo">
-                        <input type="file" class="form-control-file" name="imagena" id="imagena" accept="image/*">
+                        <input type="file" class="form-control-file" name="imagen" id="imagen" accept="image/*">
                     </div>
                 </div>
                 <input type="hidden" id="fecha" name="fecha">

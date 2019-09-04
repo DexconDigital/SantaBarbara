@@ -5,9 +5,9 @@ require_once 'conexion.php';
 $nom_asesor=$_REQUEST["nom_asesor"];
 $cel_asesor=$_REQUEST["cel_asesor"];
 $cor_asesor= $_POST["cor_asesor"];
-$imagen_asesor=$_FILES["imagena"]["name"];
-$ruta=$_FILES["imagena"]["tmp_name"];
-$nombre_foto = str_replace(" ","",$foto);
+$imagen=$_FILES["imagen"]["name"];
+$ruta=$_FILES["imagen"]["tmp_name"];
+$nombre_foto = str_replace(" ","",$imagen);
 $destino="fotos/".$nombre_foto;
 $fecha=$_REQUEST["fecha"];
 $fecha = date("Y-m-d");
@@ -39,7 +39,7 @@ $con = Conect();
     copy($ruta,$destino);
 
     
-mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`imagen`,`id_inmobiliaria`,`fecha`) VALUES (NULL, '$nom_asesor','$cel_asesor','$cor_asesor','$imagen_asesor','$id_inmo','$fecha')");
+mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`imagen`,`id_inmobiliaria`,`fecha`) VALUES (NULL, '$nom_asesor','$cel_asesor','$cor_asesor','$imagen','$id_inmo','$fecha')");
 header("Location: lista_asesores.php");
     
    

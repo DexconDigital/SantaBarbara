@@ -10,7 +10,7 @@ $cargo=$_REQUEST["cargo"];
 $dependencia=$_REQUEST["dependencia"];
 $foto=$_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
-$destino="images/".$foto;
+$destino="fotos/".$nombre_foto;
 $comparador="images/";
     $con = Conect();
     if($destino == $comparador){

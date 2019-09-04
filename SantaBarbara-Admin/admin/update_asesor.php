@@ -6,11 +6,13 @@ $id=$_REQUEST["id"];
 $nom_asesor=$_REQUEST["nom_asesor"];
 $cel_asesor=$_REQUEST["cel_asesor"];
 $cor_asesor= $_POST["cor_asesor"];
-$imagen_asesor=$_FILES["imagena"]["name"];
+$foto=$_FILES["imagen"]["name"];
+$ruta=$_FILES["imagen"]["tmp_name"];
+
 
 
 $con = Conect();
-$qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', imagen='$imagen_asesor' where id='$id '");
+$qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', imagen='$foto' where id='$id '");
 $sql=mysqli_query($con,$qry);  
 
 if(!$sql){

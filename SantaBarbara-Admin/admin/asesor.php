@@ -48,7 +48,7 @@ include 'layout/layout.php';
                 <div class="form-group row">
                     <label for="" class="col-sm-3 col-form-label">Foto del asesor</label>
                     <div class="col-sm-9">
-                        <input type="file" class="form-control-file" name="imagena" id="imagena" accept="image/*">
+                        <input type="file" class="form-control-file" name="imagen" id="imagen" accept="image/*">
                     </div>
                 </div>
 

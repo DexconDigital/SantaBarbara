@@ -2,7 +2,7 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$id_inmobiliria = 1;
+$id_inmobiliria = 7;
 $con = Conect();
 $qry = "select * from noticias where id_inmobiliaria2 = '$id_inmobiliria' order by id DESC ";
 $sql = mysqli_query($con, $qry);
