@@ -113,24 +113,29 @@ $page = 'Inicio' ?>
     </section>
 
     <section id="asesores" class="container mt-4 mb-3">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-4  ">
-          <h2 class="main-title text-center"> Nuestros Asesores</h2>
-        </div>
-        <div class="col-12">
-          <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <?php if(isset($asesor_array)){
-                        modelo_asesor($asesor_array);
-                    }else{
-                        echo '<div class="col 12">
+
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-3 ">
+        <h2 class="main-title text-center"> Nuestros Asesores</h2>
+      </div>
+      <div class="col-12 ">
+        <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
+      </div>
+
+      <div class="container ">
+        <div class="row">
+        <?php if (isset($asesor_array)) {
+            modelo_asesor($asesor_array);
+          } else {
+            echo '<div class="col 12">
                         <h3 class="text-center">No hay asesores para mostrar<h3>
                         </div>';
-                    }
-                    ?>
+          }
+          ?>
+         
         </div>
-       
+      </div>
+      
     </section>
 
     <section class="bg-gris">
@@ -142,7 +147,7 @@ $page = 'Inicio' ?>
           <p class="text-center"> Te facilitamos todas las operaciones, sin que salgas de casa accede a nuestros servicios con un solo clic y de forma segura.</p>
         </div>
 
-        <div class="container mt-5 ">
+        <div class="container contenedor_total_img mt-5 ">
           <div class="card-deck">
             <div class="card contenedor_img_zona" id="cad">
               <a href="" target="_blank">

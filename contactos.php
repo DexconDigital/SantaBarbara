@@ -99,9 +99,9 @@ $page = 'Contacto' ?>
             <div class="col-12 p-0">
               <div class="contenedor-mapa_contacto">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.387477550989!2d-74.04512468555325!3d4.702562842951571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab269c06361%3A0xdca8e05035cfdad4!2sAk.+15+%23124-17%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1565293824670!5m2!1ses-419!2sco" width="" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <div class="contenedor-overlay">
+                <div class="contenedor-overlay border">
                   <div class="card" style="width=18rem;">
-                    <h3 id="titulo_not" class="text-center">Horario de atención </h3>
+                    <h3 id="titulo_not" class="text-center ">Horario de atención </h3>
                     <div class="card-body text-center">
                     <h5>Lunes a Viernes de</h5>
                     <h5>9:00 am a 6:00 pm</h5>

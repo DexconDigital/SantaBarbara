@@ -19,7 +19,7 @@ require_once('controllers/detalle_noticiasController.php'); ?>
         <div class="row justify-content-center">
 
 
-            <div class="col-11 col-md-6 col-lg-4">
+            <div class="col-11 col-md-8 col-lg-6">
                 <div class="card text-center" style="height: 100%; width: 100%;">
                     <img style="object-fit: contain ;width: 100%;height: 100%;" src="<?php echo $ruta_imagen ?>" alt="" class="img-fluid-top">
                     <div class="col-12">

@@ -1,4 +1,5 @@
 <i class="fas fa-angle-double-up subir"></i>
+<hr style=" width:82%">
 <footer>
   <section>
     <div class="container ">

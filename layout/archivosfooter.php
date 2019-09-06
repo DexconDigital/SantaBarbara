@@ -3,6 +3,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src= 'js/scripts.js'></script>
 <script src="js/wow.min.js"></script>
+
 <script>
   new WOW().init();
 </script>
