@@ -1,5 +1,7 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/asesor_detalle.php';
+require 'controllers/noticiasController.php';
 $page = 'Inicio' ?>
 
 <!doctype html>
@@ -143,6 +145,7 @@ $page = 'Inicio' ?>
               </div>
             </div>
           </div>
+            <?php modelo_asesor($asesor_array);?>
         </div>
     </section>
 
