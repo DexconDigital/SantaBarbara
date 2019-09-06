@@ -2,35 +2,46 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$id=$_GET["id"];
-            $con=Conect();
-            $qry="SELECT * FROM asesores where id ='$id' and id_inmobiliaria = 7";
-            $sql=mysqli_query($con,$qry);
-            $res=  mysqli_fetch_array($sql) ; 
+$id = $_GET["id"];
+$con = Conect();
+$qry = "SELECT * FROM asesores where id ='$id' and id_inmobiliaria = 7";
+$sql = mysqli_query($con, $qry);
+$res =  mysqli_fetch_array($sql);
 ?>
 <style>
-.contenedor_color{
-    background-color: white;
-}
-.conct_botton{
-    text-align: center;
-    
-}
-.botonarchivo{
+    .contenedor_color {
+        background-color: white;
+    }
+
+    .conct_botton {
+        text-align: center;
+
+    }
+
+    .botonarchivo {
         margin-left: 25.66667%;
-}
-input[type]:focus{
-    border-color: red; !important;
-    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px red; !important;
-    outline: 0 none;
+    }
+
+    input[type]:focus {
+        border-color: red;
+         !important;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px red;
+         !important;
+        outline: 0 none;
+    }
+
+    .boton_imagen {
+        margin-left: 40%;
+        margin-top: 5%;
+    }
     }
 </style>
 <div class="container contenedor_color">
     <div class="row justify-content-center">
         <div class="col-9" style=" margin-top: 27px;">
-            <h2 class="text-center mb-3">Editar Noticia</h2>
+            <h2 class="text-center mb-3">Actualizar asesor</h2>
             <form method="post" action="update_asesor.php" enctype="multipart/form-data">
-            <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
+                <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                 <div class="form-group row">
                     <label for="" class="col-sm-3 col-form-label">Nombre y Apellido</label>
                     <div class="col-sm-9">
@@ -50,10 +61,12 @@ input[type]:focus{
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="" class="col-sm-3 col-form-label">Foto Actual</label>
-                    <label for="" class="col-sm-9 col-form-label"><?php echo $res[4];?></label>
-                    <div class="col-sm-9 botonarchivo">
-                        <input type="file" class="form-control-file" name="imagen" id="imagen" accept="image/*">
+                    <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
+                    <div class="col-sm-9">
+                        <img src="<?php echo $res[4]; ?>" alt="" width="200px" height="auto">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="file" class="form-control-file boton_imagen" name="imagen" id="imagen" accept="image/*">
                     </div>
                 </div>
                 <input type="hidden" id="fecha" name="fecha">

@@ -112,7 +112,7 @@ $page = 'Inicio' ?>
       </div>
     </section>
 
-    <section id="asesores" class="container mt-4">
+    <section id="asesores" class="container mt-4 mb-3">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-4  ">
           <h2 class="main-title text-center"> Nuestros Asesores</h2>
@@ -121,32 +121,16 @@ $page = 'Inicio' ?>
           <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
         </div>
         <div class="col-12 d-flex justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4  ">
-            <div class="card" style="">
-              <div class="property">
-                <a href="">
-                  <div class="property-image">
-                    <img alt="" src="img/no_image.png"></div>
-                </a>
-              </div>
-              <div class=" row col-12 p-4">
-                <div class="col-12">
-                  <p class="mb-1">Nombre:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Apellido:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Celular:</p>
-                </div>
-                <div class="col-12">
-                  <p class="mb-1">Correo:</p>
-                </div>
-              </div>
-            </div>
-          </div>
-            <?php modelo_asesor($asesor_array);?>
+          <?php if(isset($asesor_array)){
+                        modelo_asesor($asesor_array);
+                    }else{
+                        echo '<div class="col 12">
+                        <h3 class="text-center">No hay asesores para mostrar<h3>
+                        </div>';
+                    }
+                    ?>
         </div>
+       
     </section>
 
     <section class="bg-gris">
