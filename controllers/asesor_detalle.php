@@ -5,9 +5,9 @@ require_once("conexion.php");
 $link = Conect();
 $array = array();
 
-$sql = "SELECT * FROM asesores  where id_inmobiliaria2 = 8 order by id desc";
-$result = mysqli_query($link, $sql) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result)) {
+$sql1 = "SELECT * FROM asesores  where id_inmobiliaria = 7 order by id desc";
+$result1 = mysqli_query($link, $sql1) or die(mysqli_error($link));
+while ($field = mysqli_fetch_array($result1)) {
     $nombre = $field['nombre'];
     $id = $field['id'];
     $telefono = $field['telefono'];
@@ -22,7 +22,6 @@ while ($field = mysqli_fetch_array($result)) {
         'correo' => $correo,
         'imagen' => $imagen,
         'fecha' => $fecha,
-        
     );
 }
 
