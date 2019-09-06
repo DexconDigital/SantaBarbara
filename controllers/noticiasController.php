@@ -26,26 +26,6 @@ while ($field = mysqli_fetch_array($result)) {
     );
 }
 
-function modelo_ultima_noticia($r)
-{
-    $cantidad_noticias = 1;
-    for ($i = 0; $i < $cantidad_noticias; $i++) {
-        echo '
-    <div class="col-11 col-md-6 col-lg-4">
-        <div class="card text-center">
-            <div class="card-body">
-             <h5 class="card-title">' . $r[$i]['titulo'] . '</h5>
-                <p class="card-text">' . $r[$i]['descripcion'] . '</p>
-                <a href="detalle-noticia.php?co=' . $r[$i]['id'] . '" class="btn btn-primary">Ver más</a>
-            </div>
-            <div class="card-footer text-muted">
-                publicado el: ' . $r[$i]['fecha'] . '
-            </div>
-        </div>
-    </div>';
-    }
-}
-
 
 function modelo_noticia($r)
 {

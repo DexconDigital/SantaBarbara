@@ -1,6 +1,7 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
 $page = 'Inicio' ?>
+
 <!doctype html>
 <html lang="es">
 <script>

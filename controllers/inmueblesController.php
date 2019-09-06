@@ -37,7 +37,7 @@ $ch = curl_init();
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
     curl_setopt($ch, CURLOPT_USERPWD, $headers);
     $result = curl_exec($ch);
-    curl_close($ch);
+  curl_close($ch);
     $api = json_decode($result, true);
 
     

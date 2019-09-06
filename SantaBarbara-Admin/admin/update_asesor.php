@@ -8,6 +8,9 @@ $cel_asesor=$_REQUEST["cel_asesor"];
 $cor_asesor= $_POST["cor_asesor"];
 $foto=$_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
+$nombre_foto = str_replace(" ","",$foto);
+$destino="fotos/".$nombre_foto;
+$comparador_fotos="fotos/";
 
 
 
@@ -19,6 +22,19 @@ if(!$sql){
     echo 'No se logro actualizar';
 }else{
     header("Location: lista_asesores.php");
+// actualizar fotos pero no archivo
+}
+if($destino != $comparador_fotos){
+    copy($ruta,$destino );
+    $con = Conect();
+    $qry=("update noticias set nombre='$nombre', descripcion='$descripcion', imagen='$destino',noticia='$noticia' where id='$id '");
+    $sql=mysqli_query($con,$qry);  
+
+    if(!$sql){
+        echo 'No se logro actualizar';
+    }else{
+        header("Location: lista-publicaciones.php");
+    }
 }
 
 

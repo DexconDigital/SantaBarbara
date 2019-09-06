@@ -12,7 +12,10 @@ input[type]:focus{
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px red; !important;
     outline: 0 none;
     }
-
+    .conct_botton{
+    text-align: center;
+    
+}
 </style>
 <div class="container color_fondo">
     <div class="row justify-content-center">
@@ -56,7 +59,7 @@ input[type]:focus{
 
                 <input type="hidden" id="fecha" name="fecha">
                 <div class="form-group row">
-                    <div class="col-8 offset-2">
+                    <div class="col-8 offset-2 conct_botton">
                         <button class="btn btn-danger" value="crear">Crear Publicación</button>
                     </div>
                 </div>
