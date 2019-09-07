@@ -33,7 +33,7 @@ function modelo_asesor($r)
         echo '
          
         <div class=" col-md-6 col-12 col-lg-4 mt-2">
-            <div class="card" style="width: 18rem;">
+            <div class="card tamaño_targeta">
             <div class="property">
             <div class="property-image">
             <img style="object-fit: cover;width: 100%;height: 100%;"; src="' . $ruta_imagen . '" class="card-img-top">

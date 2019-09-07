@@ -34,7 +34,7 @@
               <li class="li_foot"><a class="color_a nav-link" href="inmuebles.php">Inmuebles</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="" target="_blank">Arrendatarios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="" target="_blank">Propietarios</a></li>
-              <li class="li_foot"><a class="color_a nav-link" href="noticias.php">Noticias</a></li>
+              <li class="li_foot"><a class="color_a nav-link" href="noticia.php">Noticias</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="contactos.php">Contáctanos</a></li>
             </ul>
           </div>

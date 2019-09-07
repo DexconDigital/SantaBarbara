@@ -80,7 +80,7 @@ $page = 'Contacto' ?>
                 <div class="col-md-9 col-12">
                   <div class="container">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la <a class="color_politicas" href="">política de tratamiento de datos personales.</a></label>
+                    <label class="form-check-label" for="exampleCheck1">Confimo que he leído, entendido y acepto la <a class="color_politicas" href="Politica_de_tratamiento_de_datos_e_informacio_privilegiada.pdf" download="Politica de tratamiento de infromación.pdf">política de tratamiento de datos personales.</a></label>
                   </div>
 
                 </div>
