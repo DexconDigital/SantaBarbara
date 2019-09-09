@@ -198,21 +198,21 @@ $page = 'Inmuebles' ?>
                         <h6 class="sidebar-title text-center"> Encuentra tu inmueble ideal</h6>
                         <form class="search-box">
                             <input type="text" id='codigo_buscar' class="form-control rounded-0" placeholder="Código">
-                            <select id="ciudad_buscar" class="form-control rounded-0">
-                                <option selected>Ciudad</option>
+                            <select id="ciudad_buscar" class="form-control rounded-0 select_color">
+                                <option selected value="0">Ciudad</option>
                             </select>
-                            <select id="barrio_buscar" class="form-control rounded-0">
-                                <option selected>Barrio</option>
+                            <select id="barrio_buscar" class="form-control rounded-0 select_color">
+                                <option selected value="0">Barrio</option>
                             </select>
-                            <select id="tipo_inmueble_buscar" class="form-control rounded-0">
-                                <option selected> Tipo de Inmueble</option>
+                            <select id="tipo_inmueble_buscar" class="form-control rounded-0 select_color">
+                                <option selected value="0"> Tipo de Inmueble</option>
                             </select>
-                            <select id="tipo_gestion_buscar" class="form-control rounded-0">
-                                <option selected>Tipo de gestión</option>
+                            <select id="tipo_gestion_buscar" class="form-control rounded-0 select_color">
+                                <option selected value="0">Tipo de gestión</option>
                             </select>
-                            <input type="text" id='area_minima_buscar' class="form-control rounded-0" placeholder="Área Mínima">
-                            <input type="text" id='area_maxima_buscar' class="form-control rounded-0" placeholder="Área Máxima">
-                            <button type="submit" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
+                            <input type="text" id='precio_minimo_buscar' class="form-control rounded-0 select_color" placeholder="Precio Mínimo">
+                            <input type="text" id='precio_maximo_buscar' class="form-control rounded-0 select_color" placeholder="Precio Máximo">
+                                <button type="button" id="buscar" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
                         </form>
                     </div>
                     <div class="col-md-12">
@@ -225,9 +225,9 @@ $page = 'Inmuebles' ?>
                                 <div><?php echo $asesor['ntercero']; ?></div>
                                 <div><i class="fa fa-phone pr-1"></i><a class="color_red" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
                                 <div><i class="fa fa-envelope pr-1"></i><a class="color_red" href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></div>
-                    
+
                             </div>
-                            
+
                         </div>
 
                     </div>
