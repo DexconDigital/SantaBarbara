@@ -121,7 +121,7 @@ $page = 'Inicio' ?>
       <div class="col-12 ">
         <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
       </div>
-
+       <!-- Tamaño de la imagen debe ser 286 x 242 -->
       <div class="container ">
         <div class="row">
         <?php if (isset($asesor_array)) {

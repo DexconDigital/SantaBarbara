@@ -12,8 +12,9 @@ $destino="asesores/".$nombre_foto ;
 $fecha=$_REQUEST["fecha"];
 $fecha = date("Y-m-d");
 $id_inmo = 7;
-/*
 
+
+/*
 
 $nombre_ar = $_FILES['archivo']['name'];
 $limite_kb = 850;
