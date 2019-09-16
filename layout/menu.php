@@ -50,9 +50,7 @@
 <nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
   <div class=" row col-lg-5 col-md-5 col-5">
     <a href="index.php">
-      <img style=" object-fit: contain;
-    width: 82%;
-    margin-left: 7%;;" src="<?php echo $logo; ?>" alt="" height="80px">
+      <img class="dimencion_logo" src="<?php echo $logo; ?>" alt="" height="80px">
     </a>
   </div>
 

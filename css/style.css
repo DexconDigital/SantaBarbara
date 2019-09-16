@@ -795,7 +795,7 @@ a:hover {
 
 .logo_inmobiliara_footer {
   flex: 0 0 100%;
-  max-width: 60%;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 12%; }
@@ -925,7 +925,12 @@ a:hover {
   .main-title2 {
     position: relative;
     text-transform: uppercase;
-    top: 140px; } }
+    top: 140px; }
+
+  .dimencion_logo {
+    object-fit: contain;
+    width: 193%;
+    margin-left: 7%; } }
 @media (min-width: 576px) {
   #targeta {
     overflow: hidden;
@@ -1132,7 +1137,12 @@ a:hover {
     width: 100%; }
 
   #menu {
-    margin-top: 3%; } }
+    margin-top: 3%; }
+
+  .dimencion_logo {
+    object-fit: contain;
+    width: 119%;
+    margin-left: 7%; } }
 @media (min-width: 992px) {
   .fifth-banner-wrapper figure {
     background-image: url("../img/banner_quienes_somos.jpg");
@@ -1142,6 +1152,11 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     display: block; }
+
+  .dimencion_logo {
+    object-fit: contain;
+    width: 85%;
+    margin-left: 7%; }
 
   .fifth-banner-wrapper h1 {
     font-size: 60px;

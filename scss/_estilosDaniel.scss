@@ -825,7 +825,7 @@ figure{
 }
 .logo_inmobiliara_footer{
     flex: 0 0 100%;
-    max-width: 60%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 12%;
@@ -968,6 +968,11 @@ figure{
     text-transform: uppercase;
     top: 140px;
 }
+.dimencion_logo{
+    object-fit: contain;
+    width: 193%;
+    margin-left: 7%;
+    }
     
 }
  @media (min-width: 576px) { 
@@ -1197,6 +1202,11 @@ figure{
       #menu{
         margin-top: 3%;
     }
+    .dimencion_logo{
+    object-fit: contain;
+    width: 119%;
+    margin-left: 7%;
+    }
  }
 
  @media (min-width: 992px) { 
@@ -1211,6 +1221,11 @@ figure{
         display: block;
         
     }
+    .dimencion_logo{
+        object-fit: contain;
+        width: 85%;
+        margin-left: 7%;
+        }
     .fifth-banner-wrapper h1{
         font-size: 60px;
         font-weight: 600;
