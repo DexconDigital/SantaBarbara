@@ -9,7 +9,7 @@ $page = 'Inicio';
 <!doctype html>
 <html lang="es">
 <script>
-  var page = 'Inicio';
+  var page = 'inicio';
 </script>
 
 <head>
@@ -28,7 +28,7 @@ $page = 'Inicio';
     <section>
       <?php include 'layout/menu.php' ?>
     </section>
-
+    
     <section id="hero">
       <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -85,7 +85,7 @@ $page = 'Inicio';
         </div>
       </div>
     </section>
-
+    
     <section class="separador-p bg-gris">
       <div class="container">
         <div class="row">
@@ -150,9 +150,9 @@ $page = 'Inicio';
       </div>
 
     </section>
-
+    
     <section class="bg-gris">
-      <div class="row justify-content-around" style="margin-right: 0px;margin-left: 0px;">
+      <div class="row justify-content-around" style="  margin-right: 0px;margin-left: 0px;">
         <div class="col-12 p-4  ">
           <h2 class="main-title text-center"> Zona Clientes</h2>
         </div>
@@ -194,7 +194,7 @@ $page = 'Inicio';
         </div>
       </div>
     </section>
-
+    
     <section id='parallax4'>
       <div class="overlay">
       </div>
@@ -211,7 +211,7 @@ $page = 'Inicio';
 
     <section id="aliados">
 
-      <div class="row d-flex justify-content-around" style="margin-right: 0px;margin-left: 0px;">
+      <div class="row d-flex justify-content-around aliados">
         <div class="col-12 p-4">
           <h2 class="main-title text-center">Nuestros Aliados</h2>
         </div>
@@ -245,7 +245,7 @@ $page = 'Inicio';
 
   <?php include('layout/archivosfooter.php'); ?>
 
-  
+
 </body>
 
 </html>

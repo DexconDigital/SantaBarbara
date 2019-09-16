@@ -811,6 +811,10 @@ a:hover {
   display: block;
   position: relative; }
 
+.aliados {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 @media (max-width: 575.98px) {
   #targeta {
     overflow: hidden;

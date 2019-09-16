@@ -841,6 +841,10 @@ figure{
     display: block;
     position: relative;
 }
+.aliados{
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
 
 // Extra small devices (portrait phones, less than 576px)
@@ -974,6 +978,7 @@ figure{
     margin-left: 7%;
     }
     
+    
 }
  @media (min-width: 576px) { 
     // funcionar cuando la pantalla sea igual o mayor a mil pixeles
@@ -1008,6 +1013,7 @@ figure{
         position: relative;
         
     }
+    
     .tit_foot{
         font-weight: 700;
         text-transform: capitalize;
