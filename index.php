@@ -2,12 +2,14 @@
 require 'controllers/indexController.php';
 require 'controllers/asesor_detalle.php';
 require 'controllers/noticiasController.php';
-$page = 'Inicio' ?>
+$page = 'Inicio';
+?>
+
 
 <!doctype html>
 <html lang="es">
 <script>
-  var page = 'inicio';
+  var page = 'Inicio';
 </script>
 
 <head>
@@ -21,8 +23,12 @@ $page = 'Inicio' ?>
 </head>
 
 <body>
-  <?php include 'layout/menu.php' ?>
+
   <div class="container-fluid body">
+    <section>
+      <?php include 'layout/menu.php' ?>
+    </section>
+
     <section id="hero">
       <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -67,13 +73,20 @@ $page = 'Inicio' ?>
         </div>
         <div class="col-md-12 col-12 col-lg-12  justify-content-center">
           <div class="owl-carousel owl-theme" id="owl_propiedades_destacadas">
-            <?php inmuebles_destacados($api);  ?>
+            <?php if (isset($api)) {
+              inmuebles_destacados($api);
+            } else {
+              echo '<div class="col 12">
+                        <h3 class="text-center">No hay inmuebles detacados<h3>
+                        </div>';
+            }
+            ?>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="" class="separador-p bg-gris">
+    <section class="separador-p bg-gris">
       <div class="container">
         <div class="row">
           <div class="">
@@ -121,10 +134,10 @@ $page = 'Inicio' ?>
       <div class="col-12 ">
         <p class="text-center"> Nadie conoce nuestras ciudades tan bien como nosotros</p>
       </div>
-       <!-- Tamaño de la imagen debe ser 286 x 242 -->
+      <!-- Tamaño de la imagen debe ser 286 x 242 -->
       <div class="container ">
         <div class="row">
-        <?php if (isset($asesor_array)) {
+          <?php if (isset($asesor_array)) {
             modelo_asesor($asesor_array);
           } else {
             echo '<div class="col 12">
@@ -132,14 +145,14 @@ $page = 'Inicio' ?>
                         </div>';
           }
           ?>
-         
+
         </div>
       </div>
-      
+
     </section>
 
     <section class="bg-gris">
-      <div class="row justify-content-around">
+      <div class="row justify-content-around" style="margin-right: 0px;margin-left: 0px;">
         <div class="col-12 p-4  ">
           <h2 class="main-title text-center"> Zona Clientes</h2>
         </div>
@@ -198,7 +211,7 @@ $page = 'Inicio' ?>
 
     <section id="aliados">
 
-      <div class="row d-flex justify-content-around">
+      <div class="row d-flex justify-content-around" style="margin-right: 0px;margin-left: 0px;">
         <div class="col-12 p-4">
           <h2 class="main-title text-center">Nuestros Aliados</h2>
         </div>
@@ -232,7 +245,7 @@ $page = 'Inicio' ?>
 
   <?php include('layout/archivosfooter.php'); ?>
 
-
+  
 </body>
 
 </html>

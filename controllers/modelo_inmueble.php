@@ -2,7 +2,7 @@
 // modelo inmueble propiedades destacadas
 function modelo_inmueble($r, $cantidad_inmuebles)
 {
-  for ($i = 0; $i < $cantidad_inmuebles; $i++) {
+  for ($i = 0; $i < $cantidad_inmuebles; $i = $i + 2) {
     $imagen = existeImagen(($r[$i]['foto1']));
     $codigo = str_ireplace("60-", "", $r[$i]['Codigo_Inmueble']);
     $api = $r[$i];
@@ -15,14 +15,14 @@ function modelo_inmueble($r, $cantidad_inmuebles)
                   <div class="property-image">
                     <img alt="" src="' . $imagen . '"></div>
                   <div class="precio">';
-    if ($api['Gestion'] == 'Arriendo/venta') {
-      echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
-    } else if ($api['Gestion'] == 'Arriendo') {
-      echo '$' . $api['Canon'];
-    } else {
-      echo '$' . $api['Venta'];
-    } 
-    echo '
+                    if ($api['Gestion'] == 'Arriendo/venta') {
+                       echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
+                  } else if ($api['Gestion'] == 'Arriendo') {
+                       echo '$' . $api['Canon'];
+                  } else {
+                       echo '$' . $api['Venta'];
+                         }
+               echo '
                   </div>
                   <div class="overlay">
                     <ul class="additional-info">
@@ -74,7 +74,7 @@ function modelo_inmueble2($r)
     $imagen = existeImagen(($r[$i]['foto1']));
     $codigo = str_ireplace("60-", "", $r[$i]['Codigo_Inmueble']);
     $api = $r[$i];
-    
+
     $descripcion = $api['descripcionlarga'];
     $limite_de_cadena = 10;
     // recortar cadena
@@ -91,8 +91,8 @@ function modelo_inmueble2($r)
                         <div class="col-12 col-md-4">
                         <div style="margin-bottom: 13px;">
                           <figure style="height: 230px;">
-                                <a href="detalle_inmueble.php?co='.$codigo.'">
-                                    <img src="'.$imagen.'" alt="">
+                                <a href="detalle_inmueble.php?co=' . $codigo . '">
+                                    <img src="' . $imagen . '" alt="">
                                     <span class="overlay-1"></span>
                                 </a>
                             </figure>
@@ -123,7 +123,7 @@ function modelo_inmueble2($r)
                                     <li class="col-6 col-md-6 border-left"><i class="fas fa-ruler"></i> ' . $api['AreaConstruida'] . 'm<sup>2</sup></li>
                                     <li class="col-6 col-md-6 border-left"><i class="fas fa-bed mr-2"></i>' . $api['Alcobas'] . '</li>
                                     <li class="col-6 col-md-6 border-left"><i class="fas fa-bath mr-2"></i>' . $api['banios'] . '</li>
-                                    <li class="col-12 col-md-auto ml-auto "><a class="color_black" href="detalle_inmueble.php?co='.$codigo.' class="btn btn-danger rounded-0 ">Ver más</a></li>
+                                    <li class="col-12 col-md-auto ml-auto "><a class="color_black" href="detalle_inmueble.php?co=' . $codigo . ' class="btn btn-danger rounded-0 ">Ver más</a></li>
                                 </ul>
                             </div>
                         </div>

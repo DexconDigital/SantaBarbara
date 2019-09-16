@@ -15,6 +15,7 @@ $ch = curl_init();
     curl_close($ch);
     $api = json_decode($result, true);
 
+
 function inmuebles_destacados($r)
 {
     if (is_array($r)) {
