@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-12 col-lg-4 col-md-6 col-sm-6 ">
             <div class="col-12 col-lg-12 col-sm-10 logo_inmobiliara_footer">
-              <a href="index.php"><img src="img/logo_2.png" alt="" class="" style="object-fit: contain; width: 100%;"></a>
+              <a href="index.php"><img src="img/logo_3.png" alt="" class="" style="object-fit: contain; width: 100%;"></a>
             </div>
             <p class="text-center mt-4" style="    font-size: 13px;">Avenida Cra 15 No. 124-17 Oficinas 705 y 706</p>
             <ul style="list-style: none;">

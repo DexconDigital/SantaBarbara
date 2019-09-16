@@ -1,12 +1,12 @@
 <?php
 
 $nombre_inmobiliaria = "Inmobiliaria Santa Bárbara";
-$logo = "img/logo_2.png";
+$logo = "img/logo_3.png";
 
 
 //logo empresa
 $logo_empresa = array(
-	"src" => "img/logo_2.png",
+	"src" => "img/logo_3.png",
 	"alt" => "Logo Inmobiliaria Santa Bárbara"
 ); 
 

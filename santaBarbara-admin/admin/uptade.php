@@ -42,8 +42,6 @@ if($destino == $comparador_fotos && $destinos == $comparador_archivo){
     $sql=mysqli_query($con,$qry);
         if(!$sql){
     }else{
-        echo 'actualizo solo la informacion de texto';
-        die();
         header("Location: lista-publicaciones.php");
     }
     
@@ -72,8 +70,6 @@ if($destino == $comparador_fotos && $destinos != $comparador_archivo){
     if(!$sql){
         echo 'No se logro actualizar';
     }else{
-        echo 'actualizar archivos pero no imagen';
-        die();
         header("Location: lista-publicaciones.php");
     }
 }

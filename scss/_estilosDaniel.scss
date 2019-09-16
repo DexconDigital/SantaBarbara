@@ -279,7 +279,6 @@ figure{
 }
 
 
-
 #noticia{
     background-color: #ffffff;
     padding: 27px 37px;
@@ -1195,6 +1194,9 @@ figure{
         overflow: hidden;
         width: 100%;
       }
+      #menu{
+        margin-top: 3%;
+    }
  }
 
  @media (min-width: 992px) { 
@@ -1322,4 +1324,5 @@ figure{
   .tamaño_targeta{
     width: 18rem;
   }
+  
  }

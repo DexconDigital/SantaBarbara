@@ -26,8 +26,6 @@ if($destino == $comparador_fotos){
     $sql=mysqli_query($con,$qry);
         if(!$sql){
     }else{
-        echo 'actualizo solo la informacion de texto';
-        die();
         header("Location: lista_asesores.php");
     }
     

@@ -50,7 +50,9 @@
 <nav id="medida_nav" class="navbar navbar-expand-xl navbar-light bg-light">
   <div class=" row col-lg-5 col-md-5 col-5">
     <a href="index.php">
-      <img style=" object-fit: contain;width: 100%;" src="<?php echo $logo; ?>" alt="" height="80px">
+      <img style=" object-fit: contain;
+    width: 82%;
+    margin-left: 7%;;" src="<?php echo $logo; ?>" alt="" height="80px">
     </a>
   </div>
 
@@ -58,7 +60,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto" id="menu">
       <li class="nav-item <?php if ($page == 'Inicio') {
                             echo 'active';
                           } ?>">
@@ -99,7 +101,7 @@
       </li>
     </ul>
     <a class="navbar-brand" href="#">
-      <img style="width: 50px;height: auto;" src="img/logopse.png" width="50" height="50" alt="">
+      <img style="width: 50px;height: auto;width: 52px;height: auto;margin-top: 37%;margin-left: -15%;" src="img/logopse.png" width="50" height="50" alt="">
     </a>
   </div>
 </nav>

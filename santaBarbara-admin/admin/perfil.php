@@ -4,7 +4,7 @@ require_once("conexion.php");
 include 'layout/layout.php';
 $user=$_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where usuario ='$user'";
+$qry = "SELECT * FROM usuarios where id_user ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
 ?>

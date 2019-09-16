@@ -62,8 +62,8 @@ function similares($ciudad, $inmueble)
         $result = curl_exec($ch);
         curl_close($ch);
         $respuesta = json_decode($result, true);
-        modelo_inmueble($respuesta['Inmuebles'], 2);
+        modelo_inmueble_similare($respuesta['Inmuebles'], 2);
     }else{
-        modelo_inmueble($respuesta['Inmuebles'], 2);
+        modelo_inmueble_similare($respuesta['Inmuebles'], 2);
     }
 }

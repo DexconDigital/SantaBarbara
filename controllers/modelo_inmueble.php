@@ -21,7 +21,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
       echo '$' . $api['Canon'];
     } else {
       echo '$' . $api['Venta'];
-    }
+    } 
     echo '
                   </div>
                   <div class="overlay">
@@ -134,10 +134,10 @@ function modelo_inmueble2($r)
   }
 }
 
-function modelo_inmueble_similares($r, $cantidad_inmuebles)
+function modelo_inmueble_similare($r)
 {
 
-  for ($i = 0; $i < $cantidad_inmuebles; $i++) {
+  for ($i = 0; $i < count($r); $i++) {
     $imagen = existeImagen(($r[$i]['foto1']));
     $codigo = str_ireplace("60-", "", $r[$i]['Codigo_Inmueble']);
     $api = $r[$i];
