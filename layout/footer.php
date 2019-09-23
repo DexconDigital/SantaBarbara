@@ -14,7 +14,7 @@
 
               <li class=" col-lg-12 col-md-12 col-12 ">
                 <div class=" col-md-12 row col-sm-2" style="justify-content: center;">
-                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a class="color_face"href="<?php echo $redes_sociales['facebook']['link'] ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                  <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a class="color_face" href="<?php echo $redes_sociales['facebook']['link'] ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
                   <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales['twiter']['link'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
                   <div class="col-md-2 col-2 col-sm-1 mr-2 icon_foot"><a href="<?php echo $redes_sociales['instagram']['link'] ?>" target="_blank"><i class="fab fa-instagram color_insta "></i></a></div>
                   <div class="col-md-2 col-2 col-sm-1 mr-1 icon_foot"><a href="<?php echo $redes_sociales['youtube']['link'] ?>" target="_blank"><img src="" alt=""><i class="fab fa-youtube color_you"></i> </a></div>
@@ -44,30 +44,31 @@
               <a href="http://www.ellibertador.co/wps/portal/el-libertador/home/areas-interes/formularios-estudio-arrendamiento" target="_blank" class="color_red">
                 <li class="li_foot"> El Libertador</li>
               </a>
-      
+
               <a href="https://www.sura.com/seguro-arrendamiento/secciones/descargas.aspx" target="_blank" class="color_red">
                 <li class="li_foot"> Seguros Sura</li>
               </a>
-              
-              
+
+
               <a href="http://www.fianzasdecolombia.com/descargar-solicitudes" target="_blank" class="color_red">
                 <li class="li_foot"> Fianzas de Colombia</li>
               </a>
-              
+
               <a href="https://www.zuarriendo.com/" target="_blank" class="color_red">
                 <li class="li_foot"> Zurich Seguros</li>
               </a>
             </ul>
           </div>
           <div class="col-12 col-lg-3 col-md-6 col-sm-6 " style="width: 25%;">
-            <div class="container" style="    margin: 13px;margin: 6px 0px 4px 2px;">
-              <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
-              <p>Déjanos saber de ti, y estemos en contacto.</p>
-              <input type="email" class="col-12" placeholder="ejemplo@dominio.com" id="supscrp_foot">
-              <button style="margin-top: 18px;" type="button" class="btn btn-danger rounded-0 col-12" name=""><span>Enviar</span></button>
-              <!--Correo al cual debe llegar es Santabarbaraltda@hotmai.com -->
-            </div>
-
+            <form action="email/boletincorreo.php" method="Post">
+              <div class="container" style=" margin: 13px;margin: 6px 0px 4px 2px;">
+                <h6 class="tit_foot2"> Suscríbete a nuestro boletín</h6>
+                <p>Déjanos saber de ti, y estemos en contacto.</p>
+                <input type="email" name="email" class="col-md-12 " placeholder="ejemplo@dominio.com" id="supscrp_foot">
+                <button style="margin-top: 18px;" type="submit" class="btn btn-danger rounded-0 col-12"><span>Enviar</span></button>
+                <!--Correo al cual debe llegar es Santabarbaraltda@hotmai.com -->
+              </div>
+            </form>
           </div>
         </div>
       </div>
