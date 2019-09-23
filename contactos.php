@@ -104,7 +104,9 @@ $page = 'Contacto' ?>
                     <h3 id="titulo_not" class="text-center ">Horario de atención </h3>
                     <div class="card-body text-center">
                     <h5>Lunes a Viernes de</h5>
-                    <h5>9:00 am a 6:00 pm</h5>
+                    <h5>9:00 am a 6:00 pm </h5>
+                    <h5>Y Sábados de</h5>
+                    <h5>9:00 am a 1:00 pm</h5>
                    
                     </div>
                   </div>

@@ -20,7 +20,7 @@ $pse = array(
 // redes sociales, el cliente hasta ahora las va a crear, dejar indicado
 $redes_sociales = array(
 	"facebook" => array(
-		"link" => "https://www.facebook.com/luzmarina.arizaariza.3",
+		"link" => "https://www.facebook.com/antonio.ricaurte.83",
 		"icono" => "fab fa-facebook-f",
 		"imagen" => "images/facebook.png"
 	),
@@ -54,17 +54,17 @@ $datos_contacto = array(
 	),
 	"telefono_fijo_1" => array(
 		"link"=> "+570312144700",
-		"imprimir" => "PBX +57(1) 214 4700",
+		"imprimir" => " 214 4700",
 		"icono" => "fas fa-phone-alt",
 	),
 	"telefono_fijo_2" => array(
 		"link"=> "+570312159771",
-		"imprimir" => "PBX +57(1) 215 9771",
+		"imprimir" => " 215 9771",
 		"icono" => "fas fa-phone-alt",
 	),
 	"telefono_fijo_3" => array(
 		"link"=> "+570312149761",
-		"imprimir" => "PBX +57(1) 214 9761",
+		"imprimir" => " 214 9761",
 		"icono" => "fas fa-phone-alt",
 	),
 	"celular" => array(
