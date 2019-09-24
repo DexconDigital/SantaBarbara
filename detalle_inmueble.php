@@ -8,8 +8,39 @@ $page = 'Inmuebles' ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--scrip importante -->
     <?php include 'layout/archivosheader.php' ?>
+    <link rel="stylesheet" href="css/carousel.inmuebles.css">
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <style>
+        #map {
+            height: 350px;
+            z-index: 20;
+        }
+
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
+    </style>
+
+    <link itemprop="thumbnailUrl" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    </span>
+
+
     <link rel="stylesheet" href="css/carousel.inmueble.css">
     <title>Detalle | Inmueble</title>
 </head>
@@ -178,17 +209,14 @@ $page = 'Inmuebles' ?>
                             } ?>
 
                         </div>
-                        <!-- Mapa de úbicación
-                        <div class="col-md-12  p-0">
-                            <div class="row">
-                                <div style="width: 100%;">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.716021290003!2d-74.07164198555337!3d4.644658043435028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a365d3e3b6f%3A0x6db27910fb7175ad!2sCl.%2057%20%2318-22%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1566996675146!5m2!1ses-419!2sco" height="600" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-
+                        <div class="col-md-12">
+                            <h4 class="property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
+                            <div class="card mapa_tamaño">
+                                <div class="">
+                                    <div id="map" class="w-100"></div>
                                 </div>
                             </div>
-
                         </div>
-                                    -->
                     </div>
                 </div>
 
@@ -212,7 +240,7 @@ $page = 'Inmuebles' ?>
                             </select>
                             <input type="text" id='precio_minimo_buscar' class="form-control rounded-0 select_color" placeholder="Precio Mínimo">
                             <input type="text" id='precio_maximo_buscar' class="form-control rounded-0 select_color" placeholder="Precio Máximo">
-                                <button type="button" id="buscar" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
+                            <button type="button" id="buscar" style="background-color: gray;" class="btn  rounded-0 col-12">Buscar</button>
                         </form>
                     </div>
                     <div class="col-md-12">
@@ -251,6 +279,63 @@ $page = 'Inmuebles' ?>
     <?php include 'layout/footer.php' ?>
 
     <?php include('layout/archivosfooter.php'); ?>
+    <script src="js/slick.min.js"></script>
+        <script>
+            $('#slide-detalle').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '#miniaturas'
+            });
+            $('#miniaturas').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNavFor: '#slide-detalle',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                variableWidth: true,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    }
+                ]
+            });
+        </script>
+
+        <!-- mapa del inmueble -->
+        <script src="mapas/leaflet.js" crossorigin=""></script>
+        <script>
+            var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
+
+            L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+            }).addTo(map);
+
+            L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+                .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+                .openPopup();
+        </script>
 
 
 </body>
