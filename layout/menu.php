@@ -84,8 +84,8 @@
           Clientes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Arrendatarios</a>
-          <a class="dropdown-item" href="#">Propietarios</a>
+          <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=2" target="_blank">Arrendatarios</a>
+          <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=1" target="_blank">Propietarios</a>
       </li>
       <li class="nav-item <?php if ($page == 'Noticias') {
                             echo 'active';

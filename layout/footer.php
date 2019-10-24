@@ -32,8 +32,8 @@
               <li class="li_foot"><a class="color_a nav-link" href="quienes_somos.php">Quiénes Somos</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="servicios.php">Servicios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="inmuebles.php">Inmuebles</a></li>
-              <li class="li_foot"><a class="color_a nav-link" href="" target="_blank">Arrendatarios</a></li>
-              <li class="li_foot"><a class="color_a nav-link" href="" target="_blank">Propietarios</a></li>
+              <li class="li_foot"><a class="color_a nav-link" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=2" target="_blank">Arrendatarios</a></li>
+              <li class="li_foot"><a class="color_a nav-link" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=1" target="_blank">Propietarios</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="noticia.php">Noticias</a></li>
               <li class="li_foot"><a class="color_a nav-link" href="contactos.php">Contáctanos</a></li>
             </ul>
