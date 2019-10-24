@@ -163,7 +163,7 @@ $page = 'Inicio';
         <div class="container contenedor_total_img mt-5 ">
           <div class="card-deck">
             <div class="card contenedor_img_zona" id="cad">
-              <a href="" target="_blank">
+              <a href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=1" target="_blank">
                 <?php $r = $imagenes['banner_clientes_home']['propietarios'];
                 echo '
                <img  src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
@@ -174,7 +174,7 @@ $page = 'Inicio';
             </div>
 
             <div class="card contenedor_img_zona" id="cad">
-              <a href="" target="_blank">
+              <a href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=2" target="_blank">
                 <?php $r = $imagenes['banner_clientes_home']['arrendatarios'];
                 echo '
                <img src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
