@@ -169,7 +169,7 @@ $page = 'Inicio';
                <img  src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
               </a>
               <div>
-                <h3 class="text-center"><a class=" color_zona_cliente " href="" target="_blank">Propietarios</a></h3>
+                <h3 class="text-center"><a class=" color_zona_cliente " href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=1" target="_blank">Propietarios</a></h3>
               </div>
             </div>
 
@@ -179,7 +179,7 @@ $page = 'Inicio';
                 echo '
                <img src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
               </a>
-              <h3 class="text-center"> <a class=" color_zona_cliente " target="_blank" href="">Arrendatarios</a></h3>
+              <h3 class="text-center"> <a class=" color_zona_cliente " target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocs/index.php?inmo=60&tipo=2">Arrendatarios</a></h3>
             </div>
 
             <div class="card contenedor_img_zona" id="cad">
