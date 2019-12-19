@@ -57,10 +57,17 @@ $imagen_inicio = $usuario[7];
             color: white;
         }
 
-        #page-top {
+        .fondo_img {
             background-image: url('images/banner.png');
-            background-size: cover;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
     </style>
 </head>
@@ -188,20 +195,13 @@ $imagen_inicio = $usuario[7];
                 </div>
             </li>
         </ul>
-
-</body>
-
-
+   
+        <div id="content-wrapper" style="background:white; position: relative;">
 
 
 
 
 
-<!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Page level plugin JavaScript-->
+
