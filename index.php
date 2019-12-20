@@ -183,12 +183,12 @@ $page = 'Inicio';
             </div>
 
             <div class="card contenedor_img_zona" id="cad">
-              <a href="" target="_blank">
+              <a href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/pagos-aval/resultado-busqueda/realizar-pago-facturadores?idConv=00010930&origen=buscar" target="_blank">
                 <?php $r = $imagenes['banner_clientes_home']['pagos_pse'];
                 echo '
                <img style="object-fit: contain;" src="' . $r['imagen'] . '" class="w-100 imagen_zona" alt="' . $r['alt'] . '">'; ?>
               </a>
-              <h3 class="text-center"> <a class=" color_zona_cliente " href="" target="_blank">Pagos en Línea</a></h3>
+              <h3 class="text-center"> <a class=" color_zona_cliente " href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/pagos-aval/resultado-busqueda/realizar-pago-facturadores?idConv=00010930&origen=buscar" target="_blank">Pagos en Línea</a></h3>
             </div>
           </div>
         </div>

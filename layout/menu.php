@@ -98,7 +98,7 @@
         <a class="nav-link" href="contactos.php">Contáctanos</a>
       </li>
     </ul>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://www.avalpaycenter.com/wps/portal/portal-de-pagos/web/pagos-aval/resultado-busqueda/realizar-pago-facturadores?idConv=00010930&origen=buscar" target="_blank">
       <img style="width: 50px;height: auto;width: 52px;height: auto;margin-top: 37%;margin-left: -15%;" src="img/logopse.png" width="50" height="50" alt="">
     </a>
   </div>
