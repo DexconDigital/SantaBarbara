@@ -9,10 +9,30 @@ $sql = mysqli_query($con, $qry);
 
 ?>
 <style>
-  .fondo_color{
+  .fondo_color {
     background-color: white;
   }
 
+  .color_aceptar {
+    background-color: #db2e33;
+    color: white;
+
+  }
+
+  .color_aceptar:hover {
+
+    color: white;
+  }
+
+  .color_cancelar {
+    background-color: #db2e33;
+    color: white;
+  }
+
+  .color_cancelar:hover {
+
+    color: white;
+  }
 </style>
 <div class="container fondo_color">
   <!-- Modal -->
@@ -35,33 +55,41 @@ $sql = mysqli_query($con, $qry);
             echo '<tr>
                                 <td>' . $res["id"] . '</td>
                                 <td>' . $res["nombre"] . '</td>
-                                <td><a href="actualizarasesor.php?id=' . $res["id"] . '"><i style="color:red;" class="fas fa-edit"></i></a></td>
-                                <td><a type=""  data-toggle="modal" data-target="#exampleModal" "><i style="color:red;"class="fas fa-trash-alt"></i></a></td>
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                         <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                       <span aria-hidden="true">&times;</span>
-                                    </button>
-                             </div>
-                          <div class="modal-body">
-                            ¿Estas seguro de que quieres eliminar el Asesor?
-                           </div>
-                     <div class="modal-footer">
-                        <a type="button"style="color:white;" class="btn btn-secondary " data-dismiss="modal">Cancelar</a>
-                         <a type="button" class="btn btn-danger" href="eliminar_asesor.php?id=' . $res['id'] . '">Eliminar</a>
-                     </div>
-                 </div>
-              </div>
-             </div>
-                            </tr>';
+                                <td><a href="actualizarpublicacion.php?id=' . $res["id"] . '"><i style="color:red;" class="fas fa-edit"></i></a></td>
+                                <td><a href="#" data-href="eliminar.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color:red!important;"class="fas fa-trash-alt"></i></a></td>
+
+                   </tr>';
           }
           ?>
         </tbody>
       </table>
     </div>
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ¿Estas seguro de que quieres eliminar este asesor?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn color_cancelar rounded-0" data-dismiss="modal">Cancelar</button>
+            <a class="btn color_aceptar rounded-0 btn-ok">Eliminar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#confirm-delete').on('show.bs.modal', function(e) {
+        $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+
+        $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
+      });
+    </script>
   </div>
 </div>
 
