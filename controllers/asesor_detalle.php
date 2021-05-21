@@ -2,19 +2,23 @@
 
 require_once("conexion.php");
 
-$link = Conect();
+$con = Conect();
 $array = array();
 
-$sql1 = "SELECT * FROM asesores  where id_inmobiliaria = 7 order by id desc";
-$result1 = mysqli_query($link, $sql1) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result1)) {
-    $nombre = $field['nombre'];
-    $id = $field['id'];
-    $telefono = $field['telefono'];
-    $correo = $field['correo'];
-    $imagen = $field['imagen'];
-    $fecha = $field['fecha'];
-   
+$sql = "SELECT * FROM asesores  where id_inmobiliaria = 7 order by id desc";
+$result = $con->prepare( $sql );
+$result->execute();
+
+$resultado = $result->fetchAll( PDO::FETCH_OBJ );
+
+foreach ( $resultado as $key => $field ) {
+    $id = $field->id;
+    $nombre = $field->nombre;
+    $telefono = $field->telefono;
+    $imagen = $field->imagen;
+    $correo = $field->correo; 
+    $fecha = $field->fecha; 
+
     $asesor_array[] = array(
         'nombre' => $nombre,
         'id' => $id,
@@ -24,7 +28,6 @@ while ($field = mysqli_fetch_array($result1)) {
         'fecha' => $fecha,
     );
 }
-
 
 function modelo_asesor($r)
 {

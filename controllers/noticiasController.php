@@ -2,30 +2,33 @@
 
 require_once("conexion.php");
 
-$link = Conect();
+$con = Conect();
 $array = array();
 
 $sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 7 order by id desc";
-$result = mysqli_query($link, $sql) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result)) {
-    $nombre = $field['nombre'];
-    $id = $field['id'];
-    $descripcion = $field['descripcion'];
-    $imagen = $field['imagen'];
-    $noticia = $field['noticia'];
-    $fecha = $field['fecha'];
-    $archivo = $field['archivo'];
+$result = $con->prepare( $sql );
+$result->execute();
+
+$resultado = $result->fetchAll( PDO::FETCH_OBJ );
+
+foreach ( $resultado as $key => $field ) {
+    $id = $field->id;
+    $nombre = $field->nombre;
+    $descripcion = $field->descripcion;
+    $imagen = $field->imagen;
+    $archivo = $field->archivo;
+    $noticia = $field->noticia;
+    $fecha = $field->fecha;
     $noticias_array[] = array(
         'titulo' => $nombre,
         'id' => $id,
         'descripcion' => $descripcion,
-        'imagen' => $imagen,
+        'imagen' => 'Santafe_Admin/admin/' . $imagen,
         'noticia' => $noticia,
         'fecha' => $fecha,
-        'archivo' => $archivo
+        'archivo' => $archivo,
     );
 }
-
 
 function modelo_noticia($r)
 {
