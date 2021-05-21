@@ -1,6 +1,6 @@
 <?php $page = "Noticias";
 require 'variables/variables.php';
-require_once('controllers/detalle_noticiasController.php'); ?>
+//require_once('controllers/detalle_noticiasController.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,8 +13,8 @@ require_once('controllers/detalle_noticiasController.php'); ?>
 </head>
 
 <body>
-    <?php include 'layout/menu.php' ?>
-
+    <?php include 'layout/menu.php';
+    if (isset($noticia)){ ?>
     <div class="container-fluid">
         <div class="row justify-content-center">
 
@@ -49,6 +49,7 @@ require_once('controllers/detalle_noticiasController.php'); ?>
             </div>
         </div>
     </div>
+    <?php } ?>
     <footer>
         <?php include 'layout/footer.php' ?>
     </footer>

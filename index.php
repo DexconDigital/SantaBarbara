@@ -1,7 +1,7 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
-require 'controllers/asesor_detalle.php';
-require 'controllers/noticiasController.php';
+//require 'controllers/asesor_detalle.php';
+//require 'controllers/noticiasController.php';
 $page = 'Inicio';
 ?>
 

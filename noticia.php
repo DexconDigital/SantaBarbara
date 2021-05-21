@@ -1,6 +1,6 @@
 <?php $page = 'Noticias';
 require 'variables/variables.php';
-require 'controllers/noticiasController.php' ?>
+//require 'controllers/noticiasController.php' ?>
 <!doctype html>
 <html lang="es">
 
