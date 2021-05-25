@@ -4,9 +4,10 @@ require_once("conexion.php");
 include 'layout/layout.php';
 $user=$_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where id_user ='$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
+$qry = "SELECT * FROM usuarios where id_user ='{$user->id_user}'";
+$result = $con->prepare( $qry );
+$result->execute();
+$usuario = $result->fetch( PDO::FETCH_OBJ );
 ?>
 <style>
   .container{
@@ -24,50 +25,50 @@ $usuario =  mysqli_fetch_array($sql);
         <div class="col-9" style=" margin-top: 27px;">
             <h2 style=" margin-bottom: 35px;" class="text-center">Perfil</h2>
             <form class="form-horizontal" method="post" action="updateperfil.php" enctype="multipart/form-data" >
-                    <input type="hidden" name="id" value="<?php echo $usuario[0]; ?>" >
-                    <input type="hidden" name="usuario" value="<?php echo $usuario[1]; ?>">
+                    <input type="hidden" name="id" value="<?php echo $usuario->id_user; ?>" >
+                    <input type="hidden" name="usuario" value="<?php echo $usuario->usuario; ?>">
                     <div class="form-group row">
                         <label for="disabledinput" class="col-sm-2 control-label">Password</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>"  required>
+                            <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario->password; ?>"  required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="disabledinput" class="col-sm-2 control-label">Nombre</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $usuario[3]; ?>"  required>
+                            <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $usuario->nombre; ?>"  required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="disabledinput" class="col-sm-2 control-label">Teléfono</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario[4]; ?>"  required>
+                            <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario->telefono; ?>"  required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="disabledinput" class="col-sm-2 control-label">Cargo</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $usuario[5]; ?>"  required>
+                            <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $usuario->cargo; ?>"  required>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="disabledinput" class="col-sm-2 control-label">Dependencia</label>
                         <div class="col-sm-8">
-                            <input type="text" class="form-control" name="dependencia" id="dependencia" value="<?php echo $usuario[6]; ?>"  required>
+                            <input type="text" class="form-control" name="dependencia" id="dependencia" value="<?php echo $usuario->dependencia; ?>"  required>
                         </div>
                     </div>
                     <div class="bs-example" data-example-id="form-validation-states">
                     <div class="form-group row">
                         <label for="noticia" class="col-sm-2 control-label">Imagen Perfil Actual</label>
                         <div class="col-sm-8">
-                            <img width="70px" height="" src="<?php echo $usuario[7];?>">
+                            <img width="70px" height="" src="<?php echo $usuario->imagen;?>">
                         </div>
                         
                     </div>
                     <div class="form-group row">
                         <label class="col-2 control-label" for="noticia">Subir Nueva Imagen</label>
                         <div class="col-8">
-                            <input type="file" name="imagen" id="imagen">
+                            <input type="file" name="imagen" id="imagen" accept="image/*">
                         </div>
                     </div>
                     <div class="panel-footer">
