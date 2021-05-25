@@ -23,7 +23,7 @@ foreach ( $resultado as $key => $field ) {
         'titulo' => $nombre,
         'id' => $id,
         'descripcion' => $descripcion,
-        'imagen' => 'Santafe_Admin/admin/' . $imagen,
+        'imagen' => 'SantaBarbara-Admin/admin/' . $imagen,
         'noticia' => $noticia,
         'fecha' => $fecha,
         'archivo' => $archivo,
@@ -37,7 +37,7 @@ function modelo_noticia($r)
         $descrip = $r[$i]['descripcion'];
         $limite_de_cadena1 = 100;
         $limite_de_cadena2 = 20;
-        $ruta_imagen = "./SantaBarbara-Admin/admin/" . $r[$i]['imagen'];
+        $ruta_imagen = $r[$i]['imagen'];
          //pedniente recortar cadena de descripcion corta
            if (strlen($nombre) >= $limite_de_cadena2) {
               $nombre = substr($nombre, 0, $limite_de_cadena2) . '...';
