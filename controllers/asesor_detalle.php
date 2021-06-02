@@ -29,6 +29,7 @@ foreach ( $resultado as $key => $field ) {
     );
 }
 
+//<img style="object-fit:cover;width: 100%;height: 100%;"; src="" class="card-img-top">
 function modelo_asesor($r)
 {
     for ($i = 0; $i < count($r); $i++) {
@@ -39,7 +40,7 @@ function modelo_asesor($r)
             <div class="card tamaño_targeta">
             <div class="property">
             <div class="property-image">
-            <img style="object-fit:cover;width: 100%;height: 100%;"; src="' . $ruta_imagen . '" class="card-img-top">
+            <img style="object-fit:contain;width: 100%;height: 20rem;"; src="' . $ruta_imagen . '" class="card-img-top">
             </div>
               <div class="card-body">
                 <div class="col-12 p-2">
