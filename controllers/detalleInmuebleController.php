@@ -18,6 +18,12 @@ curl_setopt($ch, CURLOPT_USERPWD, $headers);
 $result = curl_exec($ch);
 curl_close($ch);
 $r = json_decode($result, true);
+if (isset($r['msn'])) {
+    echo "<script>alert('No se Encontró Inmueble');
+    window.location.href='inmueble.php'
+    </script>";
+}
+
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
 $asesor =$r['asesor'][0];
