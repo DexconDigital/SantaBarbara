@@ -53,18 +53,18 @@ $datos_contacto = array(
 		"icono" => "fas fa-map-marker-alt",
 	),
 	"telefono_fijo_1" => array(
-		"link"=> "+570312144700",
-		"imprimir" => " 214 4700",
+		"link"=> "6012144700",
+		"imprimir" => "(601) 214 4700",
 		"icono" => "fas fa-phone-alt",
 	),
 	"telefono_fijo_2" => array(
-		"link"=> "+570312159771",
-		"imprimir" => " 215 9771",
+		"link"=> "6012159771",
+		"imprimir" => "(601) 215 9771",
 		"icono" => "fas fa-phone-alt",
 	),
 	"telefono_fijo_3" => array(
-		"link"=> "+570312149761",
-		"imprimir" => " 214 9761",
+		"link"=> "6012149761",
+		"imprimir" => "(601) 214 9761",
 		"icono" => "fas fa-phone-alt",
 	),
 	"celular" => array(
